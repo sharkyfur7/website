@@ -1,0 +1,46 @@
+#lastfm {
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid oklch(44.6% 0.03 256.802);
+
+  margin: 4px;
+  padding-bottom: 2px;
+  overflow: hidden;
+  width: max-content;
+}
+
+#lastfm header {
+  background-color: #d51007;
+  padding-left: 4px;
+}
+
+#lastfm header a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#lastfm a,
+#lastfm a:visited {
+  color: var(--font-color);
+}
+
+#cover {
+  width: 160px;
+}
+
+#artist,
+#trackname {
+  margin-top: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+  max-width: 150px;
+}
+
+#artist {
+  font-style: italic;
+}
+
+#artist::before {
+  content: "By ";
+}

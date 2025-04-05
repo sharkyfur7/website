@@ -1,0 +1,128 @@
+@import url(/css/fonts.css);
+
+/* Actually goated list of colors :3 https://tailwindcss.com/docs/colors */
+
+:root {
+  --theme-primary: oklch(54.6% 0.245 262.881);
+  --theme-secondary: oklch(98.5% 0 0);
+  --theme-accent: oklch(71.5% 0.143 215.221);
+
+  --font: "Inter";
+  --font-heading: "Red Hat Text";
+  --font-color: var(--theme-secondary);
+  --font-heading-color: var(--theme-primary);
+
+  font-family: var(--font);
+  font-size: 12pt;
+  color: var(--font-color);
+
+  background-image: url(/assets/bg.gif);
+  background-color: oklch(14.1% 0.005 285.823);
+}
+
+/* IDs */
+
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+
+  border: 1px solid oklch(44.6% 0.03 256.802);
+  border-radius: 4px;
+
+  background-color: oklch(14.1% 0.005 285.823);
+  padding: 16px;
+}
+
+#buttons {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#buttons img {
+  width: 88px !important;
+  height: 31px !important;
+  image-rendering: pixelated !important;
+}
+
+#buttons a {
+  transition: 200ms;
+}
+
+#buttons a:hover {
+  scale: 110%;
+}
+
+#shark_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
+#shark_container img {
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+#shark_container a {
+  transition: 200ms;
+
+  background-color: oklch(28.2% 0.091 267.935);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#shark_container a:hover {
+  scale: 110%;
+  border: 1px solid oklch(37.9% 0.146 265.522);
+}
+
+/* Elements */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: var(--font-heading);
+  color: var(--font-heading-color);
+}
+
+li,
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+a,
+a:visited {
+  color: var(--theme-accent);
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+section + section {
+  margin-top: 16px;
+}
+
+/* Classes */
+.main-header {
+  padding-bottom: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .disable-float-on-sm-screen {
+    float: none !important;
+  }
+}

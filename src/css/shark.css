@@ -1,0 +1,20 @@
+.subtitle {
+  opacity: 50%;
+}
+
+.warning {
+  color: oklch(75% 0.183 55.934);
+}
+
+.images-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  margin: 8px;
+  gap: 8px;
+}
+
+.images-section img {
+  max-height: 250px;
+}
