@@ -1,0 +1,120 @@
+/* IDs */
+
+:root {
+  --album-container-bg: oklch(26.9% 0 0);
+  background-image: none;
+}
+
+#noscript {
+  color: red;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+#album_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+#album_container img {
+  width: 150px;
+  height: 150px;
+  background-color: grey;
+}
+
+#heading {
+  background-color: #d51007;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#heading h1,
+#heading a,
+#heading a:visited {
+  color: white;
+}
+
+#maincontainer {
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 4px;
+  overflow: hidden;
+
+  background-color: var(--album-container-bg);
+}
+
+#interface {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 8px;
+
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+#footer {
+  margin: 8px;
+  text-align: center;
+}
+
+#subtitle {
+  padding-left: 16px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+#username,
+#period,
+#request {
+  border-radius: 0px;
+}
+
+/* Elements */
+
+hr {
+  width: 90%;
+  border: 0;
+  border-top: 1px solid oklch(37% 0.013 285.805);
+  margin-top: 16px;
+}
+
+/* Classes */
+
+.albumname,
+.albumname:visited {
+  font-weight: bold;
+  color: white;
+}
+
+.artistname {
+  font-style: italic;
+}
+
+.album {
+  max-width: 150px;
+
+  border: 1px solid oklch(37% 0.013 285.805);
+  padding: 4px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}

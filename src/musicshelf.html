@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta lang="en-US" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>lowtide | musicshelf</title>
+    <meta name="description" content="Check out your top albums on last.fm!" />
+    <link rel="canonical" href="https://lowtide.nekoweb.org/musicshelf.html" />
+
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/musicshelf.css" />
+
+    <script src="/script/musicshelf.js" defer></script>
+  </head>
+
+  <body>
+    <noscript>
+      <div id="noscript">This requires javascript to function!</div>
+    </noscript>
+
+    <main id="maincontainer">
+      <div id="heading">
+        <h1>musicshelf</h1>
+        <span>powered by <a href="https://www.last.fm">last.fm</a></span>
+      </div>
+
+      <div id="subtitle">See your top played albums on last.fm!</div>
+
+      <section id="interface">
+        <input placeholder="Last.fm username" id="username" type="text" />
+
+        <select id="period" bind:value="{timespan_value}">
+          <option value="overall">All time</option>
+          <option value="7day">7 days</option>
+          <option value="1month">1 month</option>
+          <option value="3month">3 months</option>
+          <option value="6month">6 months</option>
+          <option value="12month">12 months</option>
+        </select>
+
+        <button id="request">Get albums!</button>
+      </section>
+
+      <hr />
+
+      <div id="album_container">
+        <span style="opacity: 50%">Albums go here :)</span>
+
+        <!-- SAMPLE ALBUM -->
+        <!-- <div class="album">
+          <img width="150" src="/assets/shark/shar.jpg" />
+          <div class="info"><span>n.</span><span>m listens</span></div>
+          <div class="albumname">album name</div>
+          <div class="artistname">artist</div>
+        </div> -->
+      </div>
+    </main>
+
+    <footer id="footer">Go back <a href="/">home</a>?</footer>
+  </body>
+</html>
