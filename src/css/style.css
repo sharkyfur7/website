@@ -159,6 +159,10 @@ section + section {
   padding: 8px;
 }
 
+.spacer {
+  height: 8px;
+}
+
 /* Responsive stuff */
 
 @media only screen and (max-width: 600px) {
