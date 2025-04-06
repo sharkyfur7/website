@@ -118,3 +118,11 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  #interface {
+    flex-direction: column;
+  }
+}
