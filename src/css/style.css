@@ -6,6 +6,8 @@
   --theme-primary: oklch(54.6% 0.245 262.881);
   --theme-secondary: oklch(98.5% 0 0);
   --theme-accent: oklch(71.5% 0.143 215.221);
+  --theme-border: oklch(44.6% 0.03 256.802);
+  --theme-background: oklch(14.1% 0.005 285.823);
 
   --font: "Inter";
   --font-heading: "Red Hat Text";
@@ -25,12 +27,8 @@
 #container {
   max-width: 800px;
   margin: 0 auto;
-
-  border: 1px solid oklch(44.6% 0.03 256.802);
-  border-radius: 4px;
-
-  background-color: oklch(14.1% 0.005 285.823);
-  padding: 16px;
+  display: flex;
+  gap: 8px;
 }
 
 #buttons {
@@ -54,30 +52,58 @@
   scale: 110%;
 }
 
-#shark_container {
+#asidething {
+  max-width: 300px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  padding: 8px;
+  flex-direction: column;
 }
 
-#shark_container img {
-  height: 80px;
-  image-rendering: pixelated;
+#maincontent {
+  width: 100%;
 }
 
-#shark_container a {
-  transition: 200ms;
-
-  background-color: oklch(28.2% 0.091 267.935);
-  border-radius: 4px;
-  border: 1px solid transparent;
+#noaiwebring {
+  text-align: center;
 }
 
-#shark_container a:hover {
-  scale: 110%;
-  border: 1px solid oklch(37.9% 0.146 265.522);
+#noaiwebring a,
+#noaiwebring a:visited {
+  color: var(--font-color);
+}
+
+#links a {
+  display: block;
+  width: max-content;
+}
+
+#notifyinput {
+  outline: none;
+  border: 1px solid var(--theme-border);
+  border-radius: 2px;
+
+  color: var(--font-color);
+  background-color: var(--theme-background);
+}
+
+#notifyinput:active {
+  border-color: var(--theme-primary);
+}
+
+#notifyinput:focus {
+  border-color: var(--theme-primary);
+}
+
+#notifysend {
+  border-radius: 2px;
+
+  background-color: var(--theme-background);
+  color: var(--font-color);
+  border: 1px solid var(--theme-primary);
+}
+
+#notifysend:disabled {
+  color: grey;
+  border-color: var(--theme-border);
 }
 
 /* Elements */
@@ -87,6 +113,10 @@ h2,
 h3 {
   margin: 0;
   font-family: var(--font-heading);
+}
+
+h1,
+h2 {
   color: var(--font-heading-color);
 }
 
@@ -113,16 +143,30 @@ a:hover {
 }
 
 section + section {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 /* Classes */
-.main-header {
-  padding-bottom: 16px;
+.stuff-bg {
+  border: 1px solid var(--theme-border);
+  border-radius: 4px;
+
+  background-color: var(--theme-background);
+  padding: 8px;
 }
+
+/* Responsive stuff */
 
 @media only screen and (max-width: 600px) {
   .disable-float-on-sm-screen {
     float: none !important;
+  }
+
+  #container {
+    flex-direction: column;
+  }
+
+  #asidething {
+    flex-direction: row;
   }
 }

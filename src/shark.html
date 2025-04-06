@@ -13,33 +13,38 @@
     <link rel="canonical" href="https://lowtide.nekoweb.org/shark.html" />
 
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/shark.css" />
   </head>
 
   <body>
-    <main id="container">
-      <h1>Select a shark to learn more about it!</h1>
-      <span>You can <a href="/">go back</a> too I guess</span>
+    <div id="container">
+      <main id="maincontent">
+        <section class="stuff-bg">
+          <h1>Select a shark to learn more about it!</h1>
+          <span>You can <a href="/">go back</a> too I guess</span>
+        </section>
 
-      <div id="shark_container">
-        <a href="/shark/blacktip_reef.html">
-          <img
-            src="/assets/shark/pixel/blacktip_reef.png"
-            alt="blacktip reef shark"
-            title="Blacktip reef shark" />
-        </a>
+        <section class="stuff-bg" id="shark_container">
+          <a href="/shark/blacktip_reef.html">
+            <img
+              src="/assets/shark/pixel/blacktip_reef.png"
+              alt="blacktip reef shark"
+              title="Blacktip reef shark" />
+          </a>
 
-        <a href="/shark/nurse.html">
-          <img
-            src="/assets/shark/pixel/nurse.png"
-            alt="nurse shark"
-            title="Nurse shark" />
-        </a>
+          <a href="/shark/nurse.html">
+            <img
+              src="/assets/shark/pixel/nurse.png"
+              alt="nurse shark"
+              title="Nurse shark" />
+          </a>
 
-        <SharkBtn
-          href="/shark/nurse"
-          src="/shark/pixel/nurse.png"
-          alt="nurse shark"></SharkBtn>
-      </div>
-    </main>
+          <SharkBtn
+            href="/shark/nurse"
+            src="/shark/pixel/nurse.png"
+            alt="nurse shark"></SharkBtn>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

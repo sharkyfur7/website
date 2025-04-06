@@ -15,176 +15,197 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/lastfm.css" />
 
-    <script src="/script/lastfm.js"></script>
+    <script src="/script/lastfm.js" defer></script>
+    <script src="/script/notify.js" defer></script>
   </head>
 
   <body>
     <!-- You like inspecting source code, don't you? :3 -->
     <!-- It's a mess but oh well, you get to see all of it anyway -->
-    <main id="container">
-      <header class="main-header">
-        <h1>sharks don't meow, they sneeze <3</h1>
+    <div id="container">
+      <aside id="asidething">
+        <!-- LINKS -->
+        <section class="stuff-bg">
+          <h3>links</h3>
+          <nav id="links">
+            <a href="/shark.html">shark stuff</a>
+            <a href="https://github.com/sharkyfur7">Github</a>
+            <a href="mailto:sharkyblacktip@protonmail.com">E-Mail</a>
+          </nav>
+        </section>
 
-        <p class="text-center">
-          Sharks are really cool creatures. If you'd like to read a bit about
-          them, go to the <a href="/shark.html">sharks page</a>.
-        </p>
-      </header>
+        <!-- LASTFM -->
+        <section class="stuff-bg">
+          <noscript>Last.fm status requires javascript</noscript>
+          <div id="lastfm">
+            <header id="fmstatus">
+              <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
+              <span style="font-size: 0.8rem" id="fmtime"></span>
+            </header>
+            <img loading="lazy" id="cover" />
+            <a id="trackname"></a>
+            <span id="artist"></span>
+          </div>
+        </section>
 
-      <!-- LASTFM + SHARK -->
-      <div
-        class="disable-float-on-sm-screen"
-        style="
-          display: flex;
-          float: right;
-          flex-wrap: wrap;
-          justify-content: center;
-        ">
-        <img
-          src="/assets/shark/shar.jpg"
-          loading="lazy"
-          alt="happy shark"
-          width="220px"
-          height="220px" />
+        <!-- NO AI WEBRING -->
+        <section class="stuff-bg">
+          <div id="noaiwebring">
+            <a href="https://baccyflap.com/noai" target="_blank"
+              >the &#x1f6ab; no &#129302; ai</a
+            ><br />
+            <a
+              href="https://baccyflap.com/noai/?prv&s=shr"
+              target="_top"
+              title="previous"
+              >«</a
+            >
+            <a href="https://baccyflap.com/noai" target="_blank">webring</a>
+            <a
+              class="small"
+              href="https://baccyflap.com/noai/?rnd"
+              target="_top"
+              title="random"
+              >(&#x1F500;)</a
+            >
+            <a
+              href="https://baccyflap.com/noai/?nxt&s=shr"
+              target="_top"
+              title="next"
+              >»</a
+            >
+          </div>
+        </section>
+      </aside>
 
-        <div id="lastfm">
-          <header id="fmstatus">
-            <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
-          </header>
-          <img loading="lazy" id="cover" />
-          <a id="trackname"></a>
-          <span id="artist"></span>
-        </div>
-      </div>
+      <main id="maincontent">
+        <!-- HEADER -->
+        <section class="stuff-bg">
+          <h1>sharks don't meow, they sneeze <3</h1>
 
-      <!-- ABOUT -->
-      <section>
-        <h2>whoami</h2>
-        <p>I'm Sharky, a shark on the internet 🐟</p>
-        <p>Some mildly interesting things about me:</p>
-        <ul>
-          <li>I like sharks and dragons</li>
-          <li>80s/90s/00s music was the best</li>
-          <li>
-            CZECH REPUBLIC
-            <img src="/assets/cz.png" loading="lazy" height="12px" />
-          </li>
-          <li>I'm 18 (old)</li>
-        </ul>
+          <p class="text-center">
+            Sharks are really cool creatures. If you'd like to read a bit about
+            them, go to the <a href="/shark.html">sharks page</a>.
+          </p>
+        </section>
 
-        <p>
-          My other stuff:
-          <a href="https://github.com/sharkyfur7">Github</a>
-          <a href="mailto:sharkyblacktip@protonmail.com">E-Mail</a>
-        </p>
+        <!-- ABOUT -->
+        <section class="stuff-bg">
+          <!-- SHARK -->
+          <div
+            class="disable-float-on-sm-screen"
+            style="
+              display: flex;
+              float: right;
+              flex-wrap: wrap;
+              justify-content: center;
+            ">
+            <img
+              src="/assets/shark/shar.jpg"
+              loading="lazy"
+              alt="happy shark"
+              width="220px"
+              height="220px" />
+          </div>
 
-        <p>
-          If you like dragons or you're just looking for a cool book series, you
-          should check out Wings of Fire
-        </p>
-      </section>
+          <!-- TEXT -->
+          <section>
+            <h2>whoami</h2>
+            <p>I'm Sharky, a shark on the internet 🐟</p>
+            <p>Some mildly interesting things about me:</p>
+            <ul>
+              <li>I like sharks and dragons</li>
+              <li>80s/90s/00s music was the best</li>
+              <li>
+                CZECH REPUBLIC
+                <img src="/assets/cz.png" loading="lazy" height="12px" />
+              </li>
+              <li>I'm 18 (old)</li>
+            </ul>
 
-      <!-- BUTTONS -->
-      <section id="buttons" style="clear: both">
-        <a href="https://nekoweb.org/">
+            <p>
+              If you like dragons or you're just looking for a cool book series,
+              you should check out Wings of Fire
+            </p>
+          </section>
+        </section>
+
+        <!-- NOTIFICATION THING -->
+        <section class="stuff-bg">
+          <noscript>This won't work without javascript!</noscript>
+          <p>Send me a push notification for no reason at all:</p>
+          <input
+            placeholder="blub blub blub 🫧🐟"
+            id="notifyinput"
+            type="text" />
+          <button disabled="true" id="notifysend">send</button>
+        </section>
+
+        <!-- BUTTONS -->
+        <section class="stuff-bg" id="buttons" style="clear: both">
+          <a href="https://nekoweb.org/">
+            <img
+              src="https://nekoweb.org/assets/buttons/button11.gif"
+              alt="nekoweb dot org"
+              loading="lazy" />
+          </a>
+
           <img
-            src="https://nekoweb.org/assets/buttons/button11.gif"
-            alt="nekoweb dot org"
+            src="/assets/badges/blahaj.png"
+            alt="blahaj is best"
             loading="lazy" />
-        </a>
-
-        <img
-          src="/assets/badges/blahaj.png"
-          alt="blahaj is best"
-          loading="lazy" />
-        <img
-          src="/assets/badges/computer.gif"
-          alt="best viewed with a computer"
-          loading="lazy" />
-
-        <a href="https://breq.dev/">
-          <img src="/assets/badges/breq.png" alt="breq" loading="lazy" />
-        </a>
-
-        <a href="https://synth.download">
           <img
-            loading="lazy"
-            src="https://synth.download/assets/buttons/synth.download.svg"
-            alt="Synth.Download!" />
-        </a>
+            src="/assets/badges/computer.gif"
+            alt="best viewed with a computer"
+            loading="lazy" />
 
-        <a href="https://eightyeightthirty.one/">
-          <img
-            loading="lazy"
-            alt="eightyeightythirtyone"
-            src="/assets/badges/eightyeightythirtyone.png" />
-        </a>
+          <a href="https://breq.dev/">
+            <img src="/assets/badges/breq.png" alt="breq" loading="lazy" />
+          </a>
 
-        <a href="https://votehusky.org">
-          <img
-            loading="lazy"
-            alt="vote the husky party"
-            src="https://votehusky.org/buttons/button2.png" />
-        </a>
+          <a href="https://synth.download">
+            <img
+              loading="lazy"
+              src="https://synth.download/assets/buttons/synth.download.svg"
+              alt="Synth.Download!" />
+          </a>
 
-        <a class="border-0" href="https://swiftyshq.neocities.org/">
-          <img
-            loading="lazy"
-            alt="swiftyhq"
-            src="/assets/badges/swiftyhq.png" />
-        </a>
+          <a href="https://eightyeightthirty.one/">
+            <img
+              loading="lazy"
+              alt="eightyeightythirtyone"
+              src="/assets/badges/eightyeightythirtyone.png" />
+          </a>
 
-        <a class="border-0" href="https://freeplay.floof.company/">
-          <img
-            loading="lazy"
-            alt="freeplay"
-            src="/assets/badges/freeplay.gif" />
-        </a>
+          <a href="https://votehusky.org">
+            <img
+              loading="lazy"
+              alt="vote the husky party"
+              src="https://votehusky.org/buttons/button2.png" />
+          </a>
 
-        <a class="border-0" href="https://dimden.dev/">
-          <img
-            loading="lazy"
-            alt="dimden"
-            src="https://dimden.dev/services/images/88x31.gif" />
-        </a>
-      </section>
+          <a class="border-0" href="https://swiftyshq.neocities.org/">
+            <img
+              loading="lazy"
+              alt="swiftyhq"
+              src="/assets/badges/swiftyhq.png" />
+          </a>
 
-      <section style="display: flex; justify-content: center">
-        <map name="noaitxtwidget">
-          <area
-            href="https://baccyflap.com/noai"
-            target="_blank"
-            shape="rect"
-            coords="28,0,219,30"
-            alt="no ai webring"
-            title="no ai webring" />
-          <area
-            href="https://baccyflap.com/noai/?prv&s=shr"
-            target="_top"
-            shape="rect"
-            coords="0,0,27,30"
-            alt="previous"
-            title="previous" />
-          <area
-            href="https://baccyflap.com/noai/?rnd"
-            target="_top"
-            shape="rect"
-            coords="221,6,235,25"
-            alt="random"
-            title="random" />
-          <area
-            href="https://baccyflap.com/noai/?nxt&s=shr"
-            target="_top"
-            shape="rect"
-            coords="239,0,263,30"
-            alt="next"
-            title="next" />
-        </map>
-        <img
-          usemap="#noaitxtwidget"
-          src="https://baccyflap.com/noai/txtwidget-light.gif"
-          alt="a white rectangular box with a dashed outline with the words 'the no ai webring' in the centre, with a parenthetical question mark next to it and two arrows pointing left and right to either side" />
-      </section>
-    </main>
+          <a class="border-0" href="https://freeplay.floof.company/">
+            <img
+              loading="lazy"
+              alt="freeplay"
+              src="/assets/badges/freeplay.gif" />
+          </a>
+
+          <a class="border-0" href="https://dimden.dev/">
+            <img
+              loading="lazy"
+              alt="dimden"
+              src="https://dimden.dev/services/images/88x31.gif" />
+          </a>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

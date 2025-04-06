@@ -1,3 +1,33 @@
+/* IDs */
+
+#shark_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px;
+}
+
+#shark_container img {
+  height: 80px;
+  image-rendering: pixelated;
+}
+
+#shark_container a {
+  transition: 200ms;
+
+  background-color: oklch(28.2% 0.091 267.935);
+  border-radius: 4px;
+  border: 1px solid transparent;
+}
+
+#shark_container a:hover {
+  scale: 110%;
+  border: 1px solid oklch(37.9% 0.146 265.522);
+}
+
+/* Classes */
+
 .subtitle {
   opacity: 50%;
 }

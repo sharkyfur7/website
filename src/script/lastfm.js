@@ -55,6 +55,7 @@ const resp = fetch(api_url)
     document.getElementById("artist").innerText = artist_name;
     document.getElementById("trackname").href = last_track["url"];
     document.getElementById("cover").src = coverurl;
+    document.getElementById("fmtime").innerHTML = "(" + date + ")";
 
     // RAVEPOP has an 18+ album cover on last.fm... plz fix :(
     if (
