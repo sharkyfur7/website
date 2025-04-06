@@ -117,6 +117,13 @@
   border-color: var(--theme-border);
 }
 
+#stamps {
+  display: flex;
+  justify-content: center;
+  margin-top: 4px;
+  gap: 4px;
+}
+
 /* Elements */
 
 h1,
