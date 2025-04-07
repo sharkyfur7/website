@@ -31,35 +31,10 @@
   gap: 8px;
 }
 
-#buttons {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#buttons img {
-  width: 88px !important;
-  height: 31px !important;
-  image-rendering: pixelated !important;
-}
-
-#buttons a {
-  transition: 200ms;
-  width: 88px !important;
-  height: 31px !important;
-}
-
-#buttons a:hover {
-  scale: 110%;
-  box-shadow: 0px 0px 16px var(--theme-background);
-}
-
 #blinkies {
   display: flex;
   justify-content: center;
   gap: 4px;
-  padding-top: 4px;
   flex-wrap: wrap;
 }
 
@@ -120,7 +95,6 @@
 #stamps {
   display: flex;
   justify-content: center;
-  margin-top: 4px;
   gap: 4px;
 }
 
@@ -185,6 +159,31 @@ button {
 .sidecard {
   display: flex;
   justify-content: center;
+}
+
+.buttons {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons img {
+  width: 88px !important;
+  height: 31px !important;
+  image-rendering: pixelated !important;
+}
+
+.buttons a {
+  transition: 200ms;
+  width: 88px !important;
+  height: 31px !important;
+}
+
+.buttons a:hover {
+  scale: 110%;
+  box-shadow: 0px 0px 16px var(--theme-background);
+  rotate: 5deg;
 }
 
 /* Responsive stuff */
