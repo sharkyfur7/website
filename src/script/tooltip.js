@@ -3,6 +3,7 @@
 const tooltip = document.createElement("div");
 tooltip.id = "tooltip";
 tooltip.innerHTML = "this is a tooltip";
+tooltip.classList.add("big-screen-only");
 
 const offset_px = 12;
 
