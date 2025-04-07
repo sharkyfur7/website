@@ -16,6 +16,12 @@
 #shark_container a {
   transition: 150ms;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--font-color);
+
   background-color: oklch(28.2% 0.091 267.935);
   border-radius: 4px;
 }
