@@ -1,3 +1,5 @@
+/* Red Hat Text */
+
 @font-face {
   font-family: "Red Hat Text";
   src: url("/fonts/RedHatText/RedHatText-Light.ttf") format("truetype");
@@ -77,6 +79,8 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Inter */
 
 @font-face {
   font-family: "Inter";
@@ -218,6 +222,80 @@
   font-family: "Inter";
   src: url("/fonts/Inter/Inter_18pt-Regular.ttf") format("truetype");
   font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Geist Mono */
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Medium.ttf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Thin.ttf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Bold.ttf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Regular.ttf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Light.ttf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-UltraLight.ttf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-SemiBold.ttf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-Black.ttf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/fonts/GeistMono/GeistMono-UltraBlack.ttf") format("opentype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }

@@ -4,12 +4,12 @@
 
 :root {
   --theme-primary: oklch(54.6% 0.245 262.881);
-  --theme-secondary: oklch(98.5% 0 0);
+  --theme-secondary: oklch(97% 0 0);
   --theme-accent: oklch(71.5% 0.143 215.221);
-  --theme-border: oklch(44.6% 0.03 256.802);
+  --theme-border: oklch(44.2% 0.017 285.786);
   --theme-background: oklch(14.1% 0.005 285.823);
 
-  --font: "Inter";
+  --font: "Geist Mono";
   --font-heading: "Red Hat Text";
   --font-color: var(--theme-secondary);
   --font-heading-color: var(--theme-primary);
@@ -19,7 +19,7 @@
   color: var(--font-color);
 
   background-image: url(/assets/bg.gif);
-  background-color: oklch(14.1% 0.005 285.823);
+  background-color: var(--theme-background);
 }
 
 /* IDs */
@@ -162,6 +162,11 @@ a:hover {
 
 section + section {
   margin-top: 8px;
+}
+
+input,
+button {
+  font-family: var(--font);
 }
 
 /* Classes */
