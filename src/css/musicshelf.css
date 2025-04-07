@@ -99,6 +99,7 @@ hr {
 
 .artistname {
   font-style: italic;
+  opacity: 70%;
 }
 
 .album {
@@ -117,6 +118,7 @@ hr {
 .info {
   display: flex;
   justify-content: space-between;
+  border-bottom: 1px solid var(--theme-border);
 }
 
 /* Media queries */

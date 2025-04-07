@@ -128,10 +128,11 @@ h2 {
 a,
 a:visited {
   color: var(--theme-accent);
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 section + section {
@@ -175,7 +176,7 @@ button {
 }
 
 .buttons a {
-  transition: 200ms;
+  transition: 150ms;
   width: 88px !important;
   height: 31px !important;
 }
@@ -184,6 +185,14 @@ button {
   scale: 110%;
   box-shadow: 0px 0px 16px var(--theme-background);
   rotate: 5deg;
+}
+
+.underlined-link {
+  text-decoration: underline;
+}
+
+.underlined-link:hover {
+  text-decoration: none;
 }
 
 /* Responsive stuff */

@@ -30,6 +30,7 @@
 
 #cover {
   width: 160px;
+  border-bottom: 1px solid var(--theme-border);
 }
 
 #artist,
@@ -42,6 +43,7 @@
 
 #artist {
   font-style: italic;
+  opacity: 70%;
 }
 
 #fmtime {
