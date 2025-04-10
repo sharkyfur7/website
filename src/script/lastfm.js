@@ -64,6 +64,14 @@ const resp = fetch(api_url)
     ) {
       document.getElementById("cover").style.filter = "blur(8px)";
     }
+
+    if (artist_name == "Nirvana") {
+      const kurt = document.createElement("img");
+      kurt.src = "/assets/kurt.png";
+      kurt.loading = "lazy";
+      kurt.id = "kurt";
+      document.getElementById("lastfm").appendChild(kurt);
+    }
   })
   .catch((error) => {
     console.error("Error:", error);

@@ -6,8 +6,9 @@
 
   margin: 4px;
   padding-bottom: 2px;
-  overflow: hidden;
   width: max-content;
+
+  position: relative;
 }
 
 #lastfm header {
@@ -48,4 +49,12 @@
 
 #fmtime {
   font-size: 8pt;
+}
+
+#kurt {
+  position: absolute;
+  height: 200px;
+
+  left: -20px;
+  top: -6px;
 }

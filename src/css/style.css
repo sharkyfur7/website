@@ -6,13 +6,15 @@
   --theme-primary: oklch(54.6% 0.245 262.881);
   --theme-secondary: oklch(97% 0 0);
   --theme-accent: oklch(71.5% 0.143 215.221);
-  --theme-border: oklch(44.2% 0.017 285.786);
+  --theme-border: oklch(48.2% 0.017 285.786);
   --theme-background: oklch(14.1% 0.005 285.823);
 
   --font: "Geist Mono";
   --font-heading: "Red Hat Text";
   --font-color: var(--theme-secondary);
   --font-heading-color: var(--theme-primary);
+
+  --gap: 10px;
 
   font-family: var(--font);
   font-size: 11pt;
@@ -28,7 +30,13 @@
   max-width: 800px;
   margin: 0 auto;
   display: flex;
-  gap: 8px;
+  gap: var(--gap);
+}
+
+#main-container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #blinkies {
@@ -40,10 +48,10 @@
 
 #asidething {
   max-width: 300px;
-}
 
-#maincontent {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
 }
 
 #noaiwebring {
@@ -112,6 +120,12 @@
   transition: 50ms;
 }
 
+#main-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
 /* Elements */
 
 h1,
@@ -153,10 +167,6 @@ a:hover {
   text-decoration: underline;
 }
 
-section + section {
-  margin-top: 8px;
-}
-
 input,
 button {
   font-family: var(--font);
@@ -170,13 +180,20 @@ code {
   padding: 2px;
 }
 
+h3 + section {
+  margin-top: var(--gap);
+}
+
+header {
+  margin-bottom: var(--gap);
+}
+
 /* Classes */
 .stuff-bg {
-  border: 1px solid var(--theme-border);
-  border-radius: 4px;
+  outline: 4px var(--theme-border) ridge;
 
   background-color: var(--theme-background);
-  padding: 8px;
+  padding: var(--gap);
 }
 
 .show-tooltip:hover #tooltip {
@@ -184,7 +201,7 @@ code {
 }
 
 .spacer {
-  height: 8px;
+  height: var(--gap);
 }
 
 .sidecard {

@@ -19,32 +19,34 @@
   </head>
 
   <body>
-    <div id="container">
-      <main id="maincontent">
-        <section class="stuff-bg">
+    <div id="main-container">
+      <main id="main-container">
+        <header class="stuff-bg">
           <h1>Select a shark to learn more about it!</h1>
           <span>You can <a href="/">go back</a> too I guess</span>
-        </section>
+        </header>
 
-        <section class="stuff-bg" id="shark_container">
-          <a href="/shark/blacktip_reef.html">
-            <img
-              src="/assets/shark/pixel/blacktip_reef.png"
-              alt="Blacktip reef shark"
-              class="show-tooltip"
-              data-tooltip="Blacktip reef shark" />
-            <span class="small-screen-only">Blacktip reef shark</span>
-          </a>
+        <main class="stuff-bg" id="main-content">
+          <div id="shark_container">
+            <a href="/shark/blacktip_reef.html">
+              <img
+                src="/assets/shark/pixel/blacktip_reef.png"
+                alt="Blacktip reef shark"
+                class="show-tooltip"
+                data-tooltip="Blacktip reef shark" />
+              <span class="small-screen-only">Blacktip reef shark</span>
+            </a>
 
-          <a href="/shark/nurse.html">
-            <img
-              src="/assets/shark/pixel/nurse.png"
-              alt="Nurse shark"
-              class="show-tooltip"
-              data-tooltip="Nurse shark" />
-            <span class="small-screen-only">Nurse shark</span>
-          </a>
-        </section>
+            <a href="/shark/nurse.html">
+              <img
+                src="/assets/shark/pixel/nurse.png"
+                alt="Nurse shark"
+                class="show-tooltip"
+                data-tooltip="Nurse shark" />
+              <span class="small-screen-only">Nurse shark</span>
+            </a>
+          </div>
+        </main>
       </main>
     </div>
   </body>
