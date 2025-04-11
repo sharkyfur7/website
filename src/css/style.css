@@ -14,7 +14,7 @@
   --font-color: var(--theme-secondary);
   --font-heading-color: var(--theme-primary);
 
-  --gap: 10px;
+  --gap: 11px;
 
   font-family: var(--font);
   font-size: 11pt;
