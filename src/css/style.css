@@ -20,8 +20,7 @@
   font-size: 11pt;
   color: var(--font-color);
 
-  background-image: url(/assets/bg.gif);
-  background-color: var(--theme-background);
+  background-color: oklch(21% 0.006 285.885);
 }
 
 /* IDs */
