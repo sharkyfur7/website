@@ -12,6 +12,7 @@
 }
 
 #lastfm header {
+  margin: 0;
   background-color: #d51007;
   padding-left: 4px;
   padding-right: 4px;
