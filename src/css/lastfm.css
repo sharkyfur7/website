@@ -3,22 +3,22 @@
   flex-direction: column;
 
   border: 1px solid oklch(44.6% 0.03 256.802);
-
-  margin: 4px;
   padding-bottom: 2px;
+
   width: max-content;
 
   position: relative;
+  background-color: var(--theme-background);
 }
 
 #lastfm header {
   margin: 0;
   background-color: #d51007;
-  padding-left: 4px;
-  padding-right: 4px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: var(--gap);
+  width: 100%;
 }
 
 #lastfm header a {

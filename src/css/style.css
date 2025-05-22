@@ -6,10 +6,10 @@
   --theme-primary: oklch(54.6% 0.245 262.881);
   --theme-secondary: oklch(97% 0 0);
   --theme-accent: oklch(71.5% 0.143 215.221);
-  --theme-border: oklch(48.2% 0.017 285.786);
-  --theme-background: oklch(14.1% 0.005 285.823);
+  --theme-border: oklch(27.9% 0.041 260.031);
+  --theme-background: oklch(20.8% 0.042 265.755);
 
-  --font: "Geist Mono";
+  --font: "Noto Sans";
   --font-heading: "Red Hat Text";
   --font-color: var(--theme-secondary);
   --font-heading-color: var(--theme-primary);
@@ -20,7 +20,7 @@
   font-size: 11pt;
   color: var(--font-color);
 
-  background-color: oklch(21% 0.006 285.885);
+  background-color: oklch(12.9% 0.042 264.695);
 }
 
 /* IDs */
@@ -29,6 +29,7 @@
   max-width: 800px;
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   gap: var(--gap);
 }
 
@@ -45,12 +46,20 @@
   flex-wrap: wrap;
 }
 
-#asidething {
-  max-width: 300px;
+#blinkies img {
+  width: 150px;
+  height: 20px;
+}
 
+#asidething {
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
   gap: var(--gap);
+}
+
+#asidething * {
+  width: max-content;
+  height: max-content;
 }
 
 #noaiwebring {
@@ -62,9 +71,20 @@
   color: var(--font-color);
 }
 
+#links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 #links a {
   display: block;
+  text-align: center;
   width: max-content;
+}
+
+#fun-stuff {
+  display: flex;
+  gap: var(--gap);
 }
 
 #notifyinput {
@@ -129,6 +149,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+  flex: 3;
 
   position: relative;
 }
@@ -196,8 +217,23 @@ header {
 }
 
 /* Classes */
+.vertical-hr {
+  width: 1px;
+  background-color: var(--theme-border);
+}
+
+.gapped-list li + li {
+  margin-top: var(--gap);
+}
+
+.horizontal-hr {
+  height: 1px;
+  background-color: var(--theme-border);
+}
+
 .stuff-bg {
-  outline: 4px var(--theme-border) ridge;
+  outline: 1px var(--theme-border) solid;
+  border-radius: 1px;
 
   background-color: var(--theme-background);
   padding: var(--gap);
@@ -209,11 +245,6 @@ header {
 
 .spacer {
   height: var(--gap);
-}
-
-.sidecard {
-  display: flex;
-  justify-content: center;
 }
 
 .buttons {
