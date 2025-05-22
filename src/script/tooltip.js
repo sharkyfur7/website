@@ -18,7 +18,7 @@ document.addEventListener(
     tooltip.style.left = `${event.clientX + offset_px}px`;
 
     const target = document.elementFromPoint(event.clientX, event.clientY);
-    if (target && target.classList.contains("show-tooltip")) {
+    if (target && target.getAttribute("data-tooltip")) {
       tooltip.style.opacity = 1;
 
       if (target.getAttribute("data-tooltip")) {
