@@ -28,7 +28,7 @@
     <!-- It's a mess but oh well, you get to see all of it anyway -->
     <div id="main-container">
       <!-- HEADER -->
-      <header class="stuff-bg" style="position: relative">
+      <header class="stuff-bg">
         <h1>Sharks don't meow, they sneeze</h1>
 
         <p class="text-center">
@@ -37,38 +37,25 @@
         </p>
       </header>
 
-      <div id="container">
+      <!-- MAIN CONTENT -->
+      <main id="container">
         <!-- LINKS -->
-        <section class="stuff-bg">
-          <nav id="links">
-            <a href="/shark.html">shark stuff</a>
-            <a href="/links.html">links</a>
-            <a href="/musicshelf.html">music shelf</a>
-            <div class="vertical-hr"></div>
-            <a href="https://github.com/sharkyfur7">my github</a>
-            <a href="mailto:sharkyblacktip@protonmail.com">e-mail</a>
-          </nav>
-        </section>
+        <nav class="stuff-bg" id="links">
+          <a href="/shark.html">shark stuff</a>
+          <a href="/links.html">links</a>
+          <a href="/musicshelf.html">music shelf</a>
+          <div class="vertical-hr"></div>
+          <a href="https://github.com/sharkyfur7">my github</a>
+          <a href="mailto:sharkyblacktip@protonmail.com">e-mail</a>
+        </nav>
 
+        <!-- ABOUT + PROJECTS -->
         <section style="display: flex; gap: var(--gap)">
           <main>
             <!-- ABOUT -->
             <section class="stuff-bg">
               <!-- PROFILE -->
-              <div
-                class="disable-float-on-sm-screen"
-                style="
-                  display: flex;
-                  float: right;
-                  flex-wrap: wrap;
-                  justify-content: center;
-                  margin: 4px;
-                  border-radius: 10px;
-                  overflow: hidden;
-                  border: 1px solid var(--theme-border);
-                  box-shadow: 0px 0px 10px oklch(14.5% 0 0);
-                "
-              >
+              <div id="profilepic-container" class="disable-float-on-sm-screen">
                 <img
                   src="/assets/shark/shar.jpg"
                   loading="lazy"
@@ -102,9 +89,9 @@
               <!-- NOTIFICATION THING -->
               <section style="margin-top: var(--gap)">
                 <noscript>This won't work without javascript!</noscript>
-                <p style="font-style: italic">
-                  Send me a push notification for no reason at all:
-                </p>
+                <h4 style="font-style: italic">
+                  Send me a phone notification for no reason at all:
+                </h4>
                 <input
                   placeholder="blub blub blub 🫧🐟"
                   id="notifyinput"
@@ -131,7 +118,7 @@
                   <a href="https://github.com/sharkyfur7/lowtide-nekoweb">
                     my nekoweb page</a
                   >
-                  <span style="opacity: 50%">
+                  <span class="minor-importance-text">
                     - I like the internet, so I made a website! Sometimes I
                     update it, sometimes I don't for months. It all depends on
                     how well I'm feeling.
@@ -140,7 +127,7 @@
 
                 <li>
                   <a href="https://github.com/sharkyfur7/mako">mako</a>
-                  <span style="opacity: 50%">
+                  <span class="minor-importance-text">
                     - My shot at making a kernel. It's hard to develop and
                     sucks. So far it <u>only</u> boots in qemu and can
                     <u>only</u> print text to the screen. I'd love to be able
@@ -151,9 +138,8 @@
             </section>
           </main>
 
-          <!-- BTNS -->
           <aside style="width: 110px">
-            <!-- BUTTONS AND STUFF -->
+            <!-- BUTTONS -->
             <section id="button-container" class="stuff-bg">
               <!-- BUTTONS -->
               <!-- PEOPLE BUTTONS -->
@@ -287,6 +273,7 @@
           />
         </section>
 
+        <!-- WIGETS -->
         <span>Idk where to put all this but they're cool widgets</span>
         <aside id="asidething" class="big-screen-only">
           <!-- LASTFM -->
@@ -302,7 +289,7 @@
           </div>
 
           <!-- MOON WIDGET -->
-          <section class="sidecard stuff-bg" style="height: max-content">
+          <section class="sidecard stuff-bg">
             <iframe
               width="180"
               height="150"
@@ -341,7 +328,7 @@
             </div>
           </section>
         </aside>
-      </div>
+      </main>
     </div>
   </body>
 </html>
