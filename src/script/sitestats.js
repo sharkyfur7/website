@@ -71,4 +71,6 @@ document.getElementById("stat-updates").innerText = "n";
 document.getElementById("stat-last-update").innerText = "n";
 
 // Do this so I can use await
-main();
+window.onload = function () {
+  main();
+};
