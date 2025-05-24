@@ -1,0 +1,9 @@
+#sitestats {
+  text-align: center;
+  margin-top: var(--gap);
+  opacity: 50%;
+}
+
+#sitestats span {
+  font-style: italic;
+}
