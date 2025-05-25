@@ -4,20 +4,37 @@
     Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
 */
 
+/* THIS FILE DOES NOT WORK DIRECTLY, ONLY THE elements.css IN THE ROOT DIRECTORY OF THE NEKOWEB SITE WORKS */
+
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
   text-align: center;
   color: #b08271;
   font-size: 12px;
 
+  background-image: none;
   background-color: oklch(20.8% 0.042 265.755);
 }
 .site-box > a > p {
   color: oklch(71.5% 0.143 215.221);
   font-weight: bold;
 }
+
+.site-box > a > p:hover {
+  text-decoration: underline;
+}
+
 .site-box > a > span {
   color: oklch(97% 0 0);
+}
+
+#site-lowtide.site-box .sitefeature .screenshot {
+  opacity: 0;
+}
+
+#site-lowtide.site-box .sitefeature {
+  background-image: url("https://lowtide.nekoweb.org/assets/sitebox.jpg");
+  border: 1px solid oklch(27.9% 0.041 260.031);
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
