@@ -33,7 +33,7 @@ const resp = fetch(api_url)
 
     const artist_name = last_track["artist"]["#text"];
     const track_name = last_track["name"];
-    const coverurl = last_track["image"][3]["#text"]; // 0 = small, 1 = medium, 2 = large, 3 = extralarge
+    const coverurl = last_track["image"][2]["#text"]; // 0 = small, 1 = medium, 2 = large, 3 = extralarge
     let nowplaying;
     let date; // seconds since unix epoch, valid only when !nowplaying
 
