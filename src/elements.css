@@ -18,6 +18,7 @@
 .site-box > a > p {
   color: oklch(71.5% 0.143 215.221);
   font-weight: bold;
+  font-family: sans-serif;
 }
 
 .site-box > a > p:hover {
@@ -26,6 +27,7 @@
 
 .site-box > a > span {
   color: oklch(97% 0 0);
+  font-family: sans-serif;
 }
 
 #site-lowtide.site-box .sitefeature .screenshot {
