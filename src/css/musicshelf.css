@@ -44,11 +44,13 @@
   color: white;
 }
 
-#maincontainer {
+#musicshelf-container {
   max-width: 900px;
   margin: 0 auto;
   border-radius: 4px;
   overflow: hidden;
+
+  margin-top: 16px;
 
   background-color: var(--album-container-bg);
 }

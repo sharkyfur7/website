@@ -8,6 +8,7 @@
   --theme-accent: oklch(71.5% 0.143 215.221);
   --theme-border: oklch(27.9% 0.041 260.031);
   --theme-background: oklch(20.8% 0.042 265.755);
+  --theme-background-darker: oklch(17.8% 0.042 265.755);
 
   --font: "Noto Sans";
   --font-heading: "Red Hat Text";
@@ -26,17 +27,27 @@
 /* IDs */
 
 #container {
+  width: 100%;
   max-width: 800px;
+  min-height: 100vh;
+
+  background-color: var(--theme-background);
+  border-left: 1px solid var(--theme-border);
+  border-right: 1px solid var(--theme-border);
+
   margin: 0 auto;
+}
+
+#header {
+  height: max-content;
+}
+
+#content {
+  padding: var(--gap);
+
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-}
-
-#main-container {
-  max-width: 800px;
-  margin: 0 auto;
-  width: 100%;
 }
 
 #blinkies {
@@ -51,19 +62,22 @@
   height: 20px;
 }
 
-#asidething {
+#widgets {
   display: flex;
   justify-content: space-evenly;
   gap: var(--gap);
+
+  margin-top: var(--gap);
 }
 
-#asidething * {
-  width: max-content;
-  height: max-content;
+#widgets div {
+  border: 1px solid var(--theme-border);
+  height: fit-content;
 }
 
 #noaiwebring {
   text-align: center;
+  padding: 3px;
 }
 
 #noaiwebring a,
@@ -71,15 +85,26 @@
   color: var(--font-color);
 }
 
-#links {
+#navbar {
   display: flex;
-  justify-content: space-evenly;
+
+  border-bottom: 1px solid var(--theme-border);
+  border-top: 1px solid var(--theme-border);
 }
 
-#links a {
-  display: block;
+#navbar a {
+  transition: 100ms;
+  flex: 1;
+  padding: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  width: max-content;
+}
+
+#navbar a:hover {
+  background-color: var(--theme-background-darker);
 }
 
 #fun-stuff {
@@ -146,12 +171,14 @@
 }
 
 #button-container {
+  flex: 1;
+
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  flex: 3;
 
-  position: relative;
+  border-left: 1px solid var(--theme-border);
+  padding-left: var(--gap);
 }
 
 #profilepic-container {
@@ -167,6 +194,11 @@
 }
 
 /* Elements */
+
+body {
+  padding: 0;
+  margin: 0;
+}
 
 h1,
 h2,
@@ -223,10 +255,6 @@ code {
 
 h3 + section {
   margin-top: var(--gap);
-}
-
-header {
-  margin-bottom: var(--gap);
 }
 
 /* Classes */
