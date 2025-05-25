@@ -187,10 +187,9 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 4px;
-  border-radius: 10px;
-  overflow: hidden;
   border: 1px solid var(--theme-border);
-  box-shadow: 0px 0px 10px oklch(14.5% 0 0);
+  width: fit-content;
+  margin: 0 auto;
 }
 
 /* Elements */
@@ -342,6 +341,14 @@ h3 + section {
 
   .small-screen-only {
     display: block;
+  }
+
+  .flex-column-sm-screen {
+    flex-direction: column;
+  }
+
+  #button-container {
+    border-left: 0;
   }
 }
 
