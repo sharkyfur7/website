@@ -6,7 +6,7 @@
   --theme-primary: oklch(54.6% 0.245 262.881);
   --theme-secondary: oklch(97% 0 0);
   --theme-accent: oklch(71.5% 0.143 215.221);
-  --theme-border: oklch(27.9% 0.041 260.031);
+  --theme-border: oklch(37.2% 0.044 257.287);
   --theme-background: oklch(20.8% 0.042 265.755);
   --theme-background-darker: oklch(17.8% 0.042 265.755);
 
@@ -32,14 +32,17 @@
   min-height: 100vh;
 
   background-color: var(--theme-background);
-  border-left: 1px solid var(--theme-border);
-  border-right: 1px solid var(--theme-border);
+  border: 1px solid var(--theme-border);
 
-  margin: 0 auto;
+  margin: auto;
 }
 
 #header {
-  height: max-content;
+  display: block;
+}
+
+#header > img {
+  display: block;
 }
 
 #content {
@@ -160,7 +163,7 @@
 
   padding: 4px;
   background-color: var(--theme-background);
-  border: 1px solid var(--theme-border);
+  border: 1px dashed var(--theme-border);
   transition: 50ms;
 }
 
@@ -194,8 +197,16 @@
 
 /* Elements */
 
+fieldset {
+  border: 1px solid var(--theme-border);
+}
+
+fieldset > legend {
+  opacity: 50%;
+}
+
 body {
-  padding: 0;
+  padding: 40px;
   margin: 0;
 }
 
@@ -349,6 +360,10 @@ h3 + section {
 
   #button-container {
     border-left: 0;
+  }
+
+  body {
+    padding: 0;
   }
 }
 
