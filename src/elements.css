@@ -8,6 +8,7 @@
 
   background-image: none;
   background-color: oklch(20.8% 0.042 265.755);
+  border-radius: 8px;
 }
 .site-box > a > p {
   color: oklch(71.5% 0.143 215.221);
