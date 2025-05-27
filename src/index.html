@@ -67,36 +67,50 @@
               <section>
                 <h2>Welcome to my site</h2>
                 <p>I'm Sharky, a shark on the internet 🐟</p>
+                <p>
+                  I made this site because I want a "creative" outlet. I can't
+                  draw well, programming is easier for me lmao
+                </p>
+
                 <p>Some mildly interesting things about me:</p>
                 <ul>
                   <li>I like sharks and dragons</li>
-                  <li>80s/90s/00s music was the best</li>
+                  <li>I like 80s/90s/00s music</li>
                   <li>
+                    I come from the
+                    <img src="/assets/cz.png" loading="lazy" height="12px" />
                     CZECH REPUBLIC
                     <img src="/assets/cz.png" loading="lazy" height="12px" />
                   </li>
-                  <li>I'm 18 (old)</li>
+                  <li>I'm 18 (old) (reaching unc status)</li>
                 </ul>
 
                 <p>
-                  If you like dragons or you're just looking for a cool book
-                  series, you should check out Wings of Fire
+                  If you like dragons you should check out the
+                  <span class="fire-text">🔥🔥🔥 Wings of Fire 🔥🔥🔥</span>
+                  book series, it's really fire :3
                 </p>
               </section>
 
               <!-- NOTIFICATION THING -->
-              <section style="margin-top: var(--gap)">
-                <noscript>This won't work without javascript!</noscript>
+              <section id="notif" style="margin-top: var(--gap)">
+                <noscript
+                  ><span class="error"
+                    >This won't work without javascript!</span
+                  ></noscript
+                >
                 <h4 style="font-style: italic">
                   Send me a phone notification for no reason at all:
                 </h4>
-                <input
-                  placeholder="blub blub blub 🫧🐟"
-                  id="notifyinput"
-                  type="text"
-                  style="width: 20em"
-                />
-                <button disabled="true" id="notifysend">send</button>
+                <div>
+                  <input
+                    placeholder="blub blub blub 🫧🐟"
+                    id="notifyinput"
+                    type="text"
+                    style="width: 20em"
+                  />
+                  <button disabled="true" id="notifysend">send</button>
+                </div>
               </section>
             </div>
 
@@ -107,7 +121,7 @@
               <ul class="gapped-list">
                 <li>
                   <a href="https://github.com/sharkyfur7/lowtide-nekoweb">
-                    my nekoweb page</a
+                    lowtide</a
                   >
                   <span class="minor-importance-text">
                     - I like the internet, so I made a website! Sometimes I
@@ -204,6 +218,24 @@
                   data-tooltip="Dimden's hotel"
                 />
               </a>
+
+              <a href="https://tuxedodragon.art">
+                <img
+                  loading="lazy"
+                  alt="Tuxedo Dragon"
+                  src="/assets/buttons/tuxedodragon.gif"
+                  data-tooltip="Tuxedo Dragon"
+                />
+              </a>
+
+              <a href="https://ivrry.nekoweb.org">
+                <img
+                  loading="lazy"
+                  alt="ivrry"
+                  src="/assets/buttons/ivrry.png"
+                  data-tooltip="ivrry"
+                />
+              </a>
             </section>
 
             <div class="horizontal-hr"></div>
@@ -276,13 +308,15 @@
           <h2>Cool widgets</h2>
           <div id="widgets">
             <!-- LASTFM -->
-            <noscript>Last.fm status requires javascript</noscript>
             <div id="lastfm">
               <header id="fmstatus">
                 <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
                 <span id="fmtime"></span>
               </header>
               <img loading="lazy" id="cover" />
+              <noscript>
+                <span class="error">Last.fm status requires javascript!</span>
+              </noscript>
               <a id="trackname"></a>
               <span id="artist"></span>
             </div>
