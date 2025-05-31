@@ -313,6 +313,14 @@ li + p {
     0px -9px 20px #c33;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.more-letter-spacing {
+  letter-spacing: 1px;
+}
+
 .vertical-hr {
   width: 1px;
   background-color: var(--theme-border);
