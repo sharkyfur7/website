@@ -31,14 +31,15 @@
   max-width: 800px;
   min-height: 100vh;
 
-  background-color: var(--theme-background);
-  border: 1px solid var(--theme-border);
-
   margin: auto;
 }
 
 #header {
   display: block;
+  overflow: hidden;
+  border-radius: 16px;
+
+  border: 1px solid var(--theme-border);
 }
 
 #header > img {
@@ -46,7 +47,12 @@
 }
 
 #content {
-  padding: var(--gap);
+  padding: 16px;
+
+  background-color: var(--theme-background);
+
+  border-radius: 16px;
+  border: 1px solid var(--theme-border);
 
   display: flex;
   flex-direction: column;
@@ -91,8 +97,14 @@
 #navbar {
   display: flex;
 
-  border-bottom: 1px solid var(--theme-border);
-  border-top: 1px solid var(--theme-border);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid var(--theme-border);
+  border-radius: 50px;
+
+  background-color: var(--theme-background);
+
+  overflow: hidden;
 }
 
 #navbar a {
@@ -193,7 +205,6 @@
   margin: 4px;
   border: 1px solid var(--theme-border);
   width: fit-content;
-  margin: 0 auto;
 }
 
 #notif {
@@ -228,6 +239,8 @@ body {
   padding: 40px;
   margin: 0;
   position: relative;
+
+  min-height: 90vh;
 }
 
 h1,
@@ -402,6 +415,10 @@ li + p {
 
   body {
     padding: 0;
+  }
+
+  #profilepic-container {
+    margin: 0 auto;
   }
 }
 
