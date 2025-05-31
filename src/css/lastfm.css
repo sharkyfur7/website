@@ -3,6 +3,10 @@
   flex-direction: column;
 
   border: 1px solid oklch(44.6% 0.03 256.802);
+  border-radius: 4px;
+
+  overflow: hidden;
+
   padding-bottom: 2px;
 
   width: max-content;
@@ -32,6 +36,8 @@
 
 #cover {
   width: 160px;
+  height: 160px;
+  background-color: var(--theme-background-darker);
   border-bottom: 1px solid var(--theme-border);
 }
 
@@ -41,6 +47,10 @@
   padding-left: 4px;
   padding-right: 4px;
   max-width: 150px;
+
+  text-align: center;
+
+  min-height: 1em;
 }
 
 #artist {
