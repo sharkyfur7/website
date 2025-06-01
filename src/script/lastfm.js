@@ -51,10 +51,21 @@ const resp = fetch(api_url)
       date = formatAgo(Date.now() / 1000 - date);
     }
 
+    if (date == "right now") {
+      document
+        .getElementById("cover")
+        .setAttribute("data-tooltip", "I'm listening to this song right now");
+    } else {
+      document
+        .getElementById("cover")
+        .setAttribute("data-tooltip", `I listened to this song ${date}`);
+    }
+
     document.getElementById("trackname").innerText = track_name;
     document.getElementById("artist").innerText = artist_name;
     document.getElementById("trackname").href = last_track["url"];
     document.getElementById("cover").src = coverurl;
+    document.getElementById("cover-link").href = last_track["url"];
     document.getElementById("fmtime").innerHTML = "(" + date + ")";
 
     // RAVEPOP has an 18+ album cover on last.fm... plz fix :(
