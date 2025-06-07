@@ -12,8 +12,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 24
-        run: npm install @11ty/eleventy
-        run: npx @11ty/eleventy
+        run: npm install @11ty/eleventy; npx @11ty/eleventy
 
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@v4
