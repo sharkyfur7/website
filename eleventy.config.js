@@ -8,4 +8,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/script");
   eleventyConfig.addPassthroughCopy("src/shark");
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
+
+  eleventyConfig.addPassthroughCopy("src/not_found.html");
+  eleventyConfig.ignores.add("src/not_found.html");
 }
