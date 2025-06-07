@@ -1,0 +1,28 @@
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+    <link rel="canonical" href="{{ canonical }}" />
+
+    <link rel="stylesheet" href="/css/shark.css" />
+
+    <script src="/script/tooltip.js" defer async></script>
+{% endblock %}
+
+{% block body %}
+    <div id="container">
+        <!-- HEADER -->
+        {% include "components/header.html" %}
+
+        <!-- NAVIGATION -->
+        {% include "components/navbar.html" %}
+
+        <!-- CONTENT -->
+        <main id="content">
+            <article class="shark-article">
+                {{ content | safe }}
+            </article>
+        </main>
+
+        <div id="background-thingy"></div>
+    </div>
+{% endblock %}

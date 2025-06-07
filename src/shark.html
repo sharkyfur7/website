@@ -1,73 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta lang="en-US" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+---
+layout: layouts/shark.njk
+---
 
-    <title>lowtide | shark stuff</title>
-    <link rel="icon" href="/favicon.ico" />
-    <meta
-      name="description"
-      content="Come read about sharks! They are such wonderful and misunderstood creatures."
-    />
-    <link rel="canonical" href="https://lowtide.nekoweb.org/shark.html" />
+<div id="container">
+  <!-- HEADER -->
+  {% include "components/header.html" %}
 
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/shark.css" />
+  <!-- NAVIGATION -->
+  {% include "components/navbar.html" %}
 
-    <script src="/script/tooltip.js" defer async></script>
-  </head>
+  <!-- CONTENT -->
+  <main id="content">
+    <h1 style="text-align: center">Select a shark to learn more about it!</h1>
 
-  <body>
-    <div id="container">
-      <!-- HEADER -->
-      <a id="header" href="/"><img src="/assets/header.jpg" /></a>
+    <div id="shark_container">
+      <a href="/shark/blacktip_reef/">
+        <img
+          src="/assets/shark/pixel/blacktip_reef.png"
+          alt="Blacktip reef shark"
+          data-tooltip="Blacktip reef shark"
+        />
+        <span class="small-screen-only">Blacktip reef shark</span>
+      </a>
 
-      <!-- NAVIGATION -->
-      <nav id="navbar">
-        <a href="/">index</a>
-        <a href="/shark.html">shark stuff</a>
-        <a href="/links.html">links</a>
-        <a href="/musicshelf.html">music shelf</a>
-        <div class="vertical-hr"></div>
-        <a href="https://github.com/sharkyfur7">my github</a>
-        <a href="mailto:sharkyblacktip@protonmail.com">e-mail</a>
-      </nav>
-
-      <!-- CONTENT -->
-      <main id="content">
-        <h1 style="text-align: center">
-          Select a shark to learn more about it!
-        </h1>
-
-        <div id="shark_container">
-          <a href="/shark/blacktip_reef.html">
-            <img
-              src="/assets/shark/pixel/blacktip_reef.png"
-              alt="Blacktip reef shark"
-              data-tooltip="Blacktip reef shark"
-            />
-            <span class="small-screen-only">Blacktip reef shark</span>
-          </a>
-
-          <a href="/shark/nurse.html">
-            <img
-              src="/assets/shark/pixel/nurse.png"
-              alt="Nurse shark"
-              data-tooltip="Nurse shark"
-            />
-            <span class="small-screen-only">Nurse shark</span>
-          </a>
-        </div>
-
-        <span class="minor-importance-text" style="text-align: center"
-          >Yes, it's just me rephrasing what I've read on wikipedia</span
-        >
-      </main>
+      <a href="/shark/nurse/">
+        <img
+          src="/assets/shark/pixel/nurse.png"
+          alt="Nurse shark"
+          data-tooltip="Nurse shark"
+        />
+        <span class="small-screen-only">Nurse shark</span>
+      </a>
     </div>
 
-    <div id="background-thingy"></div>
-  </body>
-</html>
+    <span class="minor-importance-text" style="text-align: center"
+      >Yes, it's just me rephrasing what I've read on wikipedia</span
+    >
+  </main>
+</div>
+
+<div id="background-thingy"></div>

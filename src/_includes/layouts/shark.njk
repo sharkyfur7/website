@@ -1,0 +1,18 @@
+---
+title: lowtide | shark stuff
+description: Come read about sharks! They are such wonderful and misunderstood creatures.
+---
+
+{% extends "layouts/base.njk" %}
+
+{% block head %}
+    <link rel="canonical" href="https://lowtide.nekoweb.org/shark.html" />
+
+    <link rel="stylesheet" href="/css/shark.css" />
+
+    <script src="/script/tooltip.js" defer async></script>
+{% endblock %}
+
+{% block body %}
+    {{ content | safe }}
+{% endblock %}
