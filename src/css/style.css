@@ -237,8 +237,22 @@
   height: 100%;
 
   background-image: url("/assets/background.jpg");
+  background-attachment: scroll;
+
   z-index: -10;
   opacity: 20%;
+
+  animation: background-scroll 30s infinite linear;
+}
+
+@keyframes background-scroll {
+  from {
+    background-position-y: 62%;
+  }
+
+  to {
+    background-position-y: 0%;
+  }
 }
 
 /* Elements */
