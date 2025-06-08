@@ -223,16 +223,16 @@
   z-index: -10;
   opacity: 20%;
 
-  animation: background-scroll 30s infinite linear;
+  animation: background-scroll 20s infinite linear reverse;
 }
 
 @keyframes background-scroll {
   from {
-    background-position-y: 62%;
+    background-position-y: 0px;
   }
 
   to {
-    background-position-y: 0%;
+    background-position-y: 480px;
   }
 }
 
