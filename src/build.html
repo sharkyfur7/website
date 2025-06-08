@@ -31,17 +31,6 @@ layout: layouts/common_content.njk
     </tr>
 
     <tr>
-      <td>Branch</td>
-      <td>
-        <a
-          href="https://github.com/sharkyfur7/website/tree/{{ buildInfo.branch }}"
-        >
-          {{ buildInfo.branch }}
-        </a>
-      </td>
-    </tr>
-
-    <tr>
       <td>Commit</td>
       <td>{{ buildInfo.commit }}</td>
     </tr>
@@ -53,6 +42,17 @@ layout: layouts/common_content.njk
           href="https://github.com/sharkyfur7/website/commit/{{ buildInfo.hash }}"
         >
           {{ buildInfo.hash }}
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Branch</td>
+      <td>
+        <a
+          href="https://github.com/sharkyfur7/website/tree/{{ buildInfo.branch }}"
+        >
+          {{ buildInfo.branch }}
         </a>
       </td>
     </tr>
