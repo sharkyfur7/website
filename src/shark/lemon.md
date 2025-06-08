@@ -1,8 +1,8 @@
 ---
 layout: layouts/shark_article.njk
-title: lowtide | lemon shark
+title: sharky | lemon shark
 description: The lemon shark is a species of shark... wow
-canonical: https://lowtide.nekoweb.org/shark/lemon/
+canonical: https://sharkyfur.nekoweb.org/shark/lemon/
 lastModified: 08/06/2025
 
 tooltip: Lemon shark
