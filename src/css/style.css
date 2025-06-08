@@ -292,13 +292,15 @@ a:hover {
 input,
 button,
 textarea,
+select,
 .button-class {
   font-family: var(--font);
   font-size: var(--font-size);
 }
 
 input,
-textarea {
+textarea,
+select {
   outline: none;
   border: 1px solid var(--theme-border);
   border-radius: 2px;
