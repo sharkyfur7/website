@@ -2,368 +2,336 @@
 layout: layouts/index.njk
 ---
 
-<!-- You like inspecting source code, don't you? :3 -->
-<!-- It's a mess but oh well, you get to see all of it anyway -->
-<div id="container">
-  <!-- HEADER -->
-  {% include "components/header.html" %}
+<!-- ABOUT + PROJECTS -->
+<section class="flex-column-sm-screen" style="display: flex; gap: var(--gap)">
+  <div>
+    <!-- ABOUT -->
+    <div>
+      <!-- PROFILE -->
+      <div id="profilepic-container" class="disable-float-on-sm-screen">
+        <img
+          src="/assets/profile.jpg"
+          loading="lazy"
+          alt="bisexual shark"
+          width="190px"
+          height="190px"
+          data-tooltip="SHARK PRIDE"
+        />
+      </div>
 
-  <!-- NAVIGATION -->
-  {% include "components/navbar.html" %}
+      <!-- ABOUT CONTENT -->
+      <section>
+        <h2>Welcome to my site</h2>
+        <p>I'm Sharky, a shark on the internet 🐟</p>
+        <p>
+          I made this site because I want a "creative" outlet. I can't draw
+          well, programming is easier for me lmao
+        </p>
 
-  <!-- CONTENT -->
-  <main id="content">
-    <!-- ABOUT + PROJECTS -->
-    <section
-      class="flex-column-sm-screen"
-      style="display: flex; gap: var(--gap)"
-    >
-      <div>
-        <!-- ABOUT -->
+        <p>Some mildly interesting things about me:</p>
+        <ul>
+          <li>I like sharks and dragons</li>
+          <li>I like 80s/90s/00s music</li>
+          <li>
+            I come from the
+            <img src="/assets/cz.png" loading="lazy" height="12px" />
+            CZECH REPUBLIC
+            <img src="/assets/cz.png" loading="lazy" height="12px" />
+          </li>
+          <li>I'm 18 (old) (reaching unc status)</li>
+        </ul>
+
+        <p>
+          If you like dragons you should check out the
+          <span class="fire-text">🔥🔥🔥 Wings of Fire 🔥🔥🔥</span>
+          book series, it's really
+          <span class="fire-text">fire 🔥</span> :3
+        </p>
+      </section>
+
+      <!-- NOTIFICATION THING -->
+      <section id="notif" style="margin-top: var(--gap)">
+        <noscript
+          ><span class="error"
+            >This won't work without javascript!</span
+          ></noscript
+        >
+        <h4 style="font-style: italic">
+          Send me a phone notification for no reason at all:
+        </h4>
         <div>
-          <!-- PROFILE -->
-          <div id="profilepic-container" class="disable-float-on-sm-screen">
-            <img
-              src="/assets/profile.jpg"
-              loading="lazy"
-              alt="bisexual shark"
-              width="190px"
-              height="190px"
-              data-tooltip="SHARK PRIDE"
-            />
-          </div>
-
-          <!-- ABOUT CONTENT -->
-          <section>
-            <h2>Welcome to my site</h2>
-            <p>I'm Sharky, a shark on the internet 🐟</p>
-            <p>
-              I made this site because I want a "creative" outlet. I can't draw
-              well, programming is easier for me lmao
-            </p>
-
-            <p>Some mildly interesting things about me:</p>
-            <ul>
-              <li>I like sharks and dragons</li>
-              <li>I like 80s/90s/00s music</li>
-              <li>
-                I come from the
-                <img src="/assets/cz.png" loading="lazy" height="12px" />
-                CZECH REPUBLIC
-                <img src="/assets/cz.png" loading="lazy" height="12px" />
-              </li>
-              <li>I'm 18 (old) (reaching unc status)</li>
-            </ul>
-
-            <p>
-              If you like dragons you should check out the
-              <span class="fire-text">🔥🔥🔥 Wings of Fire 🔥🔥🔥</span>
-              book series, it's really
-              <span class="fire-text">fire 🔥</span> :3
-            </p>
-          </section>
-
-          <!-- NOTIFICATION THING -->
-          <section id="notif" style="margin-top: var(--gap)">
-            <noscript
-              ><span class="error"
-                >This won't work without javascript!</span
-              ></noscript
-            >
-            <h4 style="font-style: italic">
-              Send me a phone notification for no reason at all:
-            </h4>
-            <div>
-              <input
-                placeholder="blub blub blub 🫧🐟"
-                id="notifyinput"
-                type="text"
-                style="width: 20em"
-              />
-              <button disabled="true" id="notifysend">send</button>
-            </div>
-          </section>
+          <input
+            placeholder="blub blub blub 🫧🐟"
+            id="notifyinput"
+            type="text"
+            style="width: 20em"
+          />
+          <button disabled="true" id="notifysend">send</button>
         </div>
-
-        <!-- PROJECTS -->
-        <section style="margin-top: var(--gap)">
-          <h2>Projects</h2>
-
-          <ul class="gapped-list">
-            <li>
-              <a href="https://github.com/sharkyfur7/lowtide-nekoweb">
-                lowtide</a
-              >
-              <span class="minor-importance-text">
-                - I like the internet, so I made a website! Sometimes I update
-                it, sometimes I don't for months. It all depends on how well I'm
-                feeling.
-              </span>
-            </li>
-
-            <li>
-              <a href="https://github.com/sharkyfur7/bakalari-prumer"
-                >Bakaláři průměr</a
-              >
-              <span class="minor-importance-text">
-                - Web extension that calculates weighed grade averages in the
-                Bakaláři web app because our school disabled it's native
-                function to do that for some reason. It's on the
-                <a
-                  href="https://addons.mozilla.org/en-US/firefox/addon/bakal%C3%A1%C5%99i-pr%C5%AFm%C4%9Br/"
-                >
-                  Firefox store</a
-                >
-                and I'm probably going to upload it to Opera too. Chrome charges
-                $5 for a developer account so I'll see about that...
-              </span>
-            </li>
-          </ul>
-        </section>
-      </div>
-
-      <!-- BUTTONS -->
-      <div id="button-container">
-        <!-- PEOPLE BUTTONS -->
-        <section class="buttons">
-          <span class="minor-importance-text italic more-letter-spacing">
-            Cool sites
-          </span>
-          <a href="https://nekoweb.org/">
-            <img
-              src="/assets/buttons/nekoweb.gif"
-              alt="nekoweb dot org"
-              loading="lazy"
-              data-tooltip="NekoWeb"
-            />
-          </a>
-
-          <a href="https://breq.dev/">
-            <img
-              src="/assets/buttons/breq.png"
-              alt="breq"
-              loading="lazy"
-              data-tooltip="breq"
-            />
-          </a>
-
-          <a href="https://synth.download">
-            <img
-              loading="lazy"
-              src="/assets/buttons/synth_dot_download.svg"
-              alt="Synth.Download!"
-              data-tooltip="Synth.Download!"
-            />
-          </a>
-
-          <a href="https://eightyeightthirty.one/">
-            <img
-              loading="lazy"
-              alt="eightyeightythirtyone"
-              src="/assets/buttons/eightyeightythirtyone.png"
-              data-tooltip="eightyeightythirty.one"
-            />
-          </a>
-
-          <a href="https://votehusky.org">
-            <img
-              loading="lazy"
-              alt="vote the husky party"
-              src="/assets/buttons/votehusky.png"
-              data-tooltip="Vote the husky party!"
-            />
-          </a>
-
-          <a href="https://swiftyshq.neocities.org/">
-            <img
-              loading="lazy"
-              alt="swiftyhq"
-              src="/assets/buttons/swiftyhq.png"
-              data-tooltip="Swifty's HQ"
-            />
-          </a>
-
-          <a href="https://freeplay.floof.company/">
-            <img
-              loading="lazy"
-              alt="freeplay"
-              src="/assets/buttons/freeplay.gif"
-              data-tooltip="FREEEEEEEEEEEEEEE"
-            />
-          </a>
-
-          <a href="https://dimden.dev/">
-            <img
-              loading="lazy"
-              alt="dimden"
-              src="/assets/buttons/dimden.gif"
-              data-tooltip="Dimden's hotel"
-            />
-          </a>
-
-          <a href="https://tuxedodragon.art">
-            <img
-              loading="lazy"
-              alt="Tuxedo Dragon"
-              src="/assets/buttons/tuxedodragon.gif"
-              data-tooltip="Tuxedo Dragon"
-            />
-          </a>
-
-          <a href="https://ivrry.nekoweb.org">
-            <img
-              loading="lazy"
-              alt="ivrry"
-              src="/assets/buttons/ivrry.png"
-              data-tooltip="ivrry"
-            />
-          </a>
-        </section>
-
-        <!-- FUN BUTTONS -->
-        <section class="buttons">
-          <span class="minor-importance-text italic more-letter-spacing">
-            Fun btns
-          </span>
-
-          <img
-            src="/assets/buttons/blahaj.png"
-            alt="blahaj is best"
-            loading="lazy"
-          />
-
-          <img
-            src="/assets/buttons/computer.gif"
-            alt="best viewed with a computer"
-            loading="lazy"
-          />
-
-          <img
-            loading="lazy"
-            alt="make a website"
-            src="/assets/buttons/makeawebsite.png"
-          />
-
-          <img
-            loading="lazy"
-            alt="delete everything and make a nekoweb"
-            src="/assets/buttons/delete_everything.gif"
-          />
-        </section>
-      </div>
-    </section>
-
-    <!-- BLINKIES -->
-    <div id="blinkies">
-      <img
-        loading="lazy"
-        alt="construction"
-        src="/assets/blinkies/construction.gif"
-      />
-      <img
-        loading="lazy"
-        alt="monster energy"
-        src="/assets/blinkies/monster.gif"
-      />
-      <img loading="lazy" alt="get silly" src="/assets/blinkies/silly.gif" />
-      <img
-        loading="lazy"
-        alt="da blinkie"
-        src="/assets/blinkies/dablinkie.gif"
-      />
-      <img loading="lazy" alt="wahoo" src="/assets/blinkies/wahoo.gif" />
-      <img
-        loading="lazy"
-        alt="Be kind to your computer"
-        src="/assets/blinkies/kindcomputer.gif"
-      />
-      <img
-        loading="lazy"
-        alt="kinda gay tbh"
-        src="/assets/blinkies/kindagay.gif"
-      />
-      <img
-        loading="lazy"
-        alt="sea creature"
-        src="/assets/blinkies/sea_creatur.gif"
-      />
-      <img loading="lazy" alt="bisexual" src="/assets/blinkies/bisexual.webp" />
+      </section>
     </div>
 
-    <!-- WIDGETS -->
-    <section>
-      <h2>Cool widgets</h2>
-      <div id="widgets">
-        <!-- LASTFM -->
-        <div id="lastfm">
-          <header id="fmstatus">
-            <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
-            <span id="fmtime"></span>
-          </header>
-          <a id="cover-link">
-            <img loading="lazy" id="cover" />
-          </a>
-          <noscript>
-            <span class="error">Last.fm status requires javascript!</span>
-          </noscript>
-          <a id="trackname">track name</a>
-          <span id="artist">artist</span>
-        </div>
+    <!-- PROJECTS -->
+    <section style="margin-top: var(--gap)">
+      <h2>Projects</h2>
 
-        <!-- MOON WIDGET -->
-        <div class="sidecard">
-          <iframe
-            width="180"
-            height="150"
-            style="border: none"
-            src="https://dimden.dev/moon?custom=1"
-            name="dimdenmoonwidget"
-          ></iframe>
-        </div>
+      <ul class="gapped-list">
+        <li>
+          <a href="https://github.com/sharkyfur7/lowtide-nekoweb"> lowtide</a>
+          <span class="minor-importance-text">
+            - I like the internet, so I made a website! Sometimes I update it,
+            sometimes I don't for months. It all depends on how well I'm
+            feeling.
+          </span>
+        </li>
 
-        <!-- WEBRINGS -->
-        <div id="webring-container">
-          <!-- NO AI WEBRING -->
-          <div id="noaiwebring">
-            <a href="https://baccyflap.com/noai" target="_blank"
-              >the &#x1f6ab; no &#129302; ai</a
-            ><br />
+        <li>
+          <a href="https://github.com/sharkyfur7/bakalari-prumer"
+            >Bakaláři průměr</a
+          >
+          <span class="minor-importance-text">
+            - Web extension that calculates weighed grade averages in the
+            Bakaláři web app because our school disabled it's native function to
+            do that for some reason. It's on the
             <a
-              href="https://baccyflap.com/noai/?prv&s=shr"
-              target="_top"
-              title="previous"
-              >&larr;</a
+              href="https://addons.mozilla.org/en-US/firefox/addon/bakal%C3%A1%C5%99i-pr%C5%AFm%C4%9Br/"
             >
-            <a href="https://baccyflap.com/noai" target="_blank">webring</a>
-            <a
-              class="small"
-              href="https://baccyflap.com/noai/?rnd"
-              target="_top"
-              title="random"
-              >(&#x1F500;)</a
+              Firefox store</a
             >
-            <a
-              href="https://baccyflap.com/noai/?nxt&s=shr"
-              target="_top"
-              title="next"
-              >&rarr;</a
-            >
-          </div>
-
-          <!-- RETRONAUT WEBRING -->
-          <div id="retronaut">
-            <a href="https://webring.dinhe.net/prev/https://lowtide.nekoweb.org"
-              >&larr;</a
-            >
-            <a href="https://webring.dinhe.net">Retronaut webring</a>
-            <a href="https://webring.dinhe.net/next/https://lowtide.nekoweb.org"
-              >&rarr;</a
-            >
-          </div>
-        </div>
-      </div>
+            and I'm probably going to upload it to Opera too. Chrome charges $5
+            for a developer account so I'll see about that...
+          </span>
+        </li>
+      </ul>
     </section>
-  </main>
+  </div>
+
+  <!-- BUTTONS -->
+  <div id="button-container">
+    <!-- PEOPLE BUTTONS -->
+    <section class="buttons">
+      <span class="minor-importance-text italic more-letter-spacing">
+        Cool sites
+      </span>
+      <a href="https://nekoweb.org/">
+        <img
+          src="/assets/buttons/nekoweb.gif"
+          alt="nekoweb dot org"
+          loading="lazy"
+          data-tooltip="NekoWeb"
+        />
+      </a>
+
+      <a href="https://breq.dev/">
+        <img
+          src="/assets/buttons/breq.png"
+          alt="breq"
+          loading="lazy"
+          data-tooltip="breq"
+        />
+      </a>
+
+      <a href="https://synth.download">
+        <img
+          loading="lazy"
+          src="/assets/buttons/synth_dot_download.svg"
+          alt="Synth.Download!"
+          data-tooltip="Synth.Download!"
+        />
+      </a>
+
+      <a href="https://eightyeightthirty.one/">
+        <img
+          loading="lazy"
+          alt="eightyeightythirtyone"
+          src="/assets/buttons/eightyeightythirtyone.png"
+          data-tooltip="eightyeightythirty.one"
+        />
+      </a>
+
+      <a href="https://votehusky.org">
+        <img
+          loading="lazy"
+          alt="vote the husky party"
+          src="/assets/buttons/votehusky.png"
+          data-tooltip="Vote the husky party!"
+        />
+      </a>
+
+      <a href="https://swiftyshq.neocities.org/">
+        <img
+          loading="lazy"
+          alt="swiftyhq"
+          src="/assets/buttons/swiftyhq.png"
+          data-tooltip="Swifty's HQ"
+        />
+      </a>
+
+      <a href="https://freeplay.floof.company/">
+        <img
+          loading="lazy"
+          alt="freeplay"
+          src="/assets/buttons/freeplay.gif"
+          data-tooltip="FREEEEEEEEEEEEEEE"
+        />
+      </a>
+
+      <a href="https://dimden.dev/">
+        <img
+          loading="lazy"
+          alt="dimden"
+          src="/assets/buttons/dimden.gif"
+          data-tooltip="Dimden's hotel"
+        />
+      </a>
+
+      <a href="https://tuxedodragon.art">
+        <img
+          loading="lazy"
+          alt="Tuxedo Dragon"
+          src="/assets/buttons/tuxedodragon.gif"
+          data-tooltip="Tuxedo Dragon"
+        />
+      </a>
+
+      <a href="https://ivrry.nekoweb.org">
+        <img
+          loading="lazy"
+          alt="ivrry"
+          src="/assets/buttons/ivrry.png"
+          data-tooltip="ivrry"
+        />
+      </a>
+    </section>
+
+    <!-- FUN BUTTONS -->
+    <section class="buttons">
+      <span class="minor-importance-text italic more-letter-spacing">
+        Fun btns
+      </span>
+
+      <img
+        src="/assets/buttons/blahaj.png"
+        alt="blahaj is best"
+        loading="lazy"
+      />
+
+      <img
+        src="/assets/buttons/computer.gif"
+        alt="best viewed with a computer"
+        loading="lazy"
+      />
+
+      <img
+        loading="lazy"
+        alt="make a website"
+        src="/assets/buttons/makeawebsite.png"
+      />
+
+      <img
+        loading="lazy"
+        alt="delete everything and make a nekoweb"
+        src="/assets/buttons/delete_everything.gif"
+      />
+    </section>
+  </div>
+</section>
+
+<!-- BLINKIES -->
+<div id="blinkies">
+  <img
+    loading="lazy"
+    alt="construction"
+    src="/assets/blinkies/construction.gif"
+  />
+  <img loading="lazy" alt="monster energy" src="/assets/blinkies/monster.gif" />
+  <img loading="lazy" alt="get silly" src="/assets/blinkies/silly.gif" />
+  <img loading="lazy" alt="da blinkie" src="/assets/blinkies/dablinkie.gif" />
+  <img loading="lazy" alt="wahoo" src="/assets/blinkies/wahoo.gif" />
+  <img
+    loading="lazy"
+    alt="Be kind to your computer"
+    src="/assets/blinkies/kindcomputer.gif"
+  />
+  <img loading="lazy" alt="kinda gay tbh" src="/assets/blinkies/kindagay.gif" />
+  <img
+    loading="lazy"
+    alt="sea creature"
+    src="/assets/blinkies/sea_creatur.gif"
+  />
+  <img loading="lazy" alt="bisexual" src="/assets/blinkies/bisexual.webp" />
 </div>
 
-<div id="background-thingy"></div>
+<!-- WIDGETS -->
+<section>
+  <h2>Cool widgets</h2>
+  <div id="widgets">
+    <!-- LASTFM -->
+    <div id="lastfm">
+      <header id="fmstatus">
+        <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
+        <span id="fmtime"></span>
+      </header>
+      <a id="cover-link">
+        <img loading="lazy" id="cover" />
+      </a>
+      <noscript>
+        <span class="error">Last.fm status requires javascript!</span>
+      </noscript>
+      <a id="trackname">track name</a>
+      <span id="artist">artist</span>
+    </div>
+
+    <!-- MOON WIDGET -->
+    <div class="sidecard">
+      <iframe
+        width="180"
+        height="150"
+        style="border: none"
+        src="https://dimden.dev/moon?custom=1"
+        name="dimdenmoonwidget"
+      ></iframe>
+    </div>
+
+    <!-- WEBRINGS -->
+    <div id="webring-container">
+      <!-- NO AI WEBRING -->
+      <div id="noaiwebring">
+        <a href="https://baccyflap.com/noai" target="_blank"
+          >the &#x1f6ab; no &#129302; ai</a
+        ><br />
+        <a
+          href="https://baccyflap.com/noai/?prv&s=shr"
+          target="_top"
+          title="previous"
+          >&larr;</a
+        >
+        <a href="https://baccyflap.com/noai" target="_blank">webring</a>
+        <a
+          class="small"
+          href="https://baccyflap.com/noai/?rnd"
+          target="_top"
+          title="random"
+          >(&#x1F500;)</a
+        >
+        <a
+          href="https://baccyflap.com/noai/?nxt&s=shr"
+          target="_top"
+          title="next"
+          >&rarr;</a
+        >
+      </div>
+
+      <!-- RETRONAUT WEBRING -->
+      <div id="retronaut">
+        <a href="https://webring.dinhe.net/prev/https://lowtide.nekoweb.org"
+          >&larr;</a
+        >
+        <a href="https://webring.dinhe.net">Retronaut webring</a>
+        <a href="https://webring.dinhe.net/next/https://lowtide.nekoweb.org"
+          >&rarr;</a
+        >
+      </div>
+    </div>
+  </div>
+</section>

@@ -3,7 +3,7 @@ title: lowtide dot nekoweb dot org
 description: Sharky's personal webpage. The creature. Shark-infested website. lowtide.dev 🐟
 ---
 
-{% extends "layouts/base.njk" %}
+{% extends "layouts/common.njk" %}
 
 {% block head %}
     <link rel="canonical" href="https://lowtide.nekoweb.org" />
@@ -16,6 +16,6 @@ description: Sharky's personal webpage. The creature. Shark-infested website. lo
     <script src="/script/tooltip.js" defer async></script>
 {% endblock %}
 
-{% block body %}
+{% block content %}
     {{ content | safe }}
 {% endblock %}

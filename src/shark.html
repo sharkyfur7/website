@@ -2,41 +2,28 @@
 layout: layouts/shark.njk
 ---
 
-<div id="container">
-  <!-- HEADER -->
-  {% include "components/header.html" %}
+<h1 style="text-align: center">Select a shark to learn more about it!</h1>
 
-  <!-- NAVIGATION -->
-  {% include "components/navbar.html" %}
+<div id="shark_container">
+  <a href="/shark/blacktip_reef/">
+    <img
+      src="/assets/shark/pixel/blacktip_reef.png"
+      alt="Blacktip reef shark"
+      data-tooltip="Blacktip reef shark"
+    />
+    <span class="small-screen-only">Blacktip reef shark</span>
+  </a>
 
-  <!-- CONTENT -->
-  <main id="content">
-    <h1 style="text-align: center">Select a shark to learn more about it!</h1>
-
-    <div id="shark_container">
-      <a href="/shark/blacktip_reef/">
-        <img
-          src="/assets/shark/pixel/blacktip_reef.png"
-          alt="Blacktip reef shark"
-          data-tooltip="Blacktip reef shark"
-        />
-        <span class="small-screen-only">Blacktip reef shark</span>
-      </a>
-
-      <a href="/shark/nurse/">
-        <img
-          src="/assets/shark/pixel/nurse.png"
-          alt="Nurse shark"
-          data-tooltip="Nurse shark"
-        />
-        <span class="small-screen-only">Nurse shark</span>
-      </a>
-    </div>
-
-    <span class="minor-importance-text" style="text-align: center"
-      >Yes, it's just me rephrasing what I've read on wikipedia</span
-    >
-  </main>
+  <a href="/shark/nurse/">
+    <img
+      src="/assets/shark/pixel/nurse.png"
+      alt="Nurse shark"
+      data-tooltip="Nurse shark"
+    />
+    <span class="small-screen-only">Nurse shark</span>
+  </a>
 </div>
 
-<div id="background-thingy"></div>
+<span class="minor-importance-text" style="text-align: center">
+  Yes, it's just me rephrasing what I've read on wikipedia
+</span>

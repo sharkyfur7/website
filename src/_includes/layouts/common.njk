@@ -1,0 +1,22 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    <!--| You like inspecting source code, don't you? :3 |-->
+    <!--| It's a mess but oh well, you get to see all of it anyway |-->
+
+    <div id="container">
+        <!-- HEADER -->
+        {% include "components/header.html" %}
+
+        <!-- NAVIGATION -->
+        {% include "components/navbar.html" %}
+
+        <!-- CONTENT -->
+        <main id="content">
+            {% block content %}
+            {% endblock %}
+        </main>
+
+        <div id="background-thingy"></div>
+    </div>
+{% endblock %}
