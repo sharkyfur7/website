@@ -199,6 +199,9 @@
   margin: 4px;
   border: 1px solid var(--theme-border);
   width: fit-content;
+
+  border-radius: 100%;
+  overflow: hidden;
 }
 
 #notif {
