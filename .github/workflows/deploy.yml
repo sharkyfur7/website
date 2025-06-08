@@ -16,6 +16,9 @@ jobs:
       - name: Install 11ty
         run: npm install @11ty/eleventy
 
+      - name: Pre-build steps
+        run: rm -rf site/*
+
       - name: Build site
         run: npx @11ty/eleventy
 
