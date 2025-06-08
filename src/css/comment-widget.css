@@ -104,35 +104,9 @@
   box-sizing: border-box;
   height: 100%;
   overflow: auto;
-  /* padding: 20px; */
   background-image: url("sparkle-bg.gif"); /* F2U background provided by https://sadgrl.online/webmastery/downloads/tiledbgs */
   background-attachment: fixed;
-  /* font-size: 16px; */
 }
-
-/* #c_widget button,
-#c_widget input[type="submit"] {
-  padding: 4px;
-
-  text-decoration: none;
-  text-align: center;
-  background-color: black;
-  color: #b766ff;
-  border: 1px solid var(--theme-border);
-}
-#c_widget button:hover,
-#c_widget input[type="submit"]:hover {
-  border: 1px solid #b766ff;
-}
-#c_widget button:disabled,
-#c_widget input[type="submit"]:disabled {
-  opacity: 60%;
-}
-#c_widget button:disabled:hover,
-#c_widget input[type="submit"]:disabled:hover {
-  color: #b766ff;
-  border: 1px solid var(--theme-border);
-} */
 
 /* Input section */
 #c_inputDiv {
@@ -158,17 +132,7 @@
 
 .c-inputWrapper {
   display: block;
-  text-align: right;
 }
-/* .c-input {
-  padding: 4px;
-  color: black;
-  border: 1px solid #2d0b52;
-  outline: none;
-}
-.c-input:focus {
-  border: 1px solid #b766ff;
-} */
 
 .c-textInput {
   width: calc(100% - 10px);
