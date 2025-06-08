@@ -24,9 +24,30 @@ layout: layouts/index.njk
       rotate: 360deg;
     }
   }
+
+  .mybtn {
+    transition: 100ms;
+
+    position: absolute;
+    top: -80px;
+    right: -20px;
+    rotate: 10deg;
+  }
+
+  .mybtn:hover {
+    scale: 133%;
+  }
 </style>
 
 <a class="buildinfo" data-tooltip="Build info" href="/build/">🔨</a>
+
+<img
+  class="mybtn"
+  data-tooltip="My button!!!!"
+  width="88"
+  height="31"
+  src="/assets/sharky.gif"
+/>
 
 <!-- ABOUT + PROJECTS -->
 <section class="flex-column-sm-screen" style="display: flex; gap: var(--gap)">
@@ -103,7 +124,7 @@ layout: layouts/index.njk
 
       <ul class="gapped-list">
         <li>
-          <a href="https://github.com/sharkyfur7/lowtide-nekoweb"> lowtide</a>
+          <a href="https://github.com/sharkyfur7/website"> my website</a>
           <span class="minor-importance-text">
             - I like the internet, so I made a website! Sometimes I update it,
             sometimes I don't for months. It all depends on how well I'm
@@ -350,11 +371,11 @@ layout: layouts/index.njk
 
       <!-- RETRONAUT WEBRING -->
       <div id="retronaut">
-        <a href="https://webring.dinhe.net/prev/https://lowtide.nekoweb.org"
+        <a href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
           >&larr;</a
         >
         <a href="https://webring.dinhe.net">Retronaut webring</a>
-        <a href="https://webring.dinhe.net/next/https://lowtide.nekoweb.org"
+        <a href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
           >&rarr;</a
         >
       </div>
