@@ -11,6 +11,18 @@
     text-align: center;
 
     border-radius: 4px;
+
+    box-shadow: 0px 0px 6px oklch(50.5% 0.213 27.518);
+  }
+
+  ._component-shark-vulnerable a {
+    color: var(--theme-font-color);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  ._component-shark-vulnerable a:hover {
+    text-decoration: none;
   }
 
   ._component-shark-vulnerable-vulnerable {
@@ -22,7 +34,8 @@
 <div class="_component-shark-vulnerable">
   <span>⚠️⚠️⚠️</span>
   <span>
-    The IUCN has classified this shark as
+    The <a href="https://www.iucnredlist.org/">IUCN</a> has classified this
+    shark as
     <span class="_component-shark-vulnerable-vulnerable">VULNERABLE</span>... :(
   </span>
   <span>⚠️⚠️⚠️</span>
