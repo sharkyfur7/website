@@ -5,23 +5,18 @@ layout: layouts/shark.njk
 <h1 style="text-align: center">Select a shark to learn more about it!</h1>
 
 <div id="shark_container">
-  <a href="/shark/blacktip_reef/">
+  {% for post in collections.shark_posts %}
+  <a href="{{ post.url }}">
     <img
-      src="/assets/shark/pixel/blacktip_reef.png"
-      alt="Blacktip reef shark"
-      data-tooltip="Blacktip reef shark"
+      src="{{ post.data.picture }}"
+      alt="{{ post.data.tooltip }}"
+      data-tooltip="{{ post.data.tooltip }}"
+      width="200"
+      height="100"
     />
-    <span class="small-screen-only">Blacktip reef shark</span>
+    <span class="small-screen-only">{{ post.data.tooltip }}</span>
   </a>
-
-  <a href="/shark/nurse/">
-    <img
-      src="/assets/shark/pixel/nurse.png"
-      alt="Nurse shark"
-      data-tooltip="Nurse shark"
-    />
-    <span class="small-screen-only">Nurse shark</span>
-  </a>
+  {% endfor %}
 </div>
 
 <span class="minor-importance-text" style="text-align: center">

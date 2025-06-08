@@ -1,0 +1,77 @@
+---
+layout: layouts/common_content.njk
+---
+
+<h1>Build info</h1>
+
+<style>
+  .buildTable > tbody > tr:nth-child(odd) {
+    backdrop-filter: brightness(120%);
+  }
+
+  .buildTable > tbody > tr > td {
+    padding: 4px;
+  }
+
+  .buildTable {
+    width: max-content;
+  }
+</style>
+
+<script src="/script/buildAgo.js" defer></script>
+
+<table class="buildTable">
+  <tbody>
+    <tr>
+      <td>Build time</td>
+      <td>
+        <span id="buildTime">{{ buildInfo.time.raw }}</span
+        ><span id="buildAgo"></span>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Branch</td>
+      <td>
+        <a
+          href="https://github.com/sharkyfur7/lowtide/tree/{{ buildInfo.branch }}"
+        >
+          {{ buildInfo.branch }}
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Commit</td>
+      <td>{{ buildInfo.commit }}</td>
+    </tr>
+
+    <tr>
+      <td>Commit hash</td>
+      <td>
+        <a
+          href="https://github.com/sharkyfur7/lowtide/commit/{{ buildInfo.hash }}"
+        >
+          {{ buildInfo.hash }}
+        </a>
+      </td>
+    </tr>
+
+    <tr>
+      <td>Node version</td>
+      <td>{{ buildInfo.nodeVersion }}</td>
+    </tr>
+
+    <tr>
+      <td>Eleventy version</td>
+      <td>{{ buildInfo.eleventyVersion }}</td>
+    </tr>
+
+    <tr>
+      <td>Host machine</td>
+      <td>{{ buildInfo.hostname }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="text-align: center">Here be dragons!</p>

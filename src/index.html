@@ -2,6 +2,32 @@
 layout: layouts/index.njk
 ---
 
+<style>
+  .buildinfo {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    padding: 4px;
+  }
+
+  .buildinfo:hover {
+    text-decoration: none;
+    animation: 1s build-spin;
+  }
+
+  @keyframes build-spin {
+    0% {
+      rotate: 0deg;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+</style>
+
+<a class="buildinfo" data-tooltip="Build info" href="/build/">🔨</a>
+
 <!-- ABOUT + PROJECTS -->
 <section class="flex-column-sm-screen" style="display: flex; gap: var(--gap)">
   <div>

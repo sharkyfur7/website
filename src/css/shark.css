@@ -9,7 +9,10 @@
 }
 
 #shark_container img {
-  height: 80px;
+  height: 100px;
+  width: 200px;
+  margin: auto;
+  object-fit: contain;
   image-rendering: pixelated;
 }
 
