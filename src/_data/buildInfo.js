@@ -24,7 +24,7 @@ export default function () {
     commit: commit,
     branch: branch,
     eleventyVersion: Eleventy.getVersion(),
-    hostname: os.hostname(),
+    host: `${os.type()} (${os.platform()})`,
     nodeVersion: process.version,
   };
 }

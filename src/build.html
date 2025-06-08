@@ -34,7 +34,7 @@ layout: layouts/common_content.njk
       <td>Branch</td>
       <td>
         <a
-          href="https://github.com/sharkyfur7/lowtide/tree/{{ buildInfo.branch }}"
+          href="https://github.com/sharkyfur7/website/tree/{{ buildInfo.branch }}"
         >
           {{ buildInfo.branch }}
         </a>
@@ -50,7 +50,7 @@ layout: layouts/common_content.njk
       <td>Commit hash</td>
       <td>
         <a
-          href="https://github.com/sharkyfur7/lowtide/commit/{{ buildInfo.hash }}"
+          href="https://github.com/sharkyfur7/website/commit/{{ buildInfo.hash }}"
         >
           {{ buildInfo.hash }}
         </a>
@@ -69,7 +69,7 @@ layout: layouts/common_content.njk
 
     <tr>
       <td>Host machine</td>
-      <td>{{ buildInfo.hostname }}</td>
+      <td>{{ buildInfo.host }}</td>
     </tr>
   </tbody>
 </table>
