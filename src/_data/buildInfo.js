@@ -3,7 +3,7 @@ import Eleventy from "@11ty/eleventy";
 import * as os from "node:os";
 
 let hash = execSync("git rev-parse HEAD").toString().trim();
-const commit = execSync("git log -1 --oneline").toString().trim();
+const commit = execSync("git log -1 --oneline").toString().trim().slice(8); // slice out the shortened commit hash
 const branch = execSync("git branch --show-current").toString().trim();
 
 export default function () {
