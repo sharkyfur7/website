@@ -1,3 +1,7 @@
+---
+lastModified: <value not set>
+---
+
 {% extends "layouts/common.njk" %}
 
 {% block head %}
@@ -12,4 +16,6 @@
     <article class="shark-article">
         {{ content | safe }}
     </article>
+
+    <span class="minor-importance-text">Last modified on: {{ lastModified }}</span>
 {% endblock %}
