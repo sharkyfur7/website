@@ -2,9 +2,9 @@ function formatAgo(seconds) {
   if (seconds < 60) {
     return Math.round(seconds) + " seconds ago";
   } else if (seconds < 3600) {
-    return Math.round(seconds / 60) + "minutes ago";
+    return Math.round(seconds / 60) + " minutes ago";
   } else if (seconds < 86400) {
-    return Math.round(seconds / 60 / 60) + "hours ago";
+    return Math.round(seconds / 60 / 60) + " hours ago";
   } else {
     return Math.round(seconds / 60 / 60 / 24) + " days ago";
   }
