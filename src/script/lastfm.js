@@ -9,9 +9,9 @@ function formatAgo(seconds) {
   if (seconds < 60) {
     return seconds + " seconds ago";
   } else if (seconds < 3600) {
-    return Math.round(seconds / 60) + "min ago";
+    return Math.round(seconds / 60) + " minutes ago";
   } else if (seconds < 86400) {
-    return Math.round(seconds / 60 / 60) + "h ago";
+    return Math.round(seconds / 60 / 60) + " hours ago";
   } else {
     return Math.round(seconds / 60 / 60 / 24) + " days ago";
   }
@@ -65,6 +65,7 @@ const resp = fetch(api_url)
     document.getElementById("artist").innerText = artist_name;
     document.getElementById("trackname").href = last_track["url"];
     document.getElementById("cover").src = coverurl;
+    document.getElementById("bg-cover").src = coverurl;
     document.getElementById("cover-link").href = last_track["url"];
     document.getElementById("fmtime").innerHTML = "(" + date + ")";
 

@@ -51,7 +51,7 @@ layout: layouts/index.njk
 
 <!-- ABOUT + PROJECTS -->
 <section class="flex-column-sm-screen" style="display: flex; gap: var(--gap)">
-  <div>
+  <div style="flex: 3; display: flex; flex-direction: column; gap: var(--gap)">
     <!-- ABOUT -->
     <div>
       <!-- PROFILE -->
@@ -60,8 +60,8 @@ layout: layouts/index.njk
           src="/assets/profile.jpg"
           loading="lazy"
           alt="bisexual shark"
-          width="190px"
-          height="190px"
+          width="150px"
+          height="150px"
           data-tooltip="SHARK PRIDE"
         />
       </div>
@@ -95,31 +95,31 @@ layout: layouts/index.njk
           <span class="fire-text">fire 🔥</span> :3
         </p>
       </section>
-
-      <!-- NOTIFICATION THING -->
-      <section id="notif" style="margin-top: var(--gap)">
-        <noscript
-          ><span class="error"
-            >This won't work without javascript!</span
-          ></noscript
-        >
-        <h4 style="font-style: italic">
-          Send me a phone notification for no reason at all:
-        </h4>
-        <div>
-          <input
-            placeholder="blub blub blub 🫧🐟"
-            id="notifyinput"
-            type="text"
-            style="width: 20em"
-          />
-          <button disabled="true" id="notifysend">send</button>
-        </div>
-      </section>
     </div>
 
+    <!-- NOTIFICATION THING -->
+    <section id="notif">
+      <noscript
+        ><span class="error"
+          >This won't work without javascript!</span
+        ></noscript
+      >
+      <h4 style="font-style: italic">
+        Send me a phone notification for no reason at all:
+      </h4>
+      <div>
+        <input
+          placeholder="blub blub blub 🫧🐟"
+          id="notifyinput"
+          type="text"
+          style="width: 20em"
+        />
+        <button disabled="true" id="notifysend">send</button>
+      </div>
+    </section>
+
     <!-- PROJECTS -->
-    <section style="margin-top: var(--gap)">
+    <section>
       <h2>Projects</h2>
 
       <ul class="gapped-list">
@@ -150,234 +150,233 @@ layout: layouts/index.njk
         </li>
       </ul>
     </section>
+
+    <section>
+      <!-- LASTFM -->
+      {% include "components/lastfm_wide.html" %}
+    </section>
   </div>
 
-  <!-- BUTTONS -->
-  <div id="button-container">
+  <div id="thingy-right">
     <!-- PEOPLE BUTTONS -->
-    <section class="buttons">
-      <span class="minor-importance-text italic more-letter-spacing">
-        Cool sites
-      </span>
-      <a href="https://nekoweb.org/">
-        <img
-          src="/assets/buttons/nekoweb.gif"
-          alt="nekoweb dot org"
-          loading="lazy"
-          data-tooltip="NekoWeb"
-        />
-      </a>
+    <section>
+      <h4>Cool sites</h4>
+      <section class="buttons">
+        <a href="https://nekoweb.org/">
+          <img
+            src="/assets/buttons/nekoweb.gif"
+            alt="nekoweb dot org"
+            loading="lazy"
+            data-tooltip="NekoWeb"
+          />
+        </a>
 
-      <a href="https://breq.dev/">
-        <img
-          src="/assets/buttons/breq.png"
-          alt="breq"
-          loading="lazy"
-          data-tooltip="breq"
-        />
-      </a>
+        <a href="https://breq.dev/">
+          <img
+            src="/assets/buttons/breq.png"
+            alt="breq"
+            loading="lazy"
+            data-tooltip="breq"
+          />
+        </a>
 
-      <a href="https://synth.download">
-        <img
-          loading="lazy"
-          src="/assets/buttons/synth_dot_download.svg"
-          alt="Synth.Download!"
-          data-tooltip="Synth.Download!"
-        />
-      </a>
+        <a href="https://synth.download">
+          <img
+            loading="lazy"
+            src="/assets/buttons/synth_dot_download.svg"
+            alt="Synth.Download!"
+            data-tooltip="Synth.Download!"
+          />
+        </a>
 
-      <a href="https://eightyeightthirty.one/">
-        <img
-          loading="lazy"
-          alt="eightyeightythirtyone"
-          src="/assets/buttons/eightyeightythirtyone.png"
-          data-tooltip="eightyeightythirty.one"
-        />
-      </a>
+        <a href="https://eightyeightthirty.one/">
+          <img
+            loading="lazy"
+            alt="eightyeightythirtyone"
+            src="/assets/buttons/eightyeightythirtyone.png"
+            data-tooltip="eightyeightythirty.one"
+          />
+        </a>
 
-      <a href="https://votehusky.org">
-        <img
-          loading="lazy"
-          alt="vote the husky party"
-          src="/assets/buttons/votehusky.png"
-          data-tooltip="Vote the husky party!"
-        />
-      </a>
+        <a href="https://votehusky.org">
+          <img
+            loading="lazy"
+            alt="vote the husky party"
+            src="/assets/buttons/votehusky.png"
+            data-tooltip="Vote the husky party!"
+          />
+        </a>
 
-      <a href="https://swiftyshq.neocities.org/">
-        <img
-          loading="lazy"
-          alt="swiftyhq"
-          src="/assets/buttons/swiftyhq.png"
-          data-tooltip="Swifty's HQ"
-        />
-      </a>
+        <a href="https://swiftyshq.neocities.org/">
+          <img
+            loading="lazy"
+            alt="swiftyhq"
+            src="/assets/buttons/swiftyhq.png"
+            data-tooltip="Swifty's HQ"
+          />
+        </a>
 
-      <a href="https://freeplay.floof.company/">
-        <img
-          loading="lazy"
-          alt="freeplay"
-          src="/assets/buttons/freeplay.gif"
-          data-tooltip="FREEEEEEEEEEEEEEE"
-        />
-      </a>
+        <a href="https://freeplay.floof.company/">
+          <img
+            loading="lazy"
+            alt="freeplay"
+            src="/assets/buttons/freeplay.gif"
+            data-tooltip="FREEEEEEEEEEEEEEE"
+          />
+        </a>
 
-      <a href="https://dimden.dev/">
-        <img
-          loading="lazy"
-          alt="dimden"
-          src="/assets/buttons/dimden.gif"
-          data-tooltip="Dimden's hotel"
-        />
-      </a>
+        <a href="https://dimden.dev/">
+          <img
+            loading="lazy"
+            alt="dimden"
+            src="/assets/buttons/dimden.gif"
+            data-tooltip="Dimden's hotel"
+          />
+        </a>
 
-      <a href="https://tuxedodragon.art">
-        <img
-          loading="lazy"
-          alt="Tuxedo Dragon"
-          src="/assets/buttons/tuxedodragon.gif"
-          data-tooltip="Tuxedo Dragon"
-        />
-      </a>
+        <a href="https://tuxedodragon.art">
+          <img
+            loading="lazy"
+            alt="Tuxedo Dragon"
+            src="/assets/buttons/tuxedodragon.gif"
+            data-tooltip="Tuxedo Dragon"
+          />
+        </a>
 
-      <a href="https://ivrry.nekoweb.org">
-        <img
-          loading="lazy"
-          alt="ivrry"
-          src="/assets/buttons/ivrry.png"
-          data-tooltip="ivrry"
-        />
-      </a>
+        <a href="https://ivrry.nekoweb.org">
+          <img
+            loading="lazy"
+            alt="ivrry"
+            src="/assets/buttons/ivrry.png"
+            data-tooltip="ivrry"
+          />
+        </a>
+      </section>
     </section>
 
     <!-- FUN BUTTONS -->
-    <section class="buttons">
-      <span class="minor-importance-text italic more-letter-spacing">
-        Fun btns
-      </span>
+    <section>
+      <h4>Other buttons</h4>
+      <section class="buttons">
+        <img
+          src="/assets/buttons/blahaj.png"
+          alt="blahaj is best"
+          loading="lazy"
+        />
 
-      <img
-        src="/assets/buttons/blahaj.png"
-        alt="blahaj is best"
-        loading="lazy"
-      />
+        <img
+          src="/assets/buttons/computer.gif"
+          alt="best viewed with a computer"
+          loading="lazy"
+        />
 
-      <img
-        src="/assets/buttons/computer.gif"
-        alt="best viewed with a computer"
-        loading="lazy"
-      />
+        <img
+          loading="lazy"
+          alt="make a website"
+          src="/assets/buttons/makeawebsite.png"
+        />
 
-      <img
-        loading="lazy"
-        alt="make a website"
-        src="/assets/buttons/makeawebsite.png"
-      />
-
-      <img
-        loading="lazy"
-        alt="delete everything and make a nekoweb"
-        src="/assets/buttons/delete_everything.gif"
-      />
+        <img
+          loading="lazy"
+          alt="delete everything and make a nekoweb"
+          src="/assets/buttons/delete_everything.gif"
+        />
+      </section>
     </section>
-  </div>
-</section>
-
-<!-- BLINKIES -->
-<div id="blinkies">
-  <img
-    loading="lazy"
-    alt="construction"
-    src="/assets/blinkies/construction.gif"
-  />
-  <img loading="lazy" alt="monster energy" src="/assets/blinkies/monster.gif" />
-  <img loading="lazy" alt="get silly" src="/assets/blinkies/silly.gif" />
-  <img loading="lazy" alt="da blinkie" src="/assets/blinkies/dablinkie.gif" />
-  <img loading="lazy" alt="wahoo" src="/assets/blinkies/wahoo.gif" />
-  <img
-    loading="lazy"
-    alt="Be kind to your computer"
-    src="/assets/blinkies/kindcomputer.gif"
-  />
-  <img loading="lazy" alt="kinda gay tbh" src="/assets/blinkies/kindagay.gif" />
-  <img
-    loading="lazy"
-    alt="sea creature"
-    src="/assets/blinkies/sea_creatur.gif"
-  />
-  <img loading="lazy" alt="bisexual" src="/assets/blinkies/bisexual.webp" />
-</div>
-
-<!-- WIDGETS -->
-<section>
-  <h2>Cool widgets</h2>
-  <div id="widgets">
-    <!-- LASTFM -->
-    <div id="lastfm">
-      <header id="fmstatus">
-        <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
-        <span id="fmtime"></span>
-      </header>
-      <a id="cover-link">
-        <img loading="lazy" id="cover" />
-      </a>
-      <noscript>
-        <span class="error">Last.fm status requires javascript!</span>
-      </noscript>
-      <a id="trackname">track name</a>
-      <span id="artist">artist</span>
-    </div>
-
-    <!-- MOON WIDGET -->
-    <div class="sidecard">
-      <iframe
-        width="180"
-        height="150"
-        style="border: none"
-        src="https://dimden.dev/moon?custom=1"
-        name="dimdenmoonwidget"
-      ></iframe>
-    </div>
 
     <!-- WEBRINGS -->
-    <div id="webring-container">
-      <!-- NO AI WEBRING -->
-      <div id="noaiwebring">
-        <a href="https://baccyflap.com/noai" target="_blank"
-          >the &#x1f6ab; no &#129302; ai</a
-        ><br />
-        <a
-          href="https://baccyflap.com/noai/?prv&s=shr"
-          target="_top"
-          title="previous"
-          >&larr;</a
-        >
-        <a href="https://baccyflap.com/noai" target="_blank">webring</a>
-        <a
-          class="small"
-          href="https://baccyflap.com/noai/?rnd"
-          target="_top"
-          title="random"
-          >(&#x1F500;)</a
-        >
-        <a
-          href="https://baccyflap.com/noai/?nxt&s=shr"
-          target="_top"
-          title="next"
-          >&rarr;</a
-        >
-      </div>
+    <section>
+      <h4>Webrings</h4>
+      <div id="webring-container">
+        <!-- NO AI WEBRING -->
+        <div id="noaiwebring">
+          <a href="https://baccyflap.com/noai" target="_blank"
+            >the &#x1f6ab; no &#129302; ai</a
+          ><br />
+          <a
+            href="https://baccyflap.com/noai/?prv&s=shr"
+            target="_top"
+            title="previous"
+            >&larr;</a
+          >
+          <a href="https://baccyflap.com/noai" target="_blank">webring</a>
+          <a
+            class="small"
+            href="https://baccyflap.com/noai/?rnd"
+            target="_top"
+            title="random"
+            >(&#x1F500;)</a
+          >
+          <a
+            href="https://baccyflap.com/noai/?nxt&s=shr"
+            target="_top"
+            title="next"
+            >&rarr;</a
+          >
+        </div>
 
-      <!-- RETRONAUT WEBRING -->
-      <div id="retronaut">
-        <a href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
-          >&larr;</a
-        >
-        <a href="https://webring.dinhe.net">Retronaut webring</a>
-        <a href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
-          >&rarr;</a
-        >
+        <!-- RETRONAUT WEBRING -->
+        <div id="retronaut">
+          <a href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
+            >&larr;</a
+          >
+          <a href="https://webring.dinhe.net">Retronaut webring</a>
+          <a href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
+            >&rarr;</a
+          >
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- BLINKIES -->
+    <marquee>
+      <img
+        loading="lazy"
+        alt="construction"
+        src="/assets/blinkies/construction.gif"
+      />
+      <img
+        loading="lazy"
+        alt="monster energy"
+        src="/assets/blinkies/monster.gif"
+      />
+      <img loading="lazy" alt="get silly" src="/assets/blinkies/silly.gif" />
+      <img
+        loading="lazy"
+        alt="da blinkie"
+        src="/assets/blinkies/dablinkie.gif"
+      />
+      <img loading="lazy" alt="wahoo" src="/assets/blinkies/wahoo.gif" />
+      <img
+        loading="lazy"
+        alt="Be kind to your computer"
+        src="/assets/blinkies/kindcomputer.gif"
+      />
+      <img
+        loading="lazy"
+        alt="kinda gay tbh"
+        src="/assets/blinkies/kindagay.gif"
+      />
+      <img
+        loading="lazy"
+        alt="sea creature"
+        src="/assets/blinkies/sea_creatur.gif"
+      />
+      <img loading="lazy" alt="bisexual" src="/assets/blinkies/bisexual.webp" />
+    </marquee>
+
+    <!-- MOON WIDGET -->
+    <section>
+      <h4>Moon widget</h4>
+      <div class="sidecard">
+        <iframe
+          width="180"
+          height="150"
+          style="border: none"
+          src="https://dimden.dev/moon?custom=1"
+          name="dimdenmoonwidget"
+        ></iframe>
+      </div>
+    </section>
   </div>
 </section>

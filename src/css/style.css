@@ -42,6 +42,7 @@
   border-radius: 16px;
   position: relative;
 
+  padding: 0px;
   border: 1px solid var(--theme-border);
 }
 
@@ -51,12 +52,6 @@
 
 #content {
   position: relative;
-  padding: 16px;
-
-  background-color: var(--theme-background);
-
-  border-radius: 16px;
-  border: 1px solid var(--theme-border);
 
   display: flex;
   flex-direction: column;
@@ -65,7 +60,7 @@
 
 #blinkies {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 4px;
   flex-wrap: wrap;
 }
@@ -104,10 +99,9 @@
 
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 1px solid var(--theme-border);
-  border-radius: 50px;
+  padding: 0px;
 
-  background-color: var(--theme-background);
+  border-radius: 50px;
 
   overflow: hidden;
 }
@@ -155,6 +149,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  z-index: 100;
 
   text-align: center;
 
@@ -178,22 +173,24 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
-  padding: 4px;
-}
-
-#webring-container > div {
-  border: none;
+  align-items: center;
 }
 
 #button-container {
-  flex: 1;
-
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+}
 
+#thingy-right {
   border-left: 1px solid var(--theme-border);
   padding-left: var(--gap);
+  flex: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
 }
 
 #profilepic-container {
@@ -201,12 +198,16 @@
   float: right;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 4px;
+  margin: 16px;
   border: 1px solid var(--theme-border);
   width: fit-content;
 
   border-radius: 100%;
   overflow: hidden;
+}
+
+#profilepic-container:hover {
+  animation: pfp-spin 1s infinite linear;
 }
 
 #notif {
@@ -241,6 +242,16 @@
   }
 }
 
+@keyframes pfp-spin {
+  from {
+    rotate: 0deg;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
 /* Elements */
 
 fieldset {
@@ -270,6 +281,14 @@ h4 {
 h1,
 h2 {
   color: var(--font-heading-color);
+}
+
+h4 {
+  opacity: 50%;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  font-weight: normal;
 }
 
 li,
@@ -368,6 +387,16 @@ li + p {
 }
 
 /* Classes */
+.window {
+  border: 1px solid var(--theme-border);
+  border-radius: 16px;
+  background-color: var(--theme-background);
+
+  padding: 16px;
+
+  box-shadow: 0px 0px 8px var(--theme-background);
+}
+
 .fire-text {
   font-weight: bold;
   text-shadow: 0px 0px 3px #fff, 0px -1px 6px #ff3, 0px -5px 12px #f90,

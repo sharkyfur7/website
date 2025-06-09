@@ -1,0 +1,125 @@
+<style>
+  #lastfm-wide {
+    border: 1px solid oklch(44.6% 0.03 256.802);
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin: auto;
+
+    position: relative;
+    background-color: var(--theme-background);
+  }
+
+  #lastfm-wide-content {
+    display: flex;
+    position: relative;
+    /* justify-content: space-between; */
+  }
+
+  #lastfm-wide-content-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+    backdrop-filter: brightness(90%);
+  }
+
+  #lastfm-wide > header {
+    margin: 0;
+    background-color: #d51007;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap);
+
+    padding-left: var(--gap);
+    padding-right: var(--gap);
+
+    position: relative;
+    z-index: 1;
+  }
+
+  #lastfm-wide header a {
+    font-weight: bold;
+  }
+
+  #lastfm-wide a,
+  #lastfm-wide a:visited {
+    color: var(--font-color);
+  }
+
+  #cover {
+    width: 100%;
+    height: 100%;
+    min-height: 180px;
+    min-width: 180px;
+    background-color: var(--theme-background-darker);
+    border: 1px solid var(--theme-border);
+    z-index: 1;
+    position: relative;
+  }
+
+  #artist,
+  #trackname {
+    width: 400px;
+    min-height: 1em;
+
+    font-size: 1.5rem;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0px 0px 6px var(--theme-background-darker);
+  }
+
+  #artist {
+    font-style: italic;
+    opacity: 70%;
+  }
+
+  #fmtime {
+    font-size: 8pt;
+  }
+
+  #fmstatus {
+    justify-content: space-between;
+  }
+
+  #bg-cover {
+    position: absolute;
+    scale: 3.5;
+    top: 0;
+    left: 64;
+    filter: blur(3px);
+    z-index: 0;
+    rotate: 45deg;
+    opacity: 0.5;
+    border-radius: 6px;
+  }
+</style>
+
+<div id="lastfm-wide">
+  <header id="fmstatus">
+    <div>
+      Last listened on
+      <a href="https://www.last.fm/user/sharkyblacktip">last.fm</a>
+    </div>
+
+    <span id="fmtime"></span>
+  </header>
+
+  <div id="lastfm-wide-content">
+    <img loading="lazy" id="bg-cover" />
+
+    <a id="cover-link">
+      <img loading="lazy" id="cover" />
+    </a>
+
+    <div id="lastfm-wide-content-text">
+      <noscript> Last.fm status requires javascript! </noscript>
+      <a id="trackname">track name</a>
+      <div id="artist">artist</div>
+    </div>
+  </div>
+</div>
