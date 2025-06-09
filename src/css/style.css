@@ -140,6 +140,11 @@
   gap: 4px;
 }
 
+#stamps > img {
+  width: 99px;
+  height: 56px;
+}
+
 #notifyinput {
   height: 1em;
 }
