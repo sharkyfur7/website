@@ -107,7 +107,7 @@
 }
 
 #navbar a {
-  transition: 100ms;
+  transition: 200ms;
   flex: 1;
   padding: 4px;
 
@@ -118,8 +118,23 @@
 }
 
 #navbar a:hover {
-  background-color: var(--theme-background-darker);
+  color: var(--font-color);
+
+  text-decoration: none;
+  font-style: normal;
   font-weight: bold;
+  letter-spacing: 2px;
+  background-color: var(--theme-primary);
+}
+
+#navbar a:hover::before {
+  content: ">";
+  padding-right: 4px;
+}
+
+#navbar a:hover::after {
+  content: "<";
+  padding-left: 4px;
 }
 
 #fun-stuff {
