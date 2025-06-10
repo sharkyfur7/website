@@ -20,11 +20,13 @@
   #lastfm-wide-content-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+
     flex: 1;
     overflow: hidden;
     backdrop-filter: brightness(90%);
+
+    padding: 32px;
   }
 
   #lastfm-wide > header {
@@ -62,9 +64,17 @@
     position: relative;
   }
 
+  #trackname {
+    text-decoration: underline;
+  }
+
+  #trackname:hover {
+    text-decoration: none;
+  }
+
   #artist,
   #trackname {
-    width: 400px;
+    width: 100%;
     min-height: 1em;
 
     font-size: 1.5rem;
@@ -88,14 +98,18 @@
 
   #bg-cover {
     position: absolute;
-    scale: 3.5;
+    scale: 2.8;
     top: 0;
-    left: 64;
-    filter: blur(3px);
+    left: 280px;
+    filter: blur(2px);
     z-index: 0;
     rotate: 45deg;
     opacity: 0.5;
     border-radius: 6px;
+  }
+
+  #album-subtext {
+    opacity: 50%;
   }
 </style>
 
@@ -118,8 +132,19 @@
 
     <div id="lastfm-wide-content-text">
       <noscript> Last.fm status requires javascript! </noscript>
-      <a id="trackname">track name</a>
-      <div id="artist">artist</div>
+      <div>
+        <a id="trackname">track name</a>
+        <div id="album-subtext">
+          on the "<span id="albumname">album name</span>" album
+        </div>
+        <div>By <span id="artist">artist</span></div>
+      </div>
+
+      <div>
+        <div>
+          Total scrobbles on last.fm: <span id="lastfm-scrobbles">000</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
