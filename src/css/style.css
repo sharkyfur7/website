@@ -401,6 +401,22 @@ li + p {
   margin-top: var(--gap);
 }
 
+blockquote {
+  border-left: 3px solid var(--font-color);
+  border-radius: 3px;
+  margin: 0;
+
+  padding: 1em 1.5em;
+}
+
+blockquote > strong {
+  font-size: 1.2em;
+}
+
+blockquote > p {
+  margin-top: 6px;
+}
+
 /* Classes */
 .window {
   border: 1px solid var(--theme-border);
@@ -499,6 +515,18 @@ li + p {
 
 .big-screen-only {
   display: none;
+}
+
+.warning-bq {
+  color: oklch(58.6% 0.253 17.585);
+  border: 1px solid oklch(58.6% 0.253 17.585);
+  box-shadow: 0px -1px 4px oklch(58.6% 0.253 17.585);
+  background-color: oklch(27.1% 0.105 12.094);
+  border-radius: 8px;
+}
+
+.warning-bq a {
+  color: oklch(81% 0.117 11.638);
 }
 
 .error {
