@@ -1,5 +1,6 @@
 ---
 lastModified: <value not set>
+originallyCreated: <value not set>
 ---
 
 {% extends "layouts/common.njk" %}
@@ -17,5 +18,5 @@ lastModified: <value not set>
         {{ content | safe }}
     </article>
 
-    <span class="minor-importance-text">Last modified on: {{ lastModified }}</span>
+    <span class="minor-importance-text">Created: {{ originallyCreated }} | Last updated: {{ lastModified }}</span>
 {% endblock %}
