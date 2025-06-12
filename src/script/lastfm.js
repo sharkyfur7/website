@@ -44,7 +44,6 @@ async function getData() {
   if (data.nowplaying) {
     data.date = "right now";
   } else {
-    console.log(data.date);
     data.date = formatAgo(Date.now() / 1000 - data.date);
   }
 
@@ -85,7 +84,7 @@ async function main() {
 
   // RAVEPOP has an 18+ album cover on last.fm... plz fix :(
   if (
-    last_track["album"]["#text"] == "RAVEPOP" &&
+    data.last_track["album"]["#text"] == "RAVEPOP" &&
     artist_name == "r u s s e l b u c k"
   ) {
     document.getElementById("cover").style.filter = "blur(8px)";
