@@ -1,7 +1,32 @@
-<nav class="window" id="navbar">
-  <a href="/">index</a>
-  <a href="/shark/">shark stuff</a>
-  <a href="/links/">links</a>
-  <a href="/guestbook/">guestbook</a>
-  <a href="/musicshelf/">music shelf</a>
+<style>
+  #navbar {
+    display: flex;
+    padding: 1px 5px;
+    align-items: center;
+    justify-content: space-between;
+
+    backdrop-filter: brightness(80%);
+    border-bottom: 1px solid var(--theme-border);
+  }
+
+  #navbar-links a {
+    padding: 4px;
+  }
+
+  #navbar-links {
+    display: flex;
+    align-items: center;
+    color: grey;
+    gap: 4px;
+  }
+</style>
+
+<nav id="navbar">
+  <div id="navbar-links">
+    <a href="/">index</a> / <a href="/shark/">shark stuff</a> /
+    <a href="/links/">links</a> / <a href="/guestbook/">guestbook</a> /
+    <a href="/musicshelf/">music shelf</a>
+  </div>
+
+  <div style="padding: 4px">navigate!!!</div>
 </nav>
