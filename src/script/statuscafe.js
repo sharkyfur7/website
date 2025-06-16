@@ -7,7 +7,7 @@ fetch("https://status.cafe/users/sharky/status.json")
       return;
     }
     document.getElementById("statuscafe-username").innerHTML =
-      '<a href="https://status.cafe/users/" target="_blank">' +
+      '<a href="https://status.cafe/users/sharky" target="_blank">' +
       r.author +
       "</a> " +
       r.face +
