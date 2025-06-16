@@ -4,15 +4,13 @@ canonical: https://sharkyfur.nekoweb.org/shark/nurse/
 
 title: Atlantic Nurse Shark (Ginglymostoma cirratum)
 description: The Atlantic Nurse shark is a nocturnal bottom dweller living inshore. And is, unfortunately, classified as vulnerable by the IUCN.
-lastModified: 11/06/2025
+lastModified: 16/06/2025
 originallyCreated: 05/04/2025
 tooltip: Atlantic Nurse Shark
 picture: /assets/shark/pixel/nurse.png
 ---
 
 # {{ title }}
-
-**Fun fact:** This shark is adorable!
 
 <blockquote class="warning-bq">
     <strong>Warning! This shark is vulnerable!</strong>
@@ -26,8 +24,6 @@ picture: /assets/shark/pixel/nurse.png
   src="/assets/shark/nurse/sitting.jpg"
   alt="nurse shark looking at some divers"
 />
-
-## Overview
 
 The nurse shark is a pretty calm and friendly species of shark. They are
 timid bottom dwellers and have jaws filled with lots of tiny sharp teeth.
@@ -46,14 +42,10 @@ divers not respecting the animal.
   />
 </section>
 
-## Diet
-
 The nurse shark's diet consists primarily of small fish 🐟, crustaceans 🦀
 and occasionally even algae. They are nocturnal, searching for food on the
 sea floor during night. They have the ability to create suction and suck
 algae off of corals or sift through the sediments on the sea floor.
-
-## Habitat
 
 These little guys usually stay inshore. The pups stick to coral reefs or
 seagrass flats whereas the older sharks tend to stay at deeper reefs leaving
