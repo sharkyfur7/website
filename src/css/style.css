@@ -496,6 +496,10 @@ blockquote > p {
   color: oklch(81% 0.117 11.638);
 }
 
+.bq-info {
+  padding: 0.5em 1.5em;
+}
+
 .error {
   color: oklch(57.7% 0.245 27.325);
   text-shadow: 0px 0px 4px oklch(57.7% 0.245 27.325);
