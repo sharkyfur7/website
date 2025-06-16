@@ -16,8 +16,17 @@
   #navbar-links {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     color: grey;
     gap: 4px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar,
+    #navbar-links {
+      justify-content: center;
+    }
   }
 </style>
 
@@ -28,5 +37,5 @@
     <a href="/musicshelf/">music shelf</a>
   </div>
 
-  <div style="padding: 4px">navigate!!!</div>
+  <div class="big-screen-only" style="padding: 4px">navigate!!!</div>
 </nav>
