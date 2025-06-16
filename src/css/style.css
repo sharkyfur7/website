@@ -386,6 +386,14 @@ blockquote > p {
   box-shadow: 0px 0px 8px var(--theme-background);
 }
 
+.statuscafe {
+  width: 100%;
+}
+
+#statuscafe-username {
+  margin-bottom: 4px;
+}
+
 .fire-text {
   font-weight: bold;
   text-shadow: 0px 0px 3px #fff, 0px -1px 6px #ff3, 0px -5px 12px #f90,
@@ -415,6 +423,7 @@ blockquote > p {
 
 .horizontal-hr {
   height: 1px;
+  width: 100%;
   background-color: var(--theme-border);
 }
 
