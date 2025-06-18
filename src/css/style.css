@@ -1,5 +1,3 @@
-@import url(/css/fonts.css);
-
 /* Actually goated list of colors :3 https://tailwindcss.com/docs/colors */
 
 :root {
@@ -9,6 +7,7 @@
   --theme-border: oklch(37.2% 0.044 257.287);
   --theme-background: oklch(20.8% 0.042 265.755);
   --theme-background-darker: oklch(17.8% 0.042 265.755);
+  --theme-link: #60a5fa;
 
   --font: "Noto Sans", sans-serif;
   --font-heading: "Red Hat Text", sans-serif;
@@ -277,13 +276,14 @@ img {
   max-width: 100%;
 }
 
+h1,
 h2 {
   font-size: x-large;
 }
 
 a,
 a:visited {
-  color: var(--theme-primary);
+  color: var(--theme-link);
   text-underline-offset: 2px;
 }
 
