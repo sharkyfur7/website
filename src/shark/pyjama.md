@@ -12,7 +12,7 @@ picture: /assets/shark/pixel/pyjama_shark.png
 
 # {{ title }}
 
-<img src="/assets/shark/pyjama/swim.jpg">
+<img src="/assets/shark/pyjama/swim.jpg" alt="pyjama shark swimming">
 
 <blockquote class="bq-info">
     This shark is... NOT vulnerable or endangered or something else,, yay!
@@ -21,8 +21,8 @@ picture: /assets/shark/pixel/pyjama_shark.png
 The Pyjama shark (or the Striped Catshark) is... a species of... well... shark! It's name comes from it's dark stripes that run all the way from the tip of it's head down to the end of it's tail (it looks like it's wearing a pyjama). They live around reefs in shallow waters around South African shores. They're sometimes caught as bycatch and killed because they are thought to be pests for some reason.
 
 <div class="images-section">
-    <img src="/assets/shark/pyjama/curled.jpg" loading=lazy>
-    <img src="/assets/shark/pyjama/pyjama.jpg" loading=lazy>
+    <img src="/assets/shark/pyjama/curled.jpg" alt="pyjama shark curled up into a ball" loading=lazy>
+    <img src="/assets/shark/pyjama/pyjama.jpg" alt="pyjama shark from side" loading=lazy>
 </div>
 
 Fun fact: these creatures curl up into a ball and try to cover their head with their tail when they feel threathened!

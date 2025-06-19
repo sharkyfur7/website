@@ -24,8 +24,8 @@ picture: /assets/shark/pixel/lemon.png
 The lemon shark is a species of shark (unbeliveable right?). Their name comes from their yellow-ish skin that works as great camouflage for swimming on sandy shores. Thanks to that, you'll find them in shallow subtropical waters. Adult lemon sharks grow to about 2.8 meters on average. They are (mostly) nocturnal feeders utilizing their ampullae of Lorenzini to find prey in the dark. They look kinda similar to bull sharks.
 
 <div class="images-section">
-    <img src="/assets/shark/lemon/lemon_swimming.jpg">
-    <img src="/assets/shark/lemon/lemon.jpg">
+    <img src="/assets/shark/lemon/lemon_swimming.jpg" alt="lemon shark swimming">
+    <img src="/assets/shark/lemon/lemon.jpg" alt="cute lemon shark closeup image">
 </div>
 
 Oh yeah these boys aren't introverted like most sharks. They sometimes live in groups of up to 20 sharks! Apparently they could be able to learn from social interactions or form social bonds (wikipedia said so) but don't quote **me** on that.
