@@ -90,6 +90,12 @@
 #noaiwebring {
   text-align: center;
   padding: 3px;
+  display: flex;
+  align-items: center;
+}
+
+#noaiwebring div a {
+  color: var(--font-color);
 }
 
 #fun-stuff {
@@ -139,6 +145,21 @@
 #ssgwebring > a,
 #noaiwebring > a {
   color: var(--font-color);
+}
+
+#retronaut {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#retronaut div a {
+  color: var(--font-color);
+}
+
+#retronaut div {
+  text-align: center;
 }
 
 #webring-container {
@@ -506,6 +527,10 @@ blockquote > p {
   font-weight: bold;
 }
 
+.webring-arrow {
+  padding: 2px 5px;
+}
+
 /* Responsive stuff */
 
 @media only screen and (max-width: 600px) {
@@ -531,6 +556,10 @@ blockquote > p {
 
   #profilepic-container {
     margin: 0 auto;
+  }
+
+  #thingy-right {
+    border-left: none;
   }
 }
 

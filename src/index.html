@@ -44,7 +44,7 @@ layout: layouts/index.njk
 <a class="buildinfo" data-tooltip="Build info" href="/build/">🔨</a>
 
 <img
-  class="mybtn"
+  class="mybtn big-screen-only"
   data-tooltip="My button!!!!"
   width="88"
   height="31"
@@ -198,7 +198,6 @@ layout: layouts/index.njk
             >
               Chrome extension store</a
             >
-            It's pending on the Opera extension store.
           </span>
         </li>
       </ul>
@@ -369,6 +368,7 @@ layout: layouts/index.njk
         <div id="ssgwebring">
           <a
             href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=prev"
+            class="webring-arrow"
             >&larr;</a
           >
           <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/"
@@ -376,44 +376,57 @@ layout: layouts/index.njk
           >
           <a
             href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=next"
+            class="webring-arrow"
             >&rarr;</a
           >
         </div>
 
         <!-- NO AI WEBRING -->
         <div id="noaiwebring">
-          <a href="https://baccyflap.com/noai" target="_blank"
-            >the &#x1f6ab; no &#129302; ai</a
-          ><br />
           <a
             href="https://baccyflap.com/noai/?prv&s=shr"
             target="_top"
             title="previous"
+            class="webring-arrow"
             >&larr;</a
           >
-          <a href="https://baccyflap.com/noai" target="_blank">webring</a>
-          <a
-            class="small"
-            href="https://baccyflap.com/noai/?rnd"
-            target="_top"
-            title="random"
-            >(&#x1F500;)</a
-          >
+
+          <div>
+            <a href="https://baccyflap.com/noai" target="_blank"
+              >the &#x1f6ab; no &#129302; ai</a
+            >
+            <a href="https://baccyflap.com/noai" target="_blank">webring</a>
+            <a
+              class="small"
+              href="https://baccyflap.com/noai/?rnd"
+              target="_top"
+              title="random"
+              >(&#x1F500;)</a
+            >
+          </div>
+
           <a
             href="https://baccyflap.com/noai/?nxt&s=shr"
             target="_top"
             title="next"
+            class="webring-arrow"
             >&rarr;</a
           >
         </div>
 
         <!-- RETRONAUT WEBRING -->
         <div id="retronaut">
-          <a href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
+          <a
+            href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
+            class="webring-arrow"
             >&larr;</a
           >
-          <a href="https://webring.dinhe.net">Retronaut webring</a>
-          <a href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
+          <div>
+            <a href="https://webring.dinhe.net">Retronaut<br />webring</a>
+          </div>
+          <a
+            href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
+            class="webring-arrow"
             >&rarr;</a
           >
         </div>
