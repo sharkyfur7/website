@@ -14,6 +14,9 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
+    {% if og_img %}
+      <meta property="og:image" content="{{og_img}}" />
+    {% endif %}
 
     <link rel="stylesheet" href="/css/fonts.css"/>
     <link rel="stylesheet" href="/css/style.css" />

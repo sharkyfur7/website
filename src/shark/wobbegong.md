@@ -9,6 +9,7 @@ originallyCreated: 05/07/2025
 tooltip: Wobbegong
 tooltip_description: a family of carpet sharks
 picture: /assets/shark/pixel/wobbegong.png
+og_img: /assets/shark/wobbegong/observe.jpg
 ---
 
 # {{ title }}

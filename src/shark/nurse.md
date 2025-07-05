@@ -9,6 +9,7 @@ originallyCreated: 05/04/2025
 tooltip: Atlantic Nurse Shark
 tooltip_description: sea puppy!
 picture: /assets/shark/pixel/nurse.png
+og_img: /assets/shark/nurse/sitting.jpg
 ---
 
 # {{ title }}
