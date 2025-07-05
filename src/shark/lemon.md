@@ -7,6 +7,7 @@ originallyCreated: 08/06/2025
 title: Lemon shark (Negaprion brevirostris)
 description: The lemon shark is a species of shark... wow
 tooltip: Lemon shark
+tooltip_description: does not taste like lemon
 picture: /assets/shark/pixel/lemon.png
 ---
 

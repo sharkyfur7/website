@@ -7,6 +7,7 @@ description: The Blacktip Reef Shark is a pretty cool shark that is easily ident
 lastModified: 16/06/2025
 originallyCreated: 05/04/2025
 tooltip: Blacktip Reef Shark
+tooltip_description: cute shark with black tips on it's fins
 picture: /assets/shark/pixel/blacktip_reef.png
 ---
 

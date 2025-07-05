@@ -9,12 +9,12 @@ layout: layouts/shark.njk
   <a href="{{ post.url }}">
     <img
       src="{{ post.data.picture }}"
-      alt="{{ post.data.tooltip }}"
-      data-tooltip="{{ post.data.tooltip }}"
+      alt="{{ post.data.title }}"
+      data-tooltip='{{ post.data.tooltip }} <div id="tooltip-description">{{ post.data.tooltip_description }}</div>'
       width="200"
       height="100"
     />
-    <span class="small-screen-only">{{ post.data.tooltip }}</span>
+    <span class="small-screen-only">{{ post.data.title }}</span>
   </a>
   {% endfor %}
 </div>

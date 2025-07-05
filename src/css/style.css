@@ -135,6 +135,11 @@
   transition: 50ms;
 }
 
+#tooltip-description {
+  opacity: 50%;
+  font-style: italic;
+}
+
 #main-content {
   display: flex;
   flex-direction: column;

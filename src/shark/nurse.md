@@ -7,6 +7,7 @@ description: The Atlantic Nurse shark is a nocturnal bottom dweller living insho
 lastModified: 16/06/2025
 originallyCreated: 05/04/2025
 tooltip: Atlantic Nurse Shark
+tooltip_description: sea puppy!
 picture: /assets/shark/pixel/nurse.png
 ---
 

@@ -7,6 +7,7 @@ description: a shark that wears a pyjama all the time
 lastModified: 16/06/2025
 originallyCreated: 16/06/2025
 tooltip: Pyjama Shark
+tooltip_description: a shark that wears a pyjama all the time
 picture: /assets/shark/pixel/pyjama_shark.png
 ---
 
