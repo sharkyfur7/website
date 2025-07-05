@@ -199,6 +199,8 @@
   margin: 16px;
   border: 1px solid var(--theme-border);
   width: fit-content;
+  transition: 200ms;
+  box-shadow: 0px 0px 8px var(--theme-background-darker);
 
   border-radius: 100%;
   overflow: hidden;
@@ -206,6 +208,8 @@
 
 #profilepic-container:hover {
   animation: pfp-spin 1s infinite linear;
+  scale: 120%;
+  
 }
 
 #notif {
