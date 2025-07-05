@@ -14,14 +14,14 @@ og_img: /assets/shark/lemon/lemon_sleeping.jpg
 
 # {{ title }}
 
+![Lemon shark sleeping](/assets/shark/lemon/lemon_sleeping.jpg)
+
 <blockquote class="warning-bq">
     <strong>Warning! This shark is vulnerable!</strong>
     <p>
         In 2020, the IUCN has classified the Lemon shark as vulnerable due to it's population dropping by 30–49% over the last 50 years. This is thanks to intense fishing in the Southwest and Eastern Central Atlantic and the Eastern Central and Southeast Pacific oceans. <a href="https://www.iucnredlist.org/species/39380/2915472" target="_blank">[source]</a>
     </p>
 </blockquote>
-
-![Lemon shark sleeping](/assets/shark/lemon/lemon_sleeping.jpg)
 
 The lemon shark is a species of shark (unbeliveable right?). Their name comes from their yellow-ish skin that works as great camouflage for swimming on sandy shores. Thanks to that, you'll find them in shallow subtropical waters. Adult lemon sharks grow to about 2.8 meters on average. They are (mostly) nocturnal feeders utilizing their ampullae of Lorenzini to find prey in the dark. They look kinda similar to bull sharks.
 
