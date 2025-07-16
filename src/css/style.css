@@ -1,18 +1,22 @@
 /* Actually goated list of colors :3 https://tailwindcss.com/docs/colors */
 
 :root {
-  --theme-primary: oklch(54.6% 0.245 262.881);
-  --theme-secondary: oklch(92.2% 0 0);
-  --theme-accent: oklch(71.5% 0.143 215.221);
-  --theme-border: oklch(37.2% 0.044 257.287);
-  --theme-background: oklch(20.8% 0.042 265.755);
+  --palette-0: #d6e6e3;
+  --palette-1: #38bdf8;
+  --palette-2: 0; /* TBD */
+  --palette-3: #0c132b;
+  --palette-4: oklch(37.2% 0.044 257.287);
+
+  --link-color: var(--palette-1);
+  --font-color: var(--palette-0);
+  --font-heading-color: var(--palette-0);
+
+  --theme-border: var(--palette-4);
+  --theme-background: var(--palette-3);
   --theme-background-darker: oklch(17.8% 0.042 265.755);
-  --theme-link: #60a5fa;
 
   --font: "Noto Sans", sans-serif;
   --font-heading: "Red Hat Text", sans-serif;
-  --font-color: var(--theme-secondary);
-  --font-heading-color: var(--font-color);
 
   --gap: 11px;
 
@@ -22,7 +26,7 @@
   font-size: var(--font-size);
   color: var(--font-color);
 
-  background-color: oklch(12.9% 0.042 264.695);
+  background-color: #172554;
 }
 
 /* IDs */
@@ -38,13 +42,13 @@
 #header {
   display: block;
   overflow: hidden;
-  border-radius: 16px;
+  /* border-radius: 16px; */
   position: relative;
 
   padding: 0px;
   border: 1px solid var(--theme-border);
 
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 #header > img {
@@ -129,9 +133,13 @@
 
   text-align: center;
 
-  padding: 4px;
-  background-color: var(--theme-background);
-  border: 1px dashed var(--theme-border);
+  box-shadow: 0px 0px 4px var(--palette-3);
+
+  padding: 4px 8px;
+  background-color: #0c132b91;
+  backdrop-filter: blur(3px);
+  border: 1px solid var(--theme-border);
+  border-radius: 1em;
   transition: 50ms;
 }
 
@@ -230,8 +238,9 @@
 
   z-index: -10;
   opacity: 20%;
+  filter: blur(3px) saturate(0%);
 
-  animation: background-scroll 20s infinite linear reverse;
+  animation: background-scroll 30s infinite linear reverse;
 }
 
 @keyframes background-scroll {
@@ -313,7 +322,7 @@ h2 {
 
 a,
 a:visited {
-  color: var(--theme-link);
+  color: var(--link-color);
   text-underline-offset: 2px;
 }
 
@@ -347,7 +356,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-  border-color: var(--theme-primary);
+  border-color: var(--palette-1);
 }
 
 button,
@@ -362,7 +371,7 @@ button,
 
 button:hover,
 .button-class:hover {
-  border: 1px solid var(--theme-primary);
+  border: 1px solid var(--palette-1);
 }
 
 button:disabled,
@@ -408,7 +417,7 @@ blockquote > p {
 /* Classes */
 .window {
   border: 1px solid var(--theme-border);
-  border-radius: 16px;
+  /* border-radius: 16px; */
   background-color: var(--theme-background);
 
   padding: 16px;
@@ -428,6 +437,7 @@ blockquote > p {
   font-weight: bold;
   text-shadow: 0px 0px 3px #fff, 0px -1px 6px #ff3, 0px -5px 12px #f90,
     0px -9px 20px #c33;
+  color: white;
 }
 
 .italic {
