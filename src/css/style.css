@@ -65,13 +65,6 @@
   gap: var(--gap);
 }
 
-#blinkies {
-  display: flex;
-  justify-content: space-evenly;
-  gap: 4px;
-  flex-wrap: wrap;
-}
-
 #blinkies img {
   width: 150px;
   height: 20px;
