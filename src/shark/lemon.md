@@ -1,6 +1,6 @@
 ---
 layout: layouts/shark_article.njk
-canonical: https://sharkyfur.nekoweb.org/shark/lemon/
+canonical: shark/lemon/
 
 lastModified: 11/06/2025
 originallyCreated: 08/06/2025

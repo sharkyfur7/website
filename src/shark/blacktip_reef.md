@@ -1,6 +1,6 @@
 ---
 layout: layouts/shark_article.njk
-canonical: https://sharkyfur.nekoweb.org/shark/blacktip_reef/
+canonical: shark/blacktip_reef/
 
 title: Blacktip Reef Shark (Carcharhinus melanopterus)
 description: The Blacktip Reef Shark is a pretty cool shark that is easily identifiable by the black tips of it's fins.

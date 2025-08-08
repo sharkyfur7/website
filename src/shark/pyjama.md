@@ -1,6 +1,6 @@
 ---
 layout: layouts/shark_article.njk
-canonical: https://sharkyfur.nekoweb.org/shark/pyjama/
+canonical: shark/pyjama/
 
 title: Pyjama Shark (Poroderma africanum)
 description: a shark that wears a pyjama all the time
