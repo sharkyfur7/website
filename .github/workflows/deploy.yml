@@ -31,6 +31,6 @@ jobs:
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-domain: "sharkyfur.nekoweb.org"
+          nekoweb-domain: "furshark.net"
           nekoweb-username: "sharkyfur"
           directory: "site"
