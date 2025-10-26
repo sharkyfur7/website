@@ -56,6 +56,7 @@ async function main() {
   const track_name = data.last_track["name"];
   const coverurl = data.last_track["image"][2]["#text"]; // 0 = small, 1 = medium, 2 = large, 3 = extralarge
 
+  // elements that change their contents
   const lastfm = {};
   lastfm["trackname"] = document.getElementById("trackname");
   lastfm["artist"] = document.getElementById("artist");
@@ -112,14 +113,6 @@ async function main() {
   try {
     lastfm["lastfm-scrobbles"].innerText = data.info["user"]["playcount"];
   } catch {}
-
-  // RAVEPOP has an 18+ album cover on last.fm... plz fix :(
-  if (
-    data.last_track["album"]["#text"] == "RAVEPOP" &&
-    artist_name == "r u s s e l b u c k"
-  ) {
-    lastfm.cover.style.filter = "blur(8px)";
-  }
 }
 
 main();

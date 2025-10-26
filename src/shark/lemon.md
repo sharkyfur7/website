@@ -17,7 +17,7 @@ og_img: /assets/shark/lemon/lemon_sleeping.jpg
 ![Lemon shark sleeping](/assets/shark/lemon/lemon_sleeping.jpg)
 
 <blockquote class="warning-bq">
-    <strong>Warning! This shark is vulnerable!</strong>
+    <span class="warning-bq-title">Warning! This shark is vulnerable!</span>
     <p>
         In 2020, the IUCN has classified the Lemon shark as vulnerable due to it's population dropping by 30–49% over the last 50 years. This is thanks to intense fishing in the Southwest and Eastern Central Atlantic and the Eastern Central and Southeast Pacific oceans. <a href="https://www.iucnredlist.org/species/39380/2915472" target="_blank">[source]</a>
     </p>

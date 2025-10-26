@@ -14,7 +14,7 @@ picture: /assets/shark/pixel/blacktip_reef.png
 # {{ title }}
 
 <blockquote class="warning-bq">
-    <strong>Warning! This shark is vulnerable!</strong>
+    <span class="warning-bq-title">Warning! This shark is vulnerable!</span>
     <p>
         In 2020, the IUCN has classified the Blacktip Reef Shark as vulnerable. This is thanks to not only industrial and small-scale fishing and poor water quality but also thanks to climate change decreasing the quality of coral reefs (that's where they live, it's a reef shark, DUH!). The population is estimated to have reduced by 30–49% over the last 44 years. <a href="https://www.iucnredlist.org/species/39375/58303674" target="_blank">[source]</a>
     </p>

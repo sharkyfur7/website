@@ -1,14 +1,13 @@
 ---
-title: link n stuff
+title: links n stuff
 description: things I use, or other cool websites <3
 ---
 
 {% extends "layouts/common.njk" %}
-
 {% block head %}
-    <link rel="canonical" href="https://furshark.net/links" />
+    <link rel="canonical" href="https://furshark.net/links"/>
+    <script src="/script/tooltip.js" defer async></script>
 {% endblock %}
-
 {% block content %}
     {{ content | safe }}
 {% endblock %}

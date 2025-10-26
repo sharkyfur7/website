@@ -1,11 +1,11 @@
 /* Actually goated list of colors :3 https://tailwindcss.com/docs/colors */
 
 :root {
-  --palette-0: #d6e6e3;
-  --palette-1: #38bdf8;
-  --palette-2: 0; /* TBD */
-  --palette-3: #0c132b;
-  --palette-4: oklch(37.2% 0.044 257.287);
+  --palette-0: #e5e5e5;
+  --palette-1: #2563eb;
+  --palette-2: #081024;
+  --palette-3: #0a0a0a;
+  --palette-4: #e5e5e5;
 
   --link-color: var(--palette-1);
   --font-color: var(--palette-0);
@@ -15,8 +15,8 @@
   --theme-background: var(--palette-3);
   --theme-background-darker: oklch(17.8% 0.042 265.755);
 
-  --font: "Noto Sans", sans-serif;
-  --font-heading: "Red Hat Text", sans-serif;
+  --font: "MS PGothic", sans-serif;
+  --font-heading: "MS PGothic", sans-serif;
 
   --gap: 11px;
 
@@ -26,7 +26,7 @@
   font-size: var(--font-size);
   color: var(--font-color);
 
-  background-color: #172554;
+  background-color: #000000;
 }
 
 /* IDs */
@@ -56,6 +56,7 @@
 }
 
 #content {
+  flex: 10;
   position: relative;
 
   padding: 10px 16px;
@@ -63,6 +64,13 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+}
+
+#blinkies {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 #blinkies img {
@@ -85,14 +93,10 @@
 }
 
 #noaiwebring {
-  text-align: center;
-  padding: 3px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-}
-
-#noaiwebring div a {
-  color: var(--font-color);
+  justify-content: center;
 }
 
 #fun-stuff {
@@ -112,10 +116,6 @@
   height: 56px;
 }
 
-#notifyinput {
-  height: 1em;
-}
-
 #tooltip {
   opacity: 0;
 
@@ -129,10 +129,8 @@
   box-shadow: 0px 0px 4px var(--palette-3);
 
   padding: 4px 8px;
-  background-color: #0c132b91;
-  backdrop-filter: blur(3px);
+  background-color: #0a0a0a;
   border: 1px solid var(--theme-border);
-  border-radius: 1em;
   transition: 50ms;
 }
 
@@ -147,10 +145,9 @@
   gap: var(--gap);
 }
 
-#retronaut > a,
-#ssgwebring > a,
-#noaiwebring > a {
-  color: var(--font-color);
+#ssgwebring {
+  display: flex;
+  justify-content: center;
 }
 
 #retronaut {
@@ -158,10 +155,6 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-}
-
-#retronaut div a {
-  color: var(--font-color);
 }
 
 #retronaut div {
@@ -172,7 +165,14 @@
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+}
+
+#webring-container-links {
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
 #button-container {
@@ -211,12 +211,6 @@
   animation: pfp-spin 1s infinite linear;
   scale: 120%;
   
-}
-
-#notif {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 #background-thingy {
@@ -280,6 +274,7 @@ h3,
 h4 {
   margin: 0;
   font-family: var(--font-heading);
+  font-weight: normal;
 }
 
 h1,
@@ -330,6 +325,8 @@ select,
 .button-class {
   font-family: var(--font);
   font-size: var(--font-size);
+  padding: 4px 6px;
+  margin: 3px;
 }
 
 input,
@@ -337,9 +334,7 @@ textarea,
 select {
   outline: none;
   border: 1px solid var(--theme-border);
-  border-radius: 2px;
   font-family: var(--font);
-  padding: 4px;
 
   color: var(--font-color);
   background-color: var(--theme-background);
@@ -355,7 +350,6 @@ textarea:focus {
 button,
 .button-class {
   overflow: hidden;
-  border-radius: 4px;
 
   background-color: var(--theme-background);
   color: var(--font-color);
@@ -370,7 +364,7 @@ button:hover,
 button:disabled,
 .button-class:disabled {
   color: grey;
-  border-color: var(--theme-border);
+  border-color: grey;
 }
 
 code {
@@ -393,7 +387,6 @@ li + p {
 
 blockquote {
   border-left: 3px solid var(--font-color);
-  border-radius: 3px;
   margin: 0;
 
   padding: 1em 1.5em;
@@ -416,21 +409,15 @@ blockquote > p {
   padding: 16px;
 
   box-shadow: 0px 0px 8px var(--theme-background);
-}
 
-.statuscafe {
-  width: 100%;
-}
-
-#statuscafe-username {
-  margin-bottom: 4px;
+  display: flex;
 }
 
 .fire-text {
+  text-shadow: 0px -2px 8px #f90,
+    0px -5px 12px #c33;
+  color: #f90;
   font-weight: bold;
-  text-shadow: 0px 0px 3px #fff, 0px -1px 6px #ff3, 0px -5px 12px #f90,
-    0px -9px 20px #c33;
-  color: white;
 }
 
 .italic {
@@ -458,6 +445,8 @@ blockquote > p {
   height: 1px;
   width: 100%;
   background-color: var(--theme-border);
+
+  margin: 14px 0;
 }
 
 .stuff-bg {
@@ -520,9 +509,12 @@ blockquote > p {
 .warning-bq {
   color: oklch(58.6% 0.253 17.585);
   border: 1px solid oklch(58.6% 0.253 17.585);
-  box-shadow: 0px -1px 4px oklch(58.6% 0.253 17.585);
   background-color: oklch(27.1% 0.105 12.094);
-  border-radius: 8px;
+}
+
+.warning-bq-title {
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 .warning-bq a {

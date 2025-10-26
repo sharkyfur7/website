@@ -1,0 +1,57 @@
+<style>
+  #lastfm {
+    margin: auto;
+
+    position: relative;
+    background-color: var(--theme-background);
+  }
+
+  #trackname {
+    text-decoration: underline;
+  }
+
+  #trackname:hover {
+    text-decoration: none;
+  }
+
+  #artist,
+  #trackname {
+    width: 100%;
+    min-height: 1em;
+
+    position: relative;
+    z-index: 2;
+    text-shadow: 0px 0px 6px var(--theme-background-darker);
+  }
+
+  #artist {
+    font-style: italic;
+    opacity: 70%;
+  }
+
+  #fmtime {
+    font-size: 8pt;
+  }
+
+  #fmstatus {
+    justify-content: space-between;
+  }
+
+  #album-subtext {
+    opacity: 50%;
+  }
+</style>
+
+<div id="lastfm">
+  <noscript> last.fm status requires javascript! </noscript>
+  <div>
+    listening <span id="fmtime"></span> to
+    <a id="trackname">track name</a>
+
+    <span id="album-subtext">
+      on the "<span id="albumname">album name</span>" album
+    </span>
+
+    <span>by <span id="artist">artist</span></span>
+  </div>
+</div>

@@ -1,0 +1,109 @@
+<style>
+  .sidebar {
+    flex: 3;
+    padding: 4px;
+    border-left: 1px solid var(--theme-border);
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .sidebar {
+      display: none;
+    }
+  }
+</style>
+
+<aside class="sidebar">
+  <section>
+    maybe
+    <a href="https://nekoweb.org/follow/sharkyfur">follow me</a> on nekoweb?
+  </section>
+
+  {% include "components/navigation.html" %} {% include
+  "components/status_cafe.html" %}
+
+  <!-- WEBRINGS -->
+  <section>
+    <span style="font-weight: bold">webrings</span>
+    <div id="webring-container">
+      <!-- SSG WEBRING -->
+      <div id="ssgwebring">
+        <a
+          href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=prev"
+          class="webring-arrow"
+          >&larr;</a
+        >
+        <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/"
+          >SSG ring</a
+        >
+        <a
+          href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=next"
+          class="webring-arrow"
+          >&rarr;</a
+        >
+      </div>
+
+      <!-- NO AI WEBRING -->
+      <div id="noaiwebring">
+        <div>
+          <a href="https://baccyflap.com/noai" target="_blank"
+            >the no AI webring</a
+          >
+        </div>
+
+        <div>
+          <a
+            href="https://baccyflap.com/noai/?prv&s=shr"
+            target="_top"
+            title="previous"
+            class="webring-arrow"
+            >&larr;</a
+          >
+
+          <a
+            class="small"
+            href="https://baccyflap.com/noai/?rnd"
+            target="_top"
+            title="random"
+            >(random)</a
+          >
+
+          <a
+            href="https://baccyflap.com/noai/?nxt&s=shr"
+            target="_top"
+            title="next"
+            class="webring-arrow"
+            >&rarr;</a
+          >
+        </div>
+      </div>
+
+      <!-- RETRONAUT WEBRING -->
+      <div id="retronaut">
+        <a
+          href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org"
+          class="webring-arrow"
+          >&larr;</a
+        >
+        <div>
+          <a href="https://webring.dinhe.net">retronaut<br />webring</a>
+        </div>
+        <a
+          href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org"
+          class="webring-arrow"
+          >&rarr;</a
+        >
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div>
+      <a href="/build/">build info</a>
+      (for nerds)
+    </div>
+  </section>
+</aside>

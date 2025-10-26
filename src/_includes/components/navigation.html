@@ -1,0 +1,34 @@
+<style>
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 10em;
+  }
+
+  #navbar a::before {
+    content: "> ";
+  }
+
+  #navbar a:hover {
+    color: var(--font-color);
+    background-color: var(--link-color);
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar,
+    #navbar-links {
+      justify-content: center;
+    }
+  }
+</style>
+
+<div>
+  <span style="font-weight: bold">navigation</span>
+  <nav id="navbar">
+    <a href="/">index</a><a href="/shark/">sharks!!!</a>
+    <a href="/links/">links and stuff</a
+    ><a href="/guestbook/">guestbook (sign it!)</a>
+    <a href="/musicshelf/">music shelf</a>
+  </nav>
+</div>
