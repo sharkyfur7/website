@@ -76,8 +76,31 @@ layout: layouts/index.njk
           i made this site because it's cool... and my art skills suck,
           programming is easier for me lmao
         </p>
+      </section>
 
-        <p style="font-weight: bold">some mildly interesting things</p>
+      <!-- NOTIFICATION THING -->
+      <section id="notif">
+        <noscript
+          ><span class="error"
+            >This won't work without javascript!</span
+          ></noscript
+        >
+        <div style="font-weight: bold; margin-top: 2px">
+          send me a phone notification for no reason at all:
+        </div>
+        <div>
+          <input
+            placeholder="blub blub blub"
+            id="notifyinput"
+            type="text"
+            style="min-width: 20em"
+          />
+          <button disabled="true" id="notifysend">send</button>
+        </div>
+      </section>
+
+      <section>
+        <p>some mildly interesting things</p>
 
         <ul>
           <li>I like sharks and dragons</li>
@@ -109,25 +132,6 @@ layout: layouts/index.njk
         </p>
       </section>
     </div>
-
-    <!-- NOTIFICATION THING -->
-    <section id="notif">
-      <noscript
-        ><span class="error"
-          >This won't work without javascript!</span
-        ></noscript
-      >
-      <div>send me a phone notification for no reason at all:</div>
-      <div>
-        <input
-          placeholder="blub blub blub"
-          id="notifyinput"
-          type="text"
-          style="min-width: 20em"
-        />
-        <button disabled="true" id="notifysend">send</button>
-      </div>
-    </section>
 
     <section>
       <!-- LASTFM -->

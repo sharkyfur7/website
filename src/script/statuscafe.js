@@ -12,5 +12,5 @@ fetch("https://status.cafe/users/sharky/status.json")
       "</a> ";
     document.getElementById("statuscafe-stuff").innerHTML = r.timeAgo;
     document.getElementById("statuscafe-content").innerHTML =
-      '"' + r.content + '"' + r.face;
+      '"' + r.content + '"';
   });
