@@ -52,51 +52,67 @@ async function getData() {
 
 async function main() {
   const data = await getData();
-
-  // Now we do stuff :3
-
-  if (data.date == "right now") {
-    document
-      .getElementById("cover")
-      .setAttribute("data-tooltip", "I'm listening to this song right now");
-  } else {
-    document
-      .getElementById("cover")
-      .setAttribute("data-tooltip", `I listened to this song ${data.date}`);
-  }
-
   const artist_name = data.last_track["artist"]["#text"];
   const track_name = data.last_track["name"];
   const coverurl = data.last_track["image"][2]["#text"]; // 0 = small, 1 = medium, 2 = large, 3 = extralarge
 
-  document.getElementById("trackname").innerText = track_name;
-  document.getElementById("artist").innerText = artist_name;
-  document.getElementById("albumname").innerText =
-    data.last_track["album"]["#text"];
-  document.getElementById("trackname").href = data.last_track["url"];
-  document.getElementById("cover").src = coverurl;
-  document.getElementById("bg-cover").src = coverurl;
-  document.getElementById("cover-link").href = data.last_track["url"];
-  document.getElementById("fmtime").innerHTML = "(" + data.date + ")";
+  // elements that change their contents
+  const lastfm = {};
+  lastfm["trackname"] = document.getElementById("trackname");
+  lastfm["artist"] = document.getElementById("artist");
+  lastfm["albumname"] = document.getElementById("albumname");
+  lastfm["cover"] = document.getElementById("cover");
+  lastfm["bg-cover"] = document.getElementById("bg-cover");
+  lastfm["cover-link"] = document.getElementById("cover-link");
+  lastfm["fmtime"] = document.getElementById("fmtime");
+  lastfm["lastfm-scrobbles"] = document.getElementById("lastfm-scrobbles");
 
-  document.getElementById("lastfm-scrobbles").innerText =
-    data.info["user"]["playcount"];
+  // Now we do stuff :3
 
-  // RAVEPOP has an 18+ album cover on last.fm... plz fix :(
-  if (
-    data.last_track["album"]["#text"] == "RAVEPOP" &&
-    artist_name == "r u s s e l b u c k"
-  ) {
-    document.getElementById("cover").style.filter = "blur(8px)";
-  }
+  try {
+    if (data.date == "right now") {
+      document
+        .getElementById("cover")
+        .setAttribute("data-tooltip", "I'm listening to this song right now");
+    } else {
+      document
+        .getElementById("cover")
+        .setAttribute("data-tooltip", `I listened to this song ${data.date}`);
+    }
+  } catch {}
 
-  // if (artist_name == "Nirvana") {
-  //   const kurt = document.createElement("img");
-  //   kurt.src = "/assets/kurt.png";
-  //   kurt.loading = "lazy";
-  //   kurt.id = "kurt";
-  //   document.getElementById("lastfm").appendChild(kurt);
-  // }
+  try {
+    lastfm.trackname.innerText = track_name;
+    lastfm.trackname.href = data.last_track["url"];
+  } catch {}
+
+  try {
+    lastfm.artist.innerText = artist_name;
+  } catch {}
+
+  try {
+    lastfm.albumname.innerText = data.last_track["album"]["#text"];
+  } catch {}
+
+  try {
+    lastfm.cover.src = coverurl;
+  } catch {}
+
+  try {
+    lastfm["bg-cover"].src = coverurl;
+  } catch {}
+
+  try {
+    lastfm["cover-link"].href = data.last_track["url"];
+  } catch {}
+
+  try {
+    lastfm.fmtime.innerHTML = "(" + data.date + ")";
+  } catch {}
+
+  try {
+    lastfm["lastfm-scrobbles"].innerText = data.info["user"]["playcount"];
+  } catch {}
 }
 
 main();

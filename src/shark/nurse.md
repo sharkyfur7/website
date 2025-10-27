@@ -15,7 +15,7 @@ og_img: /assets/shark/nurse/sitting.jpg
 # {{ title }}
 
 <blockquote class="warning-bq">
-    <strong>Warning! This shark is vulnerable!</strong>
+    <span class="warning-bq-title">Warning! This shark is vulnerable!</span>
     <p>
         In 2019, the IUCN has classified the Atlantic Lemon shark as vulnerable. While the population may be slightly (1.2%) increasing in the Northwest and Western Central Atlantic, it's population has decreased by >80% in the Southwest Atlantic. Overall it has undergone a population reduction of 30–49% over the last 90 years. <a href="https://www.iucnredlist.org/species/144141186/3095153" target="_blank">[source]</a>
     </p>

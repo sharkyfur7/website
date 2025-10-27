@@ -9,9 +9,8 @@ fetch("https://status.cafe/users/sharky/status.json")
     document.getElementById("statuscafe-username").innerHTML =
       '<a href="https://status.cafe/users/sharky" target="_blank">' +
       r.author +
-      "</a> " +
-      r.face +
-      " " +
-      r.timeAgo;
-    document.getElementById("statuscafe-content").innerHTML = r.content;
+      "</a> ";
+    document.getElementById("statuscafe-stuff").innerHTML = r.timeAgo;
+    document.getElementById("statuscafe-content").innerHTML =
+      '"' + r.content + '"';
   });

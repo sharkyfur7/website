@@ -1,0 +1,36 @@
+<style>
+  #navbar-mobile {
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    width: 100%;
+    min-width: 10em;
+  }
+
+  #navbar-mobile a {
+    padding: 8px;
+    border: 1px solid var(--link-color);
+    text-decoration: none;
+  }
+
+  #navbar-mobile a:hover {
+    color: var(--font-color);
+    background-color: var(--link-color);
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar-mobile {
+      display: flex;
+    }
+  }
+</style>
+
+<nav id="navbar-mobile">
+  <a href="/">index</a>
+  <a href="/shark/">sharks</a>
+  <a href="/links/">links and stuff</a>
+  <a href="/guestbook/">guestbook</a>
+  <a href="/musicshelf/">music shelf</a>
+</nav>
