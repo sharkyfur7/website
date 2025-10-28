@@ -507,9 +507,9 @@ blockquote > p {
 }
 
 .warning-bq {
-  color: oklch(58.6% 0.253 17.585);
-  border: 1px solid oklch(58.6% 0.253 17.585);
-  background-color: oklch(27.1% 0.105 12.094);
+  color: #f43f5e;
+  border: 1px solid #f43f5e;
+  background-color: #380010;
 }
 
 .warning-bq-title {
