@@ -4,17 +4,14 @@ description: sharky's personal webpage. the creature. shark-infested website. fu
 ---
 
 {% extends "layouts/common.njk" %}
-
 {% block head %}
-    <link rel="canonical" href="https://furshark.net" />
-
-    <link rel="stylesheet" href="/css/sitestats.css" />
-
+    <link rel="canonical" href="https://furshark.net"/>
+    <link rel="stylesheet" href="/css/sitestats.css"/>
     <script src="/script/lastfm.js" defer async></script>
     <script src="/script/notify.js" defer async></script>
     <script src="/script/tooltip.js" defer async></script>
+    <script src="/script/meow.js" defer async></script>
 {% endblock %}
-
 {% block content %}
     {{ content | safe }}
 {% endblock %}
