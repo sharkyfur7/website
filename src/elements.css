@@ -1,56 +1,69 @@
-/* THIS FILE DOES NOT WORK DIRECTLY, ONLY THE elements.css IN THE ROOT DIRECTORY OF THE NEKOWEB SITE WORKS */
-
 /* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
-.site-box {
-  text-align: center;
-  color: #b08271;
-  font-size: 12px;
 
-  background-image: none;
-  background-color: oklch(17.8% 0.042 265.755);
-  border-radius: 8px;
+.site-box {
+	text-align: center;
+
+	background-image: url(/static/assets/cookiebox.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+
+	background-repeat: no-repeat;
+	background-color: #0a0a0a;
+
+	color: #b08271;
+
+	font-size: 12px;
+	font-family: "MS PGothic";
 }
+
 .site-box > a > p {
-  color: #38bdf8;
-  font-weight: bold;
-  font-family: sans-serif;
+	color: #2563eb;
+	text-decoration: underline;
 }
 
 .site-box > a > p:hover {
-  text-decoration: underline;
+	text-decoration: none;
+}
+
+.site-box > a > div {
+	background-image: url("https://nekoweb.org/api/files/get?pathname=%2F%2Fsitebox.jpg&site=sharkyfur");
+	border: 1px solid #e5e5e5;
+}
+
+.site-box > a > div > img {
+	opacity: 0;
 }
 
 .site-box > a > span {
-  color: oklch(97% 0 0);
-  font-family: sans-serif;
-}
-
-#site-sharky.site-box .sitefeature .screenshot {
-  opacity: 0;
-}
-
-#site-sharky.site-box .sitefeature {
-  background-image: url("https://furshark.net/assets/sitebox.jpg");
-  border: 1px solid oklch(27.9% 0.041 260.031);
+	color: #e5e5e5;
+	font-weight: normal;
 }
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+
 .follow {
 }
 
 /* Style for your post box (must start with ".post-box") */
+
 .post-box {
-  background-color: #fff2cc;
-  border: 4px solid #ecbfa6;
-  padding: 15px;
-  border-radius: 5px;
-  color: #634c53;
-  font-weight: normal;
+	background-color: #fff2cc;
+
+	border: 4px solid #ecbfa6;
+
+	padding: 15px;
+
+	border-radius: 5px;
+
+	color: #634c53;
+
+	font-weight: normal;
 }
 
 .post-box .post-title {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 0px;
+	font-size: 18px;
+
+	font-weight: bold;
+
+	margin-top: 10px;
+
+	margin-bottom: 0px;
 }
