@@ -2,17 +2,18 @@ import { getCookie, setCookie } from "./module/cookie.js";
 import { getRandomInt, getRandomArbitrary } from "./module/random.js";
 
 var checkbox = document.getElementById("catsounds");
+const mute_cookie = "mute_cat_sounds";
 
 function toggleCatSounds() {
   if (checkbox.checked) {
-    setCookie("catsound", true, 10);
+    setCookie(mute_cookie, true, 10);
   } else {
-    setCookie("catsound", false, 10);
+    setCookie(mute_cookie, false, 10);
   }
 }
 
 if (checkbox) {
-  checkbox.checked = getCookie("catsound") || false;
+  checkbox.checked = getCookie(mute_cookie) || false;
   checkbox.addEventListener("change", toggleCatSounds, false);
 }
 
