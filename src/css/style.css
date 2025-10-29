@@ -5,11 +5,15 @@
   --palette-1: #2563eb;
   --palette-2: #081024;
   --palette-3: #0a0a0a;
-  --palette-4: #e5e5e5;
+  --palette-4: #a3a3a3;
+  --palette-5: #f59e0b;
+
+  --color-active: var(--palette-5);
 
   --link-color: var(--palette-1);
   --font-color: var(--palette-0);
   --font-heading-color: var(--palette-0);
+  --color-line: #262626;
 
   --theme-border: var(--palette-4);
   --theme-background: var(--palette-3);
@@ -35,6 +39,10 @@
   width: 100%;
   max-width: 800px;
 
+  border: 1px solid var(--theme-border);
+  border-radius: 4px;
+  overflow: hidden;
+
   margin: auto;
 }
 
@@ -45,7 +53,7 @@
   position: relative;
 
   padding: 0px;
-  border: 1px solid var(--theme-border);
+  /* border: 1px solid var(--theme-border); */
 
   /* margin-bottom: 10px; */
 }
@@ -343,7 +351,7 @@ input:active,
 input:focus,
 textarea:active,
 textarea:focus {
-  border-color: var(--palette-1);
+  border-color: var(--color-active);
 }
 
 button,
@@ -355,9 +363,11 @@ button,
   border: 1px solid var(--theme-border);
 }
 
-button:hover,
+button:enabled:hover,
 .button-class:hover {
   border: 1px solid var(--palette-1);
+  background-color: var(--link-color);
+  cursor: pointer;
 }
 
 button:disabled,
@@ -401,7 +411,7 @@ blockquote > p {
 
 /* Classes */
 .window {
-  border: 1px solid var(--theme-border);
+  /* border: 1px solid var(--theme-border); */
   /* border-radius: 16px; */
   background-color: var(--theme-background);
 
@@ -415,7 +425,7 @@ blockquote > p {
 .fire-text {
   text-shadow: 0px -2px 8px #f90,
     0px -5px 12px #c33;
-  color: #f90;
+  color: #f97316;
   font-weight: bold;
 }
 
@@ -429,7 +439,7 @@ blockquote > p {
 
 .vertical-hr {
   width: 1px;
-  background-color: var(--theme-border);
+  background-color: var(--color-line);
 }
 
 .minor-importance-text {
@@ -443,7 +453,7 @@ blockquote > p {
 .horizontal-hr {
   height: 1px;
   width: 100%;
-  background-color: var(--theme-border);
+  background-color: var(--color-line);
 
   margin: 14px 0;
 }

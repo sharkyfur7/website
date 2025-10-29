@@ -6,6 +6,10 @@
     min-width: 10em;
   }
 
+  #navbar a {
+    padding: 0px 4px;
+  }
+
   #navbar a::before {
     content: "> ";
   }
@@ -13,13 +17,6 @@
   #navbar a:hover {
     color: var(--font-color);
     background-color: var(--link-color);
-  }
-
-  @media only screen and (max-width: 600px) {
-    #navbar,
-    #navbar-links {
-      justify-content: center;
-    }
   }
 </style>
 
