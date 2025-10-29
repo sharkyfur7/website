@@ -2,21 +2,10 @@
   .sidebar {
     flex: 3;
     padding: 10px 16px;
-    padding-left: 0;
-
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  @media only screen and (max-width: 600px) {
-    .sidebar {
-      display: none;
-    }
   }
 </style>
 
-<aside class="sidebar">
+<aside class="sidebar lg-only">
   {% include "components/navigation.html" %} {% include
   "components/status_cafe.html" %}
 

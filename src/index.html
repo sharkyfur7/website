@@ -23,129 +23,126 @@ layout: layouts/index.njk
 </style>
 
 <!-- ABOUT + PROJECTS -->
-<section class="flex-column-sm-screen" style="display: flex; gap: var(--gap)">
-  <div style="flex: 3; display: flex; flex-direction: column; gap: var(--gap)">
-    <!-- ABOUT -->
-    <div>
-      <blockquote class="bq-info small-screen-only" style="margin-bottom: 1em">
-        <p>
-          you appear to be on a device with a small screen (less than 600px
-          wide)
-        </p>
+<section style="display: flex; flex-direction: column; gap: var(--gap)">
+  <!-- ABOUT -->
+  <div>
+    <blockquote class="bq-info sm-only" style="margin-bottom: 1em">
+      <p>
+        you appear to be on a device with a small screen (less than 600px wide)
+      </p>
 
-        <p>
-          this website was made on a 1920x1080 screen. a large (more than 800px)
-          screen is reccommended for the intended experience
-        </p>
-      </blockquote>
+      <p>
+        this website was made on a 1920x1080 screen. a large (more than 800px)
+        screen is reccommended for the intended experience
+      </p>
+    </blockquote>
 
-      <!-- ABOUT CONTENT -->
-      <section>
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          "
-        >
-          <div>
-            <h1>welcome to my site</h1>
-
-            <p>
-              proudly hosted on
-              <a href="https://nekoweb.org" target="_blank">nekoweb.org</a>!
-            </p>
-          </div>
-
-          <img
-            class="mybtn big-screen-only"
-            data-tooltip="my button!!!!"
-            width="88"
-            height="31"
-            src="/assets/sharky.gif"
-            alt="by button"
-          />
-        </div>
-
-        <div class="horizontal-hr"></div>
-
-        <p>so like the internets are cool and all but how do i make my own</p>
-
-        <p>
-          i'm Sharky, a shark on the internet<br />
-          i made this site because it's cool... and my art skills suck,
-          programming is easier for me lmao
-        </p>
-      </section>
-
-      <!-- NOTIFICATION THING -->
-      <section id="notif">
-        <noscript
-          ><span class="error"
-            >This won't work without javascript!</span
-          ></noscript
-        >
-        <div style="font-weight: bold; margin-top: 2px">
-          send me a phone notification for no reason at all:
-        </div>
+    <!-- ABOUT CONTENT -->
+    <section>
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
         <div>
-          <input
-            placeholder="blub blub blub"
-            id="notifyinput"
-            type="text"
-            style="min-width: 20em"
-          />
-          <button disabled="true" id="notifysend">send</button>
+          <h1>welcome to my site</h1>
+
+          <p>
+            proudly hosted on
+            <a href="https://nekoweb.org" target="_blank">nekoweb.org</a>!
+          </p>
         </div>
-      </section>
 
-      <section>
-        <p>some mildly interesting things</p>
+        <img
+          class="mybtn big-screen-only"
+          data-tooltip="my button!!!!"
+          width="88"
+          height="31"
+          src="/assets/sharky.gif"
+          alt="by button"
+        />
+      </div>
 
-        <ul>
-          <li>I like sharks and dragons</li>
-          <li>divorced dad rock rocks!</li>
-          <li>
-            I come from the
-            <img
-              alt="czech republic flag"
-              src="/assets/cz.png"
-              loading="lazy"
-              height="12px"
-            />
-            CZECH REPUBLIC
-            <img
-              alt="czech republic flag"
-              src="/assets/cz.png"
-              loading="lazy"
-              height="12px"
-            />
-          </li>
-          <li>I'm 18 (old) (reaching unc status)</li>
-        </ul>
+      <div class="horizontal-hr"></div>
 
-        <p>
-          If you like dragons you should check out the
-          <span class="fire-text">Wings of Fire</span>
-          book series, it's really
-          <span class="fire-text">fire</span> :3
-        </p>
+      <p>so like the internets are cool and all but how do i make my own</p>
 
-        <p>
-          cat sounds stolen from
-          <a target="_blank" href="https://maia.crimew.gay/samples/">maia</a>
-          :3<br />
-          <label>
-            <input type="checkbox" id="catsounds" />
-            <span>mute cat sounds from keyboard</span>
-          </label>
-        </p>
-      </section>
-    </div>
+      <p>
+        i'm Sharky, a shark on the internet<br />
+        i made this site because it's cool... and my art skills suck,
+        programming is easier for me lmao
+      </p>
+    </section>
+
+    <!-- NOTIFICATION THING -->
+    <section id="notif">
+      <noscript
+        ><span class="error"
+          >This won't work without javascript!</span
+        ></noscript
+      >
+      <div style="font-weight: bold; margin-top: 2px">
+        send me a phone notification for no reason at all:
+      </div>
+      <div>
+        <input
+          placeholder="blub blub blub"
+          id="notifyinput"
+          type="text"
+          style="min-width: 20em"
+        />
+        <button disabled="true" id="notifysend">send</button>
+      </div>
+    </section>
 
     <section>
-      <!-- LASTFM -->
-      {% include "components/lastfm_wide.html" %}
+      <p>some mildly interesting things</p>
+
+      <ul>
+        <li>I like sharks and dragons</li>
+        <li>divorced dad rock rocks!</li>
+        <li>
+          I come from the
+          <img
+            alt="czech republic flag"
+            src="/assets/cz.png"
+            loading="lazy"
+            height="12px"
+          />
+          CZECH REPUBLIC
+          <img
+            alt="czech republic flag"
+            src="/assets/cz.png"
+            loading="lazy"
+            height="12px"
+          />
+        </li>
+        <li>I'm 18 (old) (reaching unc status)</li>
+      </ul>
+
+      <p>
+        If you like dragons you should check out the
+        <span class="fire-text">Wings of Fire</span>
+        book series, it's really
+        <span class="fire-text">fire</span> :3
+      </p>
+
+      <p>
+        cat sounds stolen from
+        <a target="_blank" href="https://maia.crimew.gay/samples/">maia</a>
+        :3<br />
+        <label>
+          <input type="checkbox" id="catsounds" />
+          <span>mute cat sounds from keyboard</span>
+        </label>
+      </p>
     </section>
   </div>
+
+  <section>
+    <!-- LASTFM -->
+    {% include "components/lastfm_wide.html" %}
+  </section>
 </section>

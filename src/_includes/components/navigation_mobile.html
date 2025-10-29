@@ -2,13 +2,10 @@
   @import url("/css/variables.css");
 
   #navbar-mobile {
-    display: none;
+    display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 10px;
-
-    width: 100%;
-    min-width: 10em;
+    gap: var(--gap);
   }
 
   #navbar-mobile a {
@@ -21,15 +18,9 @@
     color: var(--color-font);
     background-color: var(--color-link);
   }
-
-  @media only screen and (max-width: 600px) {
-    #navbar-mobile {
-      display: flex;
-    }
-  }
 </style>
 
-<nav id="navbar-mobile">
+<nav id="navbar-mobile" class="sm-only-flex">
   <a href="/">index</a>
   <a href="/shark/">sharks</a>
   <a href="/links/">links and stuff</a>
