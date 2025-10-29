@@ -65,16 +65,19 @@ data.follow = getCookie("nw-follow");
 data.update = getCookie("nw-update");
 
 let views = document.getElementById("nw-view");
+views.innerText = "";
 createCounter(data.view).forEach((digit) => {
   views.appendChild(digit);
 });
 
 let follows = document.getElementById("nw-follow");
+follows.innerText = "";
 createCounter(data.follow).forEach((digit) => {
   follows.appendChild(digit);
 });
 
 let updates = document.getElementById("nw-update");
+updates.innerText = "";
 createCounter(data.update).forEach((digit) => {
   updates.appendChild(digit);
 });
