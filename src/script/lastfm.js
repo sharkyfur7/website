@@ -1,3 +1,5 @@
+import { getCookie, setCookieMinutes } from "./module/cookie.js";
+
 const recent_tracks_api_url =
   "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" +
   "sharkyblacktip" +
@@ -12,6 +14,8 @@ const info_api_url =
   "8093eae1b06820d1d900400320d5f8f9" +
   "&format=json";
 
+const cookie_name = "lastfm";
+
 function formatAgo(seconds) {
   if (seconds < 60) {
     return seconds + " seconds ago";
@@ -24,7 +28,16 @@ function formatAgo(seconds) {
   }
 }
 
+function getDataCookie() {
+  return getCookie(cookie_name);
+}
+
 async function getData() {
+  let fmcookie = getDataCookie();
+  if (fmcookie) {
+    return JSON.parse(fmcookie);
+  }
+
   const tracks = await (await fetch(recent_tracks_api_url)).json();
   const info = await (await fetch(info_api_url)).json();
 
@@ -46,6 +59,8 @@ async function getData() {
   } else {
     data.date = formatAgo(Date.now() / 1000 - data.date);
   }
+
+  setCookieMinutes(cookie_name, JSON.stringify(data), 1);
 
   return data;
 }
