@@ -1,34 +1,11 @@
 /* Actually goated list of colors :3 https://tailwindcss.com/docs/colors */
 
+@import url("/css/variables.css");
+
 :root {
-  --palette-0: #e5e5e5;
-  --palette-1: #2563eb;
-  --palette-2: #081024;
-  --palette-3: #0a0a0a;
-  --palette-4: #a3a3a3;
-  --palette-5: #f59e0b;
-
-  --color-active: var(--palette-5);
-
-  --link-color: var(--palette-1);
-  --font-color: var(--palette-0);
-  --font-heading-color: var(--palette-0);
-  --color-line: #262626;
-
-  --theme-border: var(--palette-4);
-  --theme-background: var(--palette-3);
-  --theme-background-darker: oklch(17.8% 0.042 265.755);
-
-  --font: "MS PGothic", sans-serif;
-  --font-heading: "MS PGothic", sans-serif;
-
-  --gap: 11px;
-
-  --font-size: 11pt;
-
   font-family: var(--font);
   font-size: var(--font-size);
-  color: var(--font-color);
+  color: var(--color-font);
 
   background-color: #000000;
 }
@@ -39,7 +16,7 @@
   width: 100%;
   max-width: 800px;
 
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   border-radius: 4px;
   overflow: hidden;
 
@@ -53,7 +30,7 @@
   position: relative;
 
   padding: 0px;
-  /* border: 1px solid var(--theme-border); */
+  /* border: 1px solid var(--color-border); */
 
   /* margin-bottom: 10px; */
 }
@@ -95,7 +72,7 @@
 }
 
 #widgets div {
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   height: fit-content;
 }
 
@@ -137,7 +114,7 @@
 
   padding: 4px 8px;
   background-color: #0a0a0a;
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   transition: 50ms;
 }
 
@@ -189,7 +166,7 @@
 }
 
 #thingy-right {
-  border-left: 1px solid var(--theme-border);
+  border-left: 1px solid var(--color-border);
   padding-left: var(--gap);
   flex: 0;
 
@@ -205,10 +182,10 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 16px;
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   width: fit-content;
   transition: 200ms;
-  box-shadow: 0px 0px 8px var(--theme-background-darker);
+  box-shadow: 0px 0px 8px var(--bg-darker);
 
   border-radius: 100%;
   overflow: hidden;
@@ -260,7 +237,7 @@
 /* Elements */
 
 fieldset {
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
 }
 
 fieldset > legend {
@@ -286,7 +263,7 @@ h4 {
 
 h1,
 h2 {
-  color: var(--font-heading-color);
+  color: var(--color-heading);
 }
 
 h4 {
@@ -317,7 +294,7 @@ h2 {
 
 a,
 a:visited {
-  color: var(--link-color);
+  color: var(--color-link);
   text-underline-offset: 2px;
 }
 
@@ -340,11 +317,11 @@ input,
 textarea,
 select {
   outline: none;
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   font-family: var(--font);
 
-  color: var(--font-color);
-  background-color: var(--theme-background);
+  color: var(--color-font);
+  background-color: var(--bg);
 }
 
 input:active,
@@ -358,15 +335,15 @@ button,
 .button-class {
   overflow: hidden;
 
-  background-color: var(--theme-background);
-  color: var(--font-color);
-  border: 1px solid var(--theme-border);
+  background-color: var(--bg);
+  color: var(--color-font);
+  border: 1px solid var(--color-border);
 }
 
 button:enabled:hover,
 .button-class:hover {
   border: 1px solid var(--palette-1);
-  background-color: var(--link-color);
+  background-color: var(--color-link);
   cursor: pointer;
 }
 
@@ -377,7 +354,7 @@ button:disabled,
 }
 
 code {
-  border: 1px solid var(--theme-border);
+  border: 1px solid var(--color-border);
   background-color: oklch(37.1% 0 0);
   color: oklch(87% 0 0);
   border-radius: 4px;
@@ -395,7 +372,7 @@ li + p {
 }
 
 blockquote {
-  border-left: 3px solid var(--font-color);
+  border-left: 3px solid var(--color-font);
   margin: 0;
 
   padding: 1em 1.5em;
@@ -411,13 +388,11 @@ blockquote > p {
 
 /* Classes */
 .window {
-  /* border: 1px solid var(--theme-border); */
-  /* border-radius: 16px; */
-  background-color: var(--theme-background);
+  background-color: var(--bg);
 
   padding: 16px;
 
-  box-shadow: 0px 0px 8px var(--theme-background);
+  box-shadow: 0px 0px 8px var(--bg);
 
   display: flex;
 }
@@ -427,10 +402,6 @@ blockquote > p {
     0px -5px 12px #c33;
   color: #f97316;
   font-weight: bold;
-}
-
-.italic {
-  font-style: italic;
 }
 
 .more-letter-spacing {
@@ -459,19 +430,15 @@ blockquote > p {
 }
 
 .stuff-bg {
-  outline: 1px var(--theme-border) solid;
+  outline: 1px var(--color-border) solid;
   border-radius: 1px;
 
-  background-color: var(--theme-background);
+  background-color: var(--bg);
   padding: var(--gap);
 }
 
 .show-tooltip:hover #tooltip {
   opacity: 1;
-}
-
-.spacer {
-  height: var(--gap);
 }
 
 .buttons {
@@ -495,7 +462,7 @@ blockquote > p {
 
 .buttons a:hover {
   scale: 110%;
-  box-shadow: 0px 0px 16px var(--theme-background);
+  box-shadow: 0px 0px 16px var(--bg);
   rotate: 5deg;
 }
 

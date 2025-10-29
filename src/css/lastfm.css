@@ -1,3 +1,5 @@
+@import url("/css/variables.css");
+
 #lastfm {
   display: flex;
   flex-direction: column;
@@ -12,7 +14,7 @@
   width: max-content;
 
   position: relative;
-  background-color: var(--theme-background);
+  background-color: var(--bg);
 }
 
 #lastfm header {
@@ -31,14 +33,14 @@
 
 #lastfm a,
 #lastfm a:visited {
-  color: var(--font-color);
+  color: var(--color-font);
 }
 
 #cover {
   width: 160px;
   height: 160px;
-  background-color: var(--theme-background-darker);
-  border-bottom: 1px solid var(--theme-border);
+  background-color: var(--bg-darker);
+  border-bottom: 1px solid var(--color-border);
 }
 
 #artist,
