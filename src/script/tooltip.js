@@ -9,8 +9,8 @@ const offset_px = 12;
 
 function update(event) {
   // Always update position
-  tooltip.style.top = `${event.clientY + window.scrollY + offset_px}px`;
-  tooltip.style.left = `${event.clientX + offset_px}px`;
+  tooltip.style.setProperty("--tx", `${event.clientX + offset_px}px`);
+  tooltip.style.setProperty("--ty", `${event.clientY + offset_px}px`);
 
   const target = document.elementFromPoint(event.clientX, event.clientY);
   let show_tooltip = false;
@@ -36,11 +36,17 @@ function update(event) {
 document.body.appendChild(tooltip);
 
 // Listen to mouse move events
-document.addEventListener("mousemove", update, { passive: true });
-document.addEventListener(
-  "scroll",
-  () => {
-    tooltip.style.opacity = 0;
-  },
-  { passive: true }
-);
+document.addEventListener("scroll", () => {
+  tooltip.style.opacity = 0;
+});
+
+let ticking = false;
+document.addEventListener("mousemove", (e) => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      update(e);
+      ticking = false;
+    });
+    ticking = true;
+  }
+});
