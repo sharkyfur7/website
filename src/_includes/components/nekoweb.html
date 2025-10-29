@@ -1,6 +1,28 @@
 <script type="module" src="/script/nekoweb.js" defer></script>
+<style>
+  .nw-counter {
+    display: inline;
+  }
+
+  .nw-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #nw-view,
+  #nw-follow,
+  #nw-update {
+    display: flex;
+    align-items: center;
+  }
+</style>
+
 <div>
-  views: <span id="nw-view">----</span><br />
-  followers: <span id="nw-follow">----</span><br />
-  updates: <span id="nw-update">----</span>
+  <div class="nw-line">
+    views:
+    <div id="nw-view"></div>
+  </div>
+  <div class="nw-line">followers: <span id="nw-follow"></span></div>
+  <div class="nw-line">updates: <span id="nw-update"></span></div>
 </div>
