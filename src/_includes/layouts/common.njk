@@ -7,12 +7,12 @@
         {% include "components/header.html" %}
         <div
             class="window" style="padding: 0;">
+            {% include "components/sidebar.html" %}
             <!-- CONTENT -->
             <main id="content">
                 {% include "components/navigation_mobile.html" %}
                 {% block content %}{% endblock %}
             </main>
-            {% include "components/sidebar.html" %}
         </div>
         {# {% include "components/header.html" %} #}
         <div id="background-thingy"></div>

@@ -23,22 +23,6 @@
   margin: auto;
 }
 
-#header {
-  display: block;
-  overflow: hidden;
-  /* border-radius: 16px; */
-  position: relative;
-
-  padding: 0px;
-  /* border: 1px solid var(--color-border); */
-
-  /* margin-bottom: 10px; */
-}
-
-#header > img {
-  display: block;
-}
-
 #content {
   flex: 10;
   position: relative;
@@ -265,11 +249,12 @@ h2 {
 a,
 a:visited {
   color: var(--color-link);
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
+  color: var(--color-active);
 }
 
 input,
