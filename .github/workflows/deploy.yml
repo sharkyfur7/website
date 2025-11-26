@@ -29,7 +29,7 @@ jobs:
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with:
-          nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
+          nekoweb-api-key: ${{ secrets.API_KEY }}
           nekoweb-domain: "furshark.net"
           nekoweb-username: "sharkyfur"
           directory: "site"
