@@ -48,6 +48,13 @@
   color: white;
 }
 
+#heading a:hover {
+  background: radial-gradient(var(--color-font) 30%, transparent 70%);
+  text-shadow: 1px 0px var(--color-font), -1px 0px var(--color-font),
+    0px 1px var(--color-font), 0px -1px var(--color-font);
+  color: #d51007;
+}
+
 #musicshelf-container {
   max-width: 900px;
   margin: 0 auto;

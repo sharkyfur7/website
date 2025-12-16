@@ -26,17 +26,20 @@
   justify-content: center;
   align-items: center;
   color: var(--color-font);
+  border-radius: 8px;
 
   text-decoration: none;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 
   border: 2px solid oklch(28.2% 0.091 267.935);
   background-color: oklch(28.337% 0.09104 267.481 / 0.33);
 }
 
 #shark_container a:hover {
+  background: none;
   background-color: oklch(32% 0.091 267.935);
   box-shadow: 0px 0px 8px var(--bg);
+  color: var(--palette-3);
 }
 
 /* Classes */

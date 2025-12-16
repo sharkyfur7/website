@@ -52,6 +52,13 @@
     font-weight: bold;
   }
 
+  #lastfm-wide header a:hover {
+    background: radial-gradient(var(--color-font) 30%, transparent 70%);
+    text-shadow: 1px 0px var(--color-font), -1px 0px var(--color-font),
+      0px 1px var(--color-font), 0px -1px var(--color-font);
+    color: #d51007;
+  }
+
   #lastfm-wide a,
   #lastfm-wide a:visited {
     color: var(--color-font);
@@ -60,16 +67,14 @@
   #cover {
     width: 100%;
     height: 100%;
-    height: 90px;
-    width: 90px;
     background-color: var(--bg-darker);
     z-index: 1;
     position: relative;
   }
 
   #cover-link {
-    height: 90px;
-    width: 90px;
+    height: 111px;
+    width: 111px;
   }
 
   #trackname {
@@ -78,6 +83,7 @@
 
   #trackname:hover {
     text-decoration: none;
+    background: radial-gradient(#0000004b 30%, transparent 70%);
   }
 
   #artist,
