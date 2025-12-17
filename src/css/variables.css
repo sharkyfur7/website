@@ -1,25 +1,25 @@
 :root {
-    --palette-0: #e5e5e5;
-    --palette-1: #2563eb;
-    --palette-2: #081024;
-    --palette-3: #0a0a0a;
-    --palette-4: #a3a3a3;
-    --palette-5: #f59e0b;
+  --palette-0: #e5e5e5;
+  --palette-1: #2563eb;
+  --palette-2: #081024;
+  --palette-3: #0a0a0a;
+  --palette-4: #a3a3a3;
+  --palette-5: #f59e0b;
 
-    --color-active: var(--palette-5);
-    --color-link: var(--palette-1);
-    --color-font: var(--palette-0);
-    --color-heading: var(--palette-0);
-    --color-line: #262626;
+  --color-active: var(--palette-5);
+  --color-link: var(--palette-1);
+  --color-font: var(--palette-0);
+  --color-heading: var(--palette-0);
+  --color-line: #262626;
 
-    --color-border: var(--palette-4);
-    --bg: var(--palette-3);
-    --bg-darker: oklch(17.8% 0.042 265.755);
+  --color-border: var(--palette-4);
+  --bg: var(--palette-3);
+  --bg-darker: oklch(17.8% 0.042 265.755);
 
-    --font: "MS PGothic", sans-serif;
-    --font-heading: "MS PGothic", sans-serif;
-    --font-size: 11pt;
+  --font: "Work Sans", sans-serif;
+  --font-heading: "Work Sans", sans-serif;
+  --font-size: 11pt;
 
-    /* idk what this is exactly used for just dont touch it */
-    --gap: 11px;
+  /* idk what this is exactly used for just dont touch it */
+  --gap: 11px;
 }

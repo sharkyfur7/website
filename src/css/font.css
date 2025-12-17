@@ -5,3 +5,16 @@
     url("/fonts/DepartureMono/DepartureMono-Regular.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"), url("/fonts/WorkSans/WorkSans-Regular.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"), url("/fonts/WorkSans/WorkSans-Bold.ttf");
+  font-display: swap;
+  font-weight: bold;
+}
