@@ -465,6 +465,14 @@ blockquote > p {
   color: oklch(81% 0.117 11.638);
 }
 
+.warning-bq a:hover {
+  --clr: oklch(81% 0.117 11.638);
+  text-shadow: 1px 0px var(--clr), -1px 0px var(--clr), 0px 1px var(--clr),
+    0px -1px var(--clr);
+  color: var(--palette-3);
+  background: radial-gradient(oklch(81% 0.117 11.638) 30%, transparent 70%);
+}
+
 .bq-info {
   padding: 0.5em 1.5em;
 }
