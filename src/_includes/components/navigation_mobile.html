@@ -3,28 +3,31 @@
 
   #navbar-mobile {
     display: flex;
-    justify-content: space-around;
     flex-wrap: wrap;
     gap: var(--gap);
-  }
 
-  #navbar-mobile a {
-    padding: 8px 14px;
-    border: 1px solid var(--color-link);
-    border-radius: 16px;
-    text-decoration: none;
-  }
+    a {
+      padding: 8px 14px;
+      border: 1px solid var(--color-link);
+      text-decoration: none;
+      background: linear-gradient(var(--color-link) 10%, #1e3a8a 90%);
+      color: var(--color-font);
+      text-shadow: none;
+      text-wrap: nowrap;
+      text-align: center;
+      flex: 1;
+    }
 
-  #navbar-mobile a:hover {
-    color: var(--color-font);
-    background-color: var(--color-link);
+    a:hover {
+      background: #1e3a8a;
+    }
   }
 </style>
 
 <nav id="navbar-mobile" class="sm-only-flex">
-  <a href="/">index</a>
-  <a href="/shark/">sharks</a>
-  <a href="/links/">links and stuff</a>
-  <a href="/guestbook/">guestbook</a>
-  <a href="/musicshelf/">music shelf</a>
+  <a href="/">Index</a>
+  <a href="/shark/">Sharks</a>
+  <a href="/links/">Links and stuff</a>
+  <a href="/guestbook/">Guestbook</a>
+  <a href="/musicshelf/">Music shelf</a>
 </nav>

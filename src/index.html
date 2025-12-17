@@ -47,11 +47,12 @@ layout: layouts/index.njk
         "
       >
         <div>
-          <h1 id="main-title">Welcome to my site</h1>
+          <h1 id="main-title">[[[ Welcome to my site ]]]</h1>
 
           <p>
-            proudly hosted on
-            <a href="https://nekoweb.org" target="_blank">nekoweb.org</a>!
+            Proudly hosted on
+            <a href="https://nekoweb.org" target="_blank">nekoweb.org</a>!<br />
+            Also like... merry christmas... or something
           </p>
         </div>
 
@@ -67,14 +68,18 @@ layout: layouts/index.njk
 
       <div class="horizontal-hr"></div>
 
-      <p>so like the internets are cool and all but how do i make my own</p>
+      <p>So like the internets are cool and all but how do i make my own</p>
 
       <p>
-        i'm Sharky, a shark on the internet<br />
-        i made this site because it's cool... and my art skills suck,
+        I'm Sharky, a shark on the internet<br />
+        I made this site because it's cool... and my art skills suck,
         programming is easier for me lmao
       </p>
     </section>
+
+    <div style="width: 100%; display: flex; justify-content: center">
+      <img src="/assets/shark/thresher/thresher_long.png" height="128px" />
+    </div>
 
     <!-- NOTIFICATION THING -->
     <section id="notif">
@@ -84,7 +89,7 @@ layout: layouts/index.njk
         ></noscript
       >
       <div style="font-weight: bold; margin-top: 2px">
-        send me a phone notification for no reason at all:
+        Send me a phone notification for no reason at all:
       </div>
       <div>
         <input
@@ -93,16 +98,16 @@ layout: layouts/index.njk
           type="text"
           style="min-width: 20em"
         />
-        <button disabled="true" id="notifysend">send</button>
+        <button disabled="true" id="notifysend">Send</button>
       </div>
     </section>
 
     <section>
-      <p>some mildly interesting things</p>
+      <p>Some mildly interesting things</p>
 
       <ul>
         <li>I like sharks and dragons</li>
-        <li>divorced dad rock rocks!</li>
+        <li>Divorced dad rock rocks!</li>
         <li>
           I come from the
           <img
@@ -135,7 +140,7 @@ layout: layouts/index.njk
         :3<br />
         <label>
           <input type="checkbox" id="catsounds" />
-          <span>mute cat sounds from keyboard</span>
+          <span><--- mute cat sounds from keyboard</span>
         </label>
       </p>
     </section>

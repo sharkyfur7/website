@@ -6,7 +6,7 @@
   }
 
   .sidebar > section {
-    padding: 0px 16px;
+    padding: 4px 16px;
   }
 
   .sidebar > section + section {
@@ -15,10 +15,10 @@
 
   .stitle {
     padding: 2px 16px;
-    margin-bottom: 4px;
     background: linear-gradient(90deg, var(--color-link), transparent);
     font-weight: bold;
     font-family: "Departure Mono";
+    letter-spacing: 2px;
   }
 
   section + .stitle {
@@ -28,7 +28,7 @@
 
 <aside class="sidebar lg-only">
   <div class="stitle">Navigation</div>
-  <section>{% include "components/navigation.html" %}</section>
+  {% include "components/navigation.html" %}
 
   <div class="stitle">Status</div>
   <section>{% include "components/status_cafe.html" %}</section>
