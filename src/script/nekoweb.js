@@ -64,20 +64,48 @@ data.view = getCookie("nw-view");
 data.follow = getCookie("nw-follow");
 data.update = getCookie("nw-update");
 
-let views = document.getElementById("nw-view");
-views.innerText = "";
-createCounter(data.view).forEach((digit) => {
-  views.appendChild(digit);
-});
+let views = document.getElementsByClassName("nw-view");
+for (let i = 0; i < views.length; i++) {
+  views[i].innerText = "";
 
-let follows = document.getElementById("nw-follow");
-follows.innerText = "";
-createCounter(data.follow).forEach((digit) => {
-  follows.appendChild(digit);
-});
+  createCounter(data.view).forEach((digit) => {
+    views[i].appendChild(digit);
+  });
+}
 
-let updates = document.getElementById("nw-update");
-updates.innerText = "";
-createCounter(data.update).forEach((digit) => {
-  updates.appendChild(digit);
-});
+let follows = document.getElementsByClassName("nw-follow");
+
+for (let i = 0; i < follows.length; i++) {
+  follows[i].innerText = "";
+
+  createCounter(data.follow).forEach((digit) => {
+    follows[i].appendChild(digit);
+  });
+}
+
+let updates = document.getElementsByClassName("nw-update");
+
+for (let i = 0; i < updates.length; i++) {
+  updates[i].innerText = "";
+
+  createCounter(data.update).forEach((digit) => {
+    updates[i].appendChild(digit);
+  });
+}
+
+let views_text = document.getElementsByClassName("nw-view-text");
+for (let i = 0; i < views_text.length; i++) {
+  views_text[i].innerText = data.view;
+}
+
+let follows_text = document.getElementsByClassName("nw-follow-text");
+
+for (let i = 0; i < follows_text.length; i++) {
+  follows_text[i].innerText = data.follow;
+}
+
+let updates_text = document.getElementsByClassName("nw-update-text");
+
+for (let i = 0; i < updates_text.length; i++) {
+  updates_text[i].innerText = data.update;
+}
