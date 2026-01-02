@@ -2,4 +2,29 @@
 layout: layouts/guestbook.njk
 ---
 
-<div id="c_widget"></div>
+<!-- <div id="c_widget"></div> -->
+
+<div>
+  <h1>Guestbook</h1>
+  <p>Leave a comment!</p>
+  <noscript>This won't work without javascript enabled, sorry...</noscript>
+  <div class="horizontal-hr"></div>
+
+  <form id="guestbook-form">
+    <label for="gb-nickname">Nickname</label><br />
+    <input placeholder="Anonymous" id="gb-nickname" required type="text" /><br />
+
+    <label for="gb-site">Your site url</label><br />
+    <input placeholder="https://...." id="gb-site" type="text" /><br />
+
+    <label for="gb-content">Comment</label><br />
+    <textarea required placeholder="wawa" id="gb-content"></textarea><br />
+
+    <input type="submit" /> <label id="reply-text"></label>
+  </form>
+
+  <div id="form-status" class="status-normal">Sending</div>
+</div>
+
+<h1>Comments</h1>
+<div id="comments">Loading comments...</div>

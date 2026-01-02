@@ -7,11 +7,9 @@
     "clean": "run-script-os",
     "clean:linux": "rm -rf site/*",
     "clean:win32": "rd /s /q site",
-
     "build": "run-script-os",
     "build:linux": "npm run clean; npx @11ty/eleventy",
     "build:win32": "npm run clean & npx @11ty/eleventy",
-
     "dev": "run-script-os",
     "dev:linux": "npm run clean; npx @11ty/eleventy --serve",
     "dev:win32": "npm run clean & npx @11ty/eleventy --serve"
@@ -31,5 +29,10 @@
   "dependencies": {
     "@11ty/eleventy": "^3.1.1",
     "run-script-os": "^1.1.6"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "eslint": "^9.39.2",
+    "globals": "^17.0.0"
   }
 }

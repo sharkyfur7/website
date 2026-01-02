@@ -169,8 +169,8 @@
 #main-title {
   letter-spacing: 4px;
   color: var(--palette-2);
-  text-shadow: 1px 0px var(--color-link), -1px 0px var(--color-link),
-    0px 1px var(--color-link), 0px -1px var(--color-link);
+  text-shadow: 1px 0px var(--color-link), -1px 0px var(--color-link), 0px 1px var(--color-link),
+    0px -1px var(--color-link);
 }
 
 @keyframes background-scroll {
@@ -261,8 +261,8 @@ a:visited {
 }
 
 a:hover {
-  text-shadow: 1px 0px var(--color-link), -1px 0px var(--color-link),
-    0px 1px var(--color-link), 0px -1px var(--color-link);
+  text-shadow: 1px 0px var(--color-link), -1px 0px var(--color-link), 0px 1px var(--color-link),
+    0px -1px var(--color-link);
   color: var(--palette-3);
   background: radial-gradient(var(--color-link) 30%, transparent 70%);
 }
@@ -311,6 +311,8 @@ button,
 }
 
 button:enabled:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover,
 .button-class:hover {
   border: 1px solid var(--palette-1);
   background-color: var(--color-link);
@@ -467,8 +469,7 @@ blockquote > p {
 
 .warning-bq a:hover {
   --clr: oklch(81% 0.117 11.638);
-  text-shadow: 1px 0px var(--clr), -1px 0px var(--clr), 0px 1px var(--clr),
-    0px -1px var(--clr);
+  text-shadow: 1px 0px var(--clr), -1px 0px var(--clr), 0px 1px var(--clr), 0px -1px var(--clr);
   color: var(--palette-3);
   background: radial-gradient(oklch(81% 0.117 11.638) 30%, transparent 70%);
 }
