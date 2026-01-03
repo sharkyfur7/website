@@ -19,10 +19,37 @@
       content: "> ";
     }
   }
+
+  .nav-musicshelf {
+    color: oklch(57.7% 0.245 27.325) !important;
+  }
+
+  .nav-musicshelf:hover {
+    background: linear-gradient(oklch(57.7% 0.245 27.325) 10%, oklch(33.849% 0.13802 27.146) 90%) !important;
+    color: var(--color-font) !important;
+  }
+
+  .nav-musicshelf:hover::before {
+    content: "♫ " !important;
+  }
+
+  .nav-pawjobnation {
+    color: hotpink !important;
+  }
+
+  .nav-pawjobnation:hover {
+    background: linear-gradient(hotpink 10%, rgb(129, 53, 91) 90%) !important;
+    color: var(--color-font) !important;
+  }
+
+  .nav-pawjobnation:hover::before {
+    content: "🐾 " !important;
+  }
 </style>
 
 <nav id="navbar">
   <a href="/">Index</a><a href="/shark/">Sharks</a> <a href="/links/">Links and contact</a
   ><a href="/guestbook/">Guestbook</a>
-  <a href="/musicshelf/">Music shelf</a>
+  <a class="nav-musicshelf" href="/musicshelf/">Music shelf</a>
+  <a class="nav-pawjobnation" href="/pawjobnation/">Pawjob nation</a>
 </nav>

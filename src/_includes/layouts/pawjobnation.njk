@@ -1,0 +1,14 @@
+---
+title: Pawjob nation
+description: The one and only.
+---
+
+{% extends "layouts/common.njk" %}
+{% block head %}
+    <link rel="canonical" href="https://furshark.net/pawjobnation"/>
+    <link rel="stylesheet" href="/css/pawjobnation.css"/>
+    <script type="module" src="/script/meow.js" defer async></script>
+{% endblock %}
+{% block content %}
+    {{ content | safe }}
+{% endblock %}

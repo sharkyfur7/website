@@ -1,0 +1,18 @@
+---
+layout: layouts/pawjobnation.njk
+---
+
+<h1>✨ Honorary pawjob nation member list ✨</h1>
+<p>A group that loves paws. That's about it.</p>
+
+<div id="pn-members">
+  {% for member in pawjobnation_members %}
+  <div class="pn-member">
+    <img src="{{member.icon}}" />
+    <div class="pn-text">
+      <span class="pn-name">{{member.name}}</span>
+      <span class="pn-desc">{{member.desc}}</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
