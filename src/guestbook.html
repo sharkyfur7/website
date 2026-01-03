@@ -2,33 +2,40 @@
 layout: layouts/guestbook.njk
 ---
 
-<!-- <div id="c_widget"></div> -->
+<h1>Guestbook</h1>
+<p>Leave a comment! I try to respond to all of them.</p>
+<p
+  style="
+    text-align: center;
+    margin-bottom: 12px;
+    background-color: #ff440062;
+    padding: 8px;
+    width: fit-content;
+    border-radius: 8px;
+    border: 1px solid orangered;
+    margin: 0 auto;
+  "
+>
+  ⚠️⚠️⚠️ This is of my own making very much experimental ⚠️⚠️⚠️<br />⚠️⚠️⚠️ Please report any errors to me!
+  (sharky@furshark.net) ⚠️⚠️⚠️
+</p>
+<noscript>This won't work without javascript enabled, sorry...</noscript>
 
-<div>
-  <h1>Guestbook</h1>
-  <p>Leave a comment!</p>
-  <p>
-    ⚠️⚠️⚠️ This is very much experimental ⚠️⚠️⚠️<br />⚠️⚠️⚠️ Please report any errors to me! (sharky@furshark.net)
-    ⚠️⚠️⚠️
-  </p>
-  <noscript>This won't work without javascript enabled, sorry...</noscript>
-  <div class="horizontal-hr"></div>
+<form id="guestbook-form">
+  <h1>Sign here!</h1>
+  <label for="gb-nickname">Nickname</label>
+  <input placeholder="Anonymous" id="gb-nickname" required type="text" />
 
-  <form id="guestbook-form">
-    <label for="gb-nickname">Nickname</label><br />
-    <input placeholder="Anonymous" id="gb-nickname" required type="text" /><br />
+  <label for="gb-site">Your site url (optional)</label>
+  <input placeholder="https://...." id="gb-site" type="url" />
 
-    <label for="gb-site">Your site url (optional)</label><br />
-    <input placeholder="https://...." id="gb-site" type="text" /><br />
+  <label for="gb-content">Comment</label>
+  <textarea required placeholder="Lorem ipsum..." id="gb-content"></textarea>
 
-    <label for="gb-content">Comment</label><br />
-    <textarea required placeholder="wawa" id="gb-content"></textarea><br />
+  <label id="reply-text"></label>
+  <button type="submit" id="guestbook-form-submit">Submit</button>
+  <label id="form-status"></label>
+</form>
 
-    <input type="submit" /> <label id="reply-text"></label>
-  </form>
-
-  <div id="form-status" class="status-normal">Sending</div>
-</div>
-
-<h1>Comments</h1>
+<h1 style="">Comments</h1>
 <div id="comments">Loading comments...</div>

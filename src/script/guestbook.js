@@ -214,15 +214,17 @@ async function main() {
 }
 
 async function sendComment() {
-  let name = document.querySelector("#gb-nickname").value;
-  let site_url = document.querySelector("#gb-site").value;
-  let content = document.querySelector("#gb-content").value;
+  let name = document.querySelector("#gb-nickname");
+  let site_url = document.querySelector("#gb-site");
+  let content = document.querySelector("#gb-content");
   let status = document.querySelector("#form-status");
+  let submit_btn = document.querySelector("#guestbook-form-submit");
+
   status.innerText = "Sending...";
   status.classList = ["status-normal"];
   status.style.display = "block";
 
-  if (!name) {
+  if (!name.value) {
     status.innerText = "Error: Nickname is missing!";
     status.classList = ["status-error"];
     status.style.display = "block";
@@ -240,7 +242,7 @@ async function sendComment() {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name: name, content: content, site: site_url, reply_to: reply_to_id }),
+    body: JSON.stringify({ name: name.value, content: content.value, site: site_url.value, reply_to: reply_to_id }),
   });
 
   if (!response.ok) {
@@ -261,6 +263,12 @@ async function sendComment() {
     reply_to_id = null;
     document.querySelector("#reply-text").innerText = ``;
   }
+
+  submit_btn.disabled = true;
+  setTimeout(() => {
+    status.style.display = "none";
+    submit_btn.disabled = false;
+  }, 3000);
 }
 
 const form = document.querySelector("#guestbook-form");

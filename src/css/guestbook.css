@@ -1,10 +1,23 @@
 /* inputs */
 #guestbook-form {
-  width: 100%;
+  background: transparent;
+  backdrop-filter: brightness(250%);
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #262626;
 
   textarea {
     resize: vertical;
   }
+}
+
+#guestbook-form-submit {
+  width: 100%;
+}
+
+#form-status {
+  width: 100%;
+  text-align: center;
 }
 
 .status-normal {
@@ -36,7 +49,8 @@
 #gb-nickname,
 #gb-site,
 #gb-content {
-  width: 97%; /* don't look here! */
+  width: 100%; /* don't look here! */
+  box-sizing: border-box;
 }
 
 /* comments */

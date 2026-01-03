@@ -6,27 +6,44 @@ function sleep(ms) {
 }
 
 async function sendNotification() {
+  const beforetext = button.innerHTML;
   if (input.value == "") {
     return;
   }
 
-  fetch("https://ntfy.sh/sharky-notif", {
-    method: "POST",
-    body: input.value,
-  });
-
-  input.value = "";
-
-  const beforetext = button.innerHTML;
-  button.innerHTML = "sent! :)";
+  button.innerHTML = "Sending...";
   button.disabled = true;
 
-  await sleep(3000);
+  let resp = await fetch("https://api.furshark.net/ntfy", {
+    method: "POST",
+    body: JSON.stringify({ text: input.value, agent: navigator.userAgent }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  input.value = "";
 
-  button.innerHTML = beforetext;
-  button.disabled = false;
+  if (!resp.ok) {
+    button.innerHTML = "Failed... server error :(";
+    button.disabled = true;
 
-  onNotifyInput();
+    await sleep(3000);
+
+    button.innerHTML = beforetext;
+    button.disabled = false;
+
+    onNotifyInput();
+  } else {
+    button.innerHTML = "Sent! :)";
+    button.disabled = true;
+
+    await sleep(3000);
+
+    button.innerHTML = beforetext;
+    button.disabled = false;
+
+    onNotifyInput();
+  }
 }
 
 function onNotifyInput() {
