@@ -42,7 +42,7 @@
 /* comments */
 .comment {
   background-color: transparent;
-  backdrop-filter: brightness(200%);
+  backdrop-filter: brightness(250%);
   border-radius: 4px;
   overflow: hidden;
 
@@ -120,4 +120,6 @@
 .reply-site:hover {
   color: var(--palette-5);
   text-decoration: underline;
+  background: none;
+  text-shadow: none;
 }

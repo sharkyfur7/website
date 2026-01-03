@@ -1,4 +1,5 @@
 let reply_to_id = null;
+let loading = false;
 
 function createReply(data) {
   let { name, created, content } = data;
@@ -12,9 +13,22 @@ function createReply(data) {
   reply.appendChild(reply_top);
 
   // comment-top children
+  let name_site_container = document.createElement("div");
+  reply_top.appendChild(name_site_container);
+
+  // -- name
   let name_span = document.createElement("span");
-  name_span.classList.add("reply-name");
-  reply_top.appendChild(name_span);
+  name_span.classList.add("comment-name");
+  name_span.textContent = name;
+  name_site_container.appendChild(name_span);
+
+  if (data.site) {
+    // -- site url
+    let site_link = document.createElement("span");
+    // this is OK because the api won't accept anything other than valid URLs as comment.site
+    site_link.innerHTML = ` (<a class="comment-site" href="${data.site}">Site</a>)`;
+    name_site_container.appendChild(site_link);
+  }
 
   let date_span = document.createElement("span");
   date_span.classList.add("reply-date");
@@ -44,17 +58,35 @@ function createComment(data) {
   comment.appendChild(comment_top);
 
   // comment-top children
+  let name_site_container = document.createElement("div");
+  comment_top.appendChild(name_site_container);
+
+  // -- name
   let name_span = document.createElement("span");
   name_span.classList.add("comment-name");
-  comment_top.appendChild(name_span);
+  name_span.textContent = name;
+  name_site_container.appendChild(name_span);
 
+  if (data.site) {
+    // -- site url
+    let site_link = document.createElement("span");
+    // this is OK because the api won't accept anything other than valid URLs as comment.site
+    site_link.innerHTML = ` (<a class="comment-site" href="${data.site}">Site</a>)`;
+    name_site_container.appendChild(site_link);
+  }
+
+  // -- comment date
   let date_span = document.createElement("span");
   date_span.classList.add("comment-date");
+  date_span.textContent = new Date(created).toLocaleString();
   comment_top.appendChild(date_span);
+
   // end comment-top children
 
+  // -- comment content
   let comment_content = document.createElement("div");
   comment_content.classList.add("comment-content");
+  comment_content.textContent = content;
   comment.appendChild(comment_content);
 
   let reply_button = document.createElement("button");
@@ -93,10 +125,6 @@ function createComment(data) {
 
   // end comment children
 
-  name_span.textContent = name;
-  date_span.textContent = new Date(created).toLocaleString();
-  comment_content.textContent = content;
-
   reply_button.addEventListener("click", () => {
     reply_to_id = id;
     document.querySelector("#reply-text").innerText = `Replying to ${name}`;
@@ -128,27 +156,61 @@ function createComment(data) {
 </div> */
 }
 
-async function main() {
-  let comment_container = document.getElementById("comments");
-  let comment_response = await fetch("https://api.furshark.net/guestbook", {
-    method: "GET",
-    accept: "application/json",
-  });
+const delay = (ms) => new Promise((res) => setTimeout(res, ms));
+async function startLoading() {
+  let comment_container = document.querySelector("#comments");
+  loading = true;
 
-  if (!comment_response.ok) {
-    console.log(comment_response.status, comment_response.statusText);
-    console.log(await comment_response.text());
-    throw new Error("unexpected API response");
+  comment_container.innerText = "Loading comments";
+
+  while (loading) {
+    if (comment_container.innerText == "Loading comments...") {
+      comment_container.innerText = "Loading comments";
+    }
+
+    comment_container.innerText += ".";
+    await delay(400);
   }
+}
 
-  let comment_data = await comment_response.json();
+function stopLoading() {
+  loading = false;
+}
 
-  comment_container.innerHTML = "";
+async function main() {
+  startLoading();
+  let comment_container = document.querySelector("#comments");
 
-  comment_data.entries.forEach((comment) => {
-    let comment_element = createComment(comment);
-    comment_container.appendChild(comment_element);
-  });
+  try {
+    let comment_response = await fetch("https://api.furshark.net/guestbook", {
+      method: "GET",
+      accept: "application/json",
+    });
+
+    if (!comment_response.ok) {
+      let response_text = await comment_response.text();
+      console.log(comment_response.status, comment_response.statusText);
+      console.log(response_text);
+
+      comment_container.innerHTML = `Error loading, API response NOT ok! (${comment_response.status}) ${response_text}`;
+
+      throw new Error("unexpected API response");
+    }
+
+    let comment_data = await comment_response.json();
+
+    stopLoading();
+    comment_container.innerHTML = "";
+
+    comment_data.entries.forEach((comment) => {
+      let comment_element = createComment(comment);
+      comment_container.appendChild(comment_element);
+    });
+  } catch (error) {
+    stopLoading();
+    comment_container.innerText = `An error occoured (${error}), check the browser console for more info.`;
+    comment_container.style.color = "red";
+  }
 }
 
 async function sendComment() {
