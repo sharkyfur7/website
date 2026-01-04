@@ -126,7 +126,9 @@
 }
 
 .comment-site,
-.reply-site {
+.reply-site,
+.comment-site:visited,
+.reply-site:visited {
   color: var(--palette-5);
 }
 
