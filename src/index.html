@@ -20,9 +20,23 @@ layout: layouts/index.njk
   .mybtn:hover {
     box-shadow: 0px 0px 6px var(--color-link);
   }
+
+  #shark-spin {
+    position: absolute;
+    top: 330px;
+    left: 190px;
+    z-index: 10;
+
+    background: url("/assets/shark/blacktip/rendered.png");
+    width: 459px;
+    height: 208px;
+  }
+
+  #shark-spin:hover {
+    background: url("/assets/shark/blacktip/spin.gif");
+  }
 </style>
 
-<!-- ABOUT + PROJECTS -->
 <section style="display: flex; flex-direction: column; gap: var(--gap)">
   <!-- ABOUT -->
   <div>
@@ -68,7 +82,11 @@ layout: layouts/index.njk
     </section>
 
     <div style="width: 100%; display: flex; justify-content: center">
-      <img src="/assets/shark/thresher/thresher_long.png" height="128px" style="object-fit: contain" />
+      <div
+        data-tooltip="This is supposed to be a Blacktip Shark,<br/>but this one in particular played in mud and is now really brown."
+        id="shark-spin"
+        class="lg-only"
+      ></div>
     </div>
 
     <!-- NOTIFICATION THING -->
