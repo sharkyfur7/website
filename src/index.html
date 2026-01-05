@@ -22,14 +22,12 @@ layout: layouts/index.njk
   }
 
   #shark-spin {
-    position: absolute;
-    top: 330px;
-    left: 190px;
-    z-index: 10;
-
     background: url("/assets/shark/blacktip/rendered.png");
-    width: 459px;
+    max-width: 459px;
     height: 208px;
+    min-height: 150px;
+    margin: 0 auto;
+    background-size: contain;
   }
 
   #shark-spin:hover {
@@ -81,39 +79,27 @@ layout: layouts/index.njk
       </p>
     </section>
 
-    <div style="width: 100%; display: flex; justify-content: center">
+    <section>
       <div
         data-tooltip="This is supposed to be a Blacktip Shark,<br/>but this one in particular played in mud and is now really brown."
         id="shark-spin"
-        class="lg-only"
       ></div>
-    </div>
+      <p>
+        ^ This is a bit broken on mobile lol but idk how to make it work without javascript (let me know if you do!).
+      </p>
+    </section>
 
     <!-- NOTIFICATION THING -->
     <section id="notif">
       <noscript><span class="error">This won't work without javascript!</span></noscript>
       <div style="font-weight: bold; margin-top: 2px">Send me a phone notification for no reason at all:</div>
-      <div>
-        <input placeholder="blub blub blub" id="notifyinput" type="text" style="min-width: 20em" />
-        <button disabled="true" id="notifysend">Send</button>
+      <div style="display: flex; gap: 6px">
+        <input placeholder="Blub blub blub" id="notifyinput" type="text" style="flex: 4" />
+        <button disabled="true" id="notifysend" style="flex: 1">Send</button>
       </div>
     </section>
 
     <section>
-      <p>Some mildly interesting things</p>
-
-      <ul>
-        <li>I like sharks and dragons</li>
-        <li>Divorced dad rock rocks!</li>
-        <li>
-          I come from the
-          <img alt="czech republic flag" src="/assets/cz.png" loading="lazy" height="12px" />
-          CZECH REPUBLIC
-          <img alt="czech republic flag" src="/assets/cz.png" loading="lazy" height="12px" />
-        </li>
-        <li>I'm 18 (old) (reaching unc status)</li>
-      </ul>
-
       <p>
         If you like dragons you should check out the
         <span class="fire-text">Wings of Fire</span>

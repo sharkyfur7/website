@@ -222,7 +222,7 @@ h3,
 h4 {
   margin: 0;
   font-family: var(--font-heading);
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h1,
@@ -343,12 +343,6 @@ code {
 }
 
 h3 + section {
-  margin-top: var(--gap);
-}
-
-p + p,
-ul + p,
-li + p {
   margin-top: var(--gap);
 }
 
