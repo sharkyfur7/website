@@ -157,7 +157,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  min-height: 100vh;
+  min-height: 100%;
 
   background-image: url("/assets/background_shark.jpg");
   background-size: 100%;
