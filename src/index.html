@@ -24,7 +24,7 @@ layout: layouts/index.njk
   #shark-spin {
     background: url("/assets/shark/blacktip/rendered.png");
     max-width: 459px;
-    height: 208px;
+    max-height: 208px;
     min-height: 150px;
     margin: 0 auto;
     background-size: contain;
@@ -32,6 +32,7 @@ layout: layouts/index.njk
 
   #shark-spin:hover {
     background: url("/assets/shark/blacktip/spin.gif");
+    background-size: contain;
   }
 </style>
 
@@ -84,9 +85,6 @@ layout: layouts/index.njk
         data-tooltip="This is supposed to be a Blacktip Shark,<br/>but this one in particular played in mud and is now really brown."
         id="shark-spin"
       ></div>
-      <p>
-        ^ This is a bit broken on mobile lol but idk how to make it work without javascript (let me know if you do!).
-      </p>
     </section>
 
     <!-- NOTIFICATION THING -->

@@ -15,7 +15,7 @@ picture: /assets/shark/pixel/blacktip_reef.png
   #shark-spin {
     background: url("/assets/shark/blacktip/rendered.png");
     max-width: 459px;
-    height: 208px;
+    max-height: 208px;
     width: 100%;
     min-height: 150px;
     margin: 0 auto;
@@ -24,12 +24,13 @@ picture: /assets/shark/pixel/blacktip_reef.png
 
   #shark-spin:hover {
     background: url("/assets/shark/blacktip/spin.gif");
+    background-size: contain;
   }
 </style>
 
 # {{ title }}
 
-Hover over me! ↓
+<span>Hover over me! (click me on mobile!) ↓</span>
 
 <div id="shark-spin"></div>
 

@@ -16,7 +16,7 @@ og_img: /assets/shark/nurse/sitting.jpg
   #shark-spin {
     background: url("/assets/shark/nurse/render.png");
     max-width: 500px;
-    height: 281px;
+    max-height: 281px;
     width: 100%;
     min-height: 150px;
     margin: 0 auto;
@@ -25,12 +25,13 @@ og_img: /assets/shark/nurse/sitting.jpg
 
   #shark-spin:hover {
     background: url("/assets/shark/nurse/nurse.gif");
+        background-size: contain;
   }
 </style>
 
 # {{ title }}
 
-Hover over me! ↓
+<span>Hover over me! (click me on mobile!) ↓</span>
 
 <div id="shark-spin"></div>
 
