@@ -11,7 +11,27 @@ tooltip_description: cute shark with black tips on it's fins
 picture: /assets/shark/pixel/blacktip_reef.png
 ---
 
+<style>
+  #shark-spin {
+    background: url("/assets/shark/blacktip/rendered.png");
+    max-width: 459px;
+    height: 208px;
+    width: 100%;
+    min-height: 150px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  #shark-spin:hover {
+    background: url("/assets/shark/blacktip/spin.gif");
+  }
+</style>
+
 # {{ title }}
+
+Hover over me! ↓
+
+<div id="shark-spin"></div>
 
 <blockquote class="warning-bq">
     <span class="warning-bq-title">Warning! This shark is vulnerable!</span>

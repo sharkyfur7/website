@@ -4,7 +4,7 @@ canonical: shark/nurse/
 
 title: Atlantic Nurse Shark (Ginglymostoma cirratum)
 description: The Atlantic Nurse shark is a nocturnal bottom dweller living inshore. And is, unfortunately, classified as vulnerable by the IUCN.
-lastModified: 16/06/2025
+lastModified: 07/01/2026
 originallyCreated: 05/04/2025
 tooltip: Atlantic Nurse Shark
 tooltip_description: sea puppy!
@@ -12,7 +12,27 @@ picture: /assets/shark/pixel/nurse.png
 og_img: /assets/shark/nurse/sitting.jpg
 ---
 
+<style>
+  #shark-spin {
+    background: url("/assets/shark/nurse/render.png");
+    max-width: 500px;
+    height: 281px;
+    width: 100%;
+    min-height: 150px;
+    margin: 0 auto;
+    background-size: contain;
+  }
+
+  #shark-spin:hover {
+    background: url("/assets/shark/nurse/nurse.gif");
+  }
+</style>
+
 # {{ title }}
+
+Hover over me! ↓
+
+<div id="shark-spin"></div>
 
 <blockquote class="warning-bq">
     <span class="warning-bq-title">Warning! This shark is vulnerable!</span>
@@ -20,12 +40,6 @@ og_img: /assets/shark/nurse/sitting.jpg
         In 2019, the IUCN has classified the Atlantic Lemon shark as vulnerable. While the population may be slightly (1.2%) increasing in the Northwest and Western Central Atlantic, it's population has decreased by >80% in the Southwest Atlantic. Overall it has undergone a population reduction of 30–49% over the last 90 years. <a href="https://www.iucnredlist.org/species/144141186/3095153" target="_blank">[source]</a>
     </p>
 </blockquote>
-
-<img
-  style="max-width: 100%"
-  src="/assets/shark/nurse/sitting.jpg"
-  alt="nurse shark looking at some divers"
-/>
 
 The nurse shark is a pretty calm and friendly species of shark. They are
 timid bottom dwellers and have jaws filled with lots of tiny sharp teeth.
@@ -55,3 +69,9 @@ their shelter to feed in shallower areas during night. Interestingly they
 also have something typical of reef sharks: site fidelity, a tendency to
 stick to a particular area. And it is also one of the few sharks that
 exhibits mating site fidelity, returning to the same area to breed.
+
+<img
+  style="max-width: 100%"
+  src="/assets/shark/nurse/sitting.jpg"
+  alt="nurse shark looking at some divers"
+/>
