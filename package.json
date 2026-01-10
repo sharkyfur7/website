@@ -5,13 +5,13 @@
   "main": "index.js",
   "scripts": {
     "clean": "run-script-os",
-    "clean:linux": "rm -rf site/*",
+    "clean:linux:darwin": "rm -rf site/*",
     "clean:win32": "rd /s /q site",
     "build": "run-script-os",
-    "build:linux": "npm run clean; npx @11ty/eleventy",
+    "build:linux:darwin": "npm run clean; npx @11ty/eleventy",
     "build:win32": "npm run clean & npx @11ty/eleventy",
     "dev": "run-script-os",
-    "dev:linux": "npm run clean; npx @11ty/eleventy --serve",
+    "dev:linux:darwin": "npm run clean; npx @11ty/eleventy --serve",
     "dev:win32": "npm run clean & npx @11ty/eleventy --serve"
   },
   "repository": {
