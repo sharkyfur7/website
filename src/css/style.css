@@ -372,6 +372,17 @@ blockquote > p {
   display: flex;
 }
 
+a[target="_blank"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a[target="_blank"]::after {
+  content: url("/assets/outlink.png");
+  margin-left: 2px;
+}
+
 .fire-text {
   text-shadow: 0px -2px 8px #f90, 0px -5px 12px #c33;
   color: #f97316;

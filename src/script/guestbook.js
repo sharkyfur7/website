@@ -242,7 +242,12 @@ async function sendComment() {
       Accept: "application/json",
       "Content-Type": "application/json",
     },
-    body: JSON.stringify({ name: name.value, content: content.value, site: site_url.value, reply_to: reply_to_id }),
+    body: JSON.stringify({
+      name: name.value,
+      content: content.value,
+      site: site_url.value,
+      reply_to: reply_to_id,
+    }),
   });
 
   if (!response.ok) {
