@@ -24,7 +24,8 @@ layout: layouts/index.njk
   #shark-spin {
     background: url("/assets/shark/blacktip/rendered.png");
     max-width: 459px;
-    max-height: 208px;
+    height: 208px;
+    background-repeat: no-repeat;
     min-height: 150px;
     margin: 0 auto;
     background-size: contain;
@@ -33,6 +34,7 @@ layout: layouts/index.njk
   #shark-spin:hover {
     background: url("/assets/shark/blacktip/spin.gif");
     background-size: contain;
+    background-repeat: no-repeat;
   }
 </style>
 
@@ -43,8 +45,8 @@ layout: layouts/index.njk
       <p>you appear to be on a device with a small screen (less than 600px wide)</p>
 
       <p>
-        this website was made on a 1920x1080 screen. a large (more than 800px) screen is reccommended for the intended
-        experience
+        this website was made on a 1920x1080 screen. a large (more than 800px) screen is
+        reccommended for the intended experience
       </p>
     </blockquote>
 
@@ -76,7 +78,8 @@ layout: layouts/index.njk
 
       <p>
         I'm Sharky, a shark on the internet<br />
-        I made this site because it's cool... and my art skills suck, programming is easier for me lmao
+        I made this site because it's cool... and my art skills suck, programming is easier for me
+        lmao
       </p>
     </section>
 
@@ -90,7 +93,9 @@ layout: layouts/index.njk
     <!-- NOTIFICATION THING -->
     <section id="notif">
       <noscript><span class="error">This won't work without javascript!</span></noscript>
-      <div style="font-weight: bold; margin-top: 2px">Send me a phone notification for no reason at all:</div>
+      <div style="font-weight: bold; margin-top: 2px">
+        Send me a phone notification for no reason at all:
+      </div>
       <div style="display: flex; gap: 6px">
         <input placeholder="Blub blub blub" id="notifyinput" type="text" style="flex: 4" />
         <button disabled="true" id="notifysend" style="flex: 1">Send</button>

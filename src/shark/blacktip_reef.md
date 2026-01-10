@@ -20,11 +20,13 @@ picture: /assets/shark/pixel/blacktip_reef.png
     min-height: 150px;
     margin: 0 auto;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #shark-spin:hover {
     background: url("/assets/shark/blacktip/spin.gif");
     background-size: contain;
+    background-repeat: no-repeat;
   }
 </style>
 

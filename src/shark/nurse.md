@@ -21,11 +21,13 @@ og_img: /assets/shark/nurse/sitting.jpg
     min-height: 150px;
     margin: 0 auto;
     background-size: contain;
+    background-repeat: no-repeat;
   }
 
   #shark-spin:hover {
     background: url("/assets/shark/nurse/nurse.gif");
-        background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 </style>
 
