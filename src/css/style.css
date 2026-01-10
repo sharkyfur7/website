@@ -381,6 +381,7 @@ a[target="_blank"] {
 a[target="_blank"]::after {
   content: url("/assets/outlink.png");
   margin-left: 2px;
+  height: 16px;
 }
 
 .fire-text {
