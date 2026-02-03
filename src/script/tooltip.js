@@ -12,6 +12,15 @@ function update(event) {
   tooltip.style.setProperty("--tx", `${event.clientX + offset_px}px`);
   tooltip.style.setProperty("--ty", `${event.clientY + offset_px}px`);
 
+  let tooltip_rect = tooltip.getBoundingClientRect();
+  if (tooltip_rect.right > window.innerWidth) {
+    tooltip.style.setProperty("--tx", `${event.clientX - tooltip.clientWidth - offset_px}px`);
+  }
+
+  if (tooltip_rect.bottom > window.innerHeight) {
+    tooltip.style.setProperty("--ty", `${event.clientY - tooltip.clientHeight - offset_px}px`);
+  }
+
   const target = document.elementFromPoint(event.clientX, event.clientY);
   let show_tooltip = false;
 
