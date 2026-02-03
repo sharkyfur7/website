@@ -2,7 +2,7 @@
 layout: layouts/blogpost.njk
 canonical: blog/selfhosting-stuff/
 
-modified: 2026-02-02
+modified: 2026-02-03
 date: 2026-02-02
 
 thumbnail: /assets/blog/selfhosting-stuff/thumb.jpg
@@ -29,6 +29,8 @@ Once I've had it up and running, I have realized something. Now I have a server 
 ## Services
 
 ### <a href="https://www.beszel.dev" target="_blank">Beszel</a>
+
+![Screenshot of my Beszel dashboard](/assets/blog/selfhosting-stuff/beszel.jpg)
 
 This is a really cool lightweight monitoring platform. I can see all the basic things like CPU and memory load, network traffic, device temperature and stuff. But what is really cool is that it also monitors docker containers: their CPU and RAM usage and their status.
 
@@ -57,6 +59,8 @@ Yes, I run the backend for this site on the same Pi too! Well backend... if you 
 ### <a href="https://pi-hole.net" target="_blank">Pihole</a>
 
 Yeah I also run pihole but that's like the most basic bitch service EVER to run on a Pi. And it doesn't even block ads on youtube anymore :(
+
+![Screenshot of the PiHole dashboard](/assets/blog/selfhosting-stuff/pihole.jpg)
 
 ## So what? Who cares?
 
