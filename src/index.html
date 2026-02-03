@@ -15,6 +15,10 @@ layout: layouts/index.njk
 
   .mybtn {
     transition: 150ms;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 100;
   }
 
   .mybtn:hover {
@@ -37,6 +41,15 @@ layout: layouts/index.njk
     background-repeat: no-repeat;
   }
 </style>
+
+<img
+  class="mybtn big-screen-only"
+  data-tooltip="my button!!!!"
+  width="88"
+  height="31"
+  src="/assets/sharky.gif"
+  alt="by button"
+/>
 
 <section style="display: flex; flex-direction: column; gap: var(--gap)">
   <!-- ABOUT -->
@@ -61,15 +74,6 @@ layout: layouts/index.njk
             <a href="https://nekoweb.org" target="_blank">nekoweb.org</a>!<br />
           </p>
         </div>
-
-        <img
-          class="mybtn big-screen-only"
-          data-tooltip="my button!!!!"
-          width="88"
-          height="31"
-          src="/assets/sharky.gif"
-          alt="by button"
-        />
       </div>
 
       <div class="horizontal-hr"></div>
