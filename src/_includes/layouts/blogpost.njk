@@ -1,0 +1,19 @@
+---
+lastModified: <value not set>
+originallyCreated: <value not set>
+---
+
+{% extends "layouts/common.njk" %}
+
+{% block head %}
+    <link rel="canonical" href="https://furshark.net/{{ canonical }}" />
+    <script src="/script/tooltip.js" defer async></script>
+{% endblock %}
+
+{% block content %}
+    <article>
+        {{ content | safe }}
+    </article>
+
+    <span class="minor-importance-text">Created: {{ date | utcDate }} | Last updated: {{ modified | utcDate }}</span>
+{% endblock %}

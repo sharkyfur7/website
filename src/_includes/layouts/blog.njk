@@ -1,0 +1,13 @@
+---
+title: Blog
+description: I sometimes write about things
+---
+
+{% extends "layouts/common.njk" %}
+{% block head %}
+    <link rel="canonical" href="https://furshark.net/blog"/>
+    <script src="/script/tooltip.js" defer async></script>
+{% endblock %}
+{% block content %}
+    {{ content | safe }}
+{% endblock %}

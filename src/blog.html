@@ -1,0 +1,53 @@
+---
+layout: layouts/blog.njk
+---
+
+<style>
+  .blog-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .blogpost-entry {
+    border: 1px solid #212121;
+    padding: 8px;
+    transition: 200ms;
+    color: var(--color-font) !important;
+    border-radius: 4px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .blogpost-entry:hover {
+    background: none;
+    backdrop-filter: brightness(200%);
+    scale: 105%;
+    color: var(--color-font);
+    text-shadow: none;
+    border-color: var(--color-font);
+  }
+
+  @media only screen and (max-width: 500px) {
+    .blog-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<h1>Blog</h1>
+
+<div class="blog-grid">
+  {% for post in collections.blogposts | reverse %}
+  <a href="{{ post.url }}" class="blogpost-entry">
+    <img src="{{ post.data.thumbnail }}" />
+    <div style="color: var(--color-link)">{{ post.data.title }}</div>
+    <div style="font-weight: normal">{{ post.data.description }}</div>
+    <div style="font-weight: normal" class="minor-importance-text">
+      {{ post.data.date | utcDate }}
+    </div>
+  </a>
+  {% endfor %}
+</div>

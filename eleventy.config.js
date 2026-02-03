@@ -17,6 +17,14 @@ export default async function (eleventyConfig) {
     return collectionApi.getFilteredByGlob("src/shark/**/*.{html,md}");
   });
 
+  eleventyConfig.addCollection("blogposts", function (collectionApi) {
+    return collectionApi.getFilteredByGlob("src/blog/**/*.{html,md}");
+  });
+
+  eleventyConfig.addFilter("utcDate", (date) => {
+    return new Date(date).toLocaleDateString("en-CA");
+  });
+
   return {
     templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
