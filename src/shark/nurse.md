@@ -4,8 +4,8 @@ canonical: shark/nurse/
 
 title: Atlantic Nurse Shark (Ginglymostoma cirratum)
 description: The Atlantic Nurse shark is a nocturnal bottom dweller living inshore. And is, unfortunately, classified as vulnerable by the IUCN.
-lastModified: 07/01/2026
-originallyCreated: 05/04/2025
+modified: 2026-01-07
+date: 2025-04-05
 tooltip: Atlantic Nurse Shark
 tooltip_description: sea puppy!
 picture: /assets/shark/pixel/nurse.png

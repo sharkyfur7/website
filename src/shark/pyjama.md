@@ -4,8 +4,8 @@ canonical: shark/pyjama/
 
 title: Pyjama Shark (Poroderma africanum)
 description: a shark that wears a pyjama all the time
-lastModified: 16/06/2025
-originallyCreated: 16/06/2025
+modified: 2025-06-16
+date: 2025-06-16
 tooltip: Pyjama Shark
 tooltip_description: a shark that wears a pyjama all the time
 picture: /assets/shark/pixel/pyjama_shark.png

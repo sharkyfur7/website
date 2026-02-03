@@ -2,8 +2,8 @@
 layout: layouts/shark_article.njk
 canonical: shark/lemon/
 
-lastModified: 11/06/2025
-originallyCreated: 08/06/2025
+modified: 2025-06-11
+date: 2025-06-08
 title: Lemon shark (Negaprion brevirostris)
 description: The lemon shark is a species of shark... wow
 tooltip: Lemon shark

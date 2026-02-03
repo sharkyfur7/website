@@ -4,8 +4,8 @@ canonical: shark/wobbegong/
 
 title: Wobbegong (Orectolobidae)
 description: a family of carpet sharks
-lastModified: 05/07/2025
-originallyCreated: 05/07/2025
+modified: 2025-07-05
+date: 2025-07-05
 tooltip: Wobbegong
 tooltip_description: a family of carpet sharks
 picture: /assets/shark/pixel/wobbegong.png
