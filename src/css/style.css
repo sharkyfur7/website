@@ -163,7 +163,7 @@
   background-size: 100%;
 
   z-index: -10;
-  filter: blur(3px) brightness(50%);
+  filter: blur(1px) brightness(80%);
 }
 
 #main-title {
