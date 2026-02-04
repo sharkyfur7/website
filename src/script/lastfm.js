@@ -1,18 +1,7 @@
 import { getCookie, setCookieMinutes } from "./module/cookie.js";
 
-const recent_tracks_api_url =
-  "https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=" +
-  "sharkyblacktip" +
-  "&api_key=" +
-  "8093eae1b06820d1d900400320d5f8f9" +
-  "&format=json";
-
-const info_api_url =
-  "https://ws.audioscrobbler.com/2.0/?method=user.getinfo&user=" +
-  "sharkyblacktip" +
-  "&api_key=" +
-  "8093eae1b06820d1d900400320d5f8f9" +
-  "&format=json";
+const recent_tracks_api_url = "https://api.furshark.net/lastfm/recent?user=sharkyblacktip";
+const info_api_url = "https://api.furshark.net/lastfm/info?user=sharkyblacktip";
 
 const cookie_name = "lastfm";
 
@@ -46,17 +35,10 @@ async function getData() {
     info: info,
   };
 
-  try {
-    data.nowplaying = data.last_track["@attr"]["nowplaying"];
-  } catch (e) {}
-
-  try {
-    data.date = data.last_track["date"]["uts"];
-  } catch (e) {}
-
-  if (data.nowplaying) {
+  if (data.last_track["@attr"] && data.last_track["@attr"]["nowplaying"]) {
     data.date = "right now";
   } else {
+    data.date = data.last_track["date"]["uts"];
     data.date = formatAgo(Date.now() / 1000 - data.date);
   }
 
@@ -84,50 +66,25 @@ async function main() {
 
   // Now we do stuff :3
 
-  try {
-    if (data.date == "right now") {
-      document
-        .getElementById("cover")
-        .setAttribute("data-tooltip", "I'm listening to this song right now");
-    } else {
-      document
-        .getElementById("cover")
-        .setAttribute("data-tooltip", `I listened to this song ${data.date}`);
-    }
-  } catch {}
+  if (data.date == "right now") {
+    document
+      .getElementById("cover")
+      .setAttribute("data-tooltip", "I'm listening to this song right now");
+  } else {
+    document
+      .getElementById("cover")
+      .setAttribute("data-tooltip", `I listened to this song ${data.date}`);
+  }
 
-  try {
-    lastfm.trackname.innerText = track_name;
-    lastfm.trackname.href = data.last_track["url"];
-  } catch {}
-
-  try {
-    lastfm.artist.innerText = artist_name;
-  } catch {}
-
-  try {
-    lastfm.albumname.innerText = data.last_track["album"]["#text"];
-  } catch {}
-
-  try {
-    lastfm.cover.src = coverurl;
-  } catch {}
-
-  try {
-    lastfm["bg-cover"].src = coverurl;
-  } catch {}
-
-  try {
-    lastfm["cover-link"].href = data.last_track["url"];
-  } catch {}
-
-  try {
-    lastfm.fmtime.innerHTML = "(" + data.date + ")";
-  } catch {}
-
-  try {
-    lastfm["lastfm-scrobbles"].innerText = data.info["user"]["playcount"];
-  } catch {}
+  lastfm.trackname.innerText = track_name;
+  lastfm.trackname.href = data.last_track["url"];
+  lastfm.artist.innerText = artist_name;
+  lastfm.albumname.innerText = data.last_track["album"]["#text"];
+  lastfm.cover.src = coverurl;
+  lastfm["bg-cover"].src = coverurl;
+  lastfm["cover-link"].href = data.last_track["url"];
+  lastfm.fmtime.innerHTML = "(" + data.date + ")";
+  lastfm["lastfm-scrobbles"].innerText = data.info["user"]["playcount"];
 }
 
 main();
