@@ -16,8 +16,9 @@
   width: 100%;
   max-width: 800px;
 
-  border: 2px ridge var(--palette-1);
-  border-radius: 4px;
+  border-left: 2px ridge var(--palette-1);
+  border-right: 2px ridge var(--palette-1);
+  /* border-radius: 4px; */
   overflow: hidden;
   box-shadow: 0 0 8px var(--palette-3);
 
@@ -28,7 +29,7 @@
   flex: 10;
   position: relative;
 
-  padding: 20px;
+  min-height: 99vh;
 
   display: flex;
   flex-direction: column;
@@ -212,11 +213,11 @@ fieldset > legend {
 }
 
 body {
-  padding: 40px;
+  /* padding: 40px; */
   margin: 0;
   position: relative;
 
-  min-height: 90vh;
+  min-height: 99vh;
 }
 
 h1,
@@ -274,7 +275,7 @@ a:hover {
     0px 1px var(--color-link),
     0px -1px var(--color-link);
   color: var(--palette-3);
-  background: radial-gradient(var(--color-link) 30%, transparent 70%);
+  text-decoration: underline;
 }
 
 input,

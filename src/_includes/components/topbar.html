@@ -1,0 +1,40 @@
+<style>
+  #topbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4px 8px;
+
+    background-color: var(--bg);
+    border-bottom: 2px solid var(--palette-1);
+  }
+
+  .stats-line {
+    display: inline;
+  }
+
+  .stats-line > span {
+    color: var(--palette-5);
+  }
+</style>
+
+<div id="topbar">
+  <div style="font-family: monospace">sharky@ocean:~$ curl https://furshark.net</div>
+
+  <div>
+    <span class="stats-line">
+      Views:
+      <span class="nw-view-text">----</span>
+    </span>
+
+    <span class="stats-line">
+      Followers:
+      <span class="nw-follow-text">----</span>
+    </span>
+
+    <span class="stats-line">
+      Updates:
+      <span class="nw-update-text">----</span>
+    </span>
+  </div>
+</div>

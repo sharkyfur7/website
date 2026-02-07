@@ -45,9 +45,7 @@ function createCounter(number, padding = 5) {
 
 async function checkCookies() {
   if (!getCookie("nw-view")) {
-    let response = await fetch(
-      "https://nekoweb.org/api/site/info/furshark.net"
-    );
+    let response = await fetch("https://nekoweb.org/api/site/info/furshark.net");
     response = await response.json();
 
     setCookieMinutes("nw-view", response.views, cookieMinutes);
@@ -58,7 +56,9 @@ async function checkCookies() {
 
 try {
   await checkCookies();
-} catch (e) {}
+} catch (e) {
+  console.log(e);
+}
 
 data.view = getCookie("nw-view");
 data.follow = getCookie("nw-follow");
