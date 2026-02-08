@@ -7,6 +7,7 @@ layout: layouts/blog.njk
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 8px;
+    padding: 4px;
   }
 
   .blogpost-entry {
@@ -21,15 +22,6 @@ layout: layouts/blog.njk
     }
   }
 
-  .blogpost-entry:hover {
-    background: none;
-    backdrop-filter: brightness(200%);
-    scale: 105%;
-    color: var(--color-font);
-    text-shadow: none;
-    border-color: var(--color-font);
-  }
-
   @media only screen and (max-width: 500px) {
     .blog-grid {
       grid-template-columns: 1fr;
@@ -41,13 +33,13 @@ layout: layouts/blog.njk
 
 <div class="blog-grid">
   {% for post in collections.blogposts | reverse %}
-  <a href="{{ post.url }}" class="blogpost-entry">
+  <div class="blogpost-entry">
     <img src="{{ post.data.thumbnail }}" />
-    <div style="color: var(--color-link)">{{ post.data.title }}</div>
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
     <div style="font-weight: normal">{{ post.data.description }}</div>
     <div style="font-weight: normal" class="minor-importance-text">
       {{ post.data.date | utcDate }}
     </div>
-  </a>
+  </div>
   {% endfor %}
 </div>
