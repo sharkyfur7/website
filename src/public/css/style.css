@@ -1,8 +1,15 @@
+@import url("/css/reset.css");
+@import url("/css/font.css");
+
+/* Component style files */
+@import url("/css/component/topbar.css");
+
 :root {
   color: white;
   font-family: "Fuzzy Bubbles";
 
   --link-color: #bacbf3;
+  --border-color: #475e94;
 }
 
 a,
@@ -19,7 +26,7 @@ a:hover {
 
   height: 256px;
 
-  border: 2px solid hsl(222, 35%, 43%);
+  border: 2px solid var(--border-color);
   border-bottom: none;
 }
 
@@ -31,39 +38,4 @@ a:hover {
   padding: 4px;
 
   font-size: 13px;
-}
-
-.topbar {
-  font-family: "Inter";
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: rgba(60, 60, 60, 0.3);
-  backdrop-filter: blur(4px);
-
-  margin-bottom: 6px;
-  padding: 4px 0px;
-}
-
-.topbar--logo,
-.topbar--time {
-  padding: 0px 14px !important;
-}
-
-.topbar--nav {
-  display: flex;
-  flex-direction: row;
-}
-.topbar--nav > a {
-  padding: 0 16px;
-  margin: 0 -4px;
-  border-radius: 32px;
-
-  text-decoration: none;
-
-  color: #bacbf3;
-}
-
-.topbar--nav > a:hover {
-  backdrop-filter: brightness(00%);
 }

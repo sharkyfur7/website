@@ -1,0 +1,35 @@
+.topbar {
+  font-family: "Inter";
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(60, 60, 60, 0.3);
+  backdrop-filter: blur(3px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  margin-bottom: 6px;
+  padding: 4px 0px;
+}
+
+.topbar--logo,
+.topbar--time {
+  padding: 0px 14px !important;
+}
+
+.topbar--nav {
+  display: flex;
+  flex-direction: row;
+}
+.topbar--nav > a {
+  padding: 0 16px;
+  margin: 0 -4px;
+  border-radius: 32px;
+
+  text-decoration: none;
+
+  color: #bacbf3;
+}
+
+.topbar--nav > a:hover {
+  backdrop-filter: brightness(00%);
+}

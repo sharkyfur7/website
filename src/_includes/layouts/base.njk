@@ -13,24 +13,23 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png" />
     <meta name="description" content="{{ description }}" />
 
-    {# discord stuff #}
-    <meta property="og:url" content="https://furshark.net" />
+    {# https://ogp.me stuff #}
+    <meta property="og:url" content="https://furshark.net{{ page.url }}" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="{{ title }}" />
-    <meta property="og:description" content="{{ description }}" />
-    {% if og_img %}
-      <meta property="og:image" content="{{ og_img }}" />
-    {% endif %}
+    {% if description %}<meta property="og:description" content="{{ description }}" />{% endif %}
+    {% if og_img %}<meta property="og:image" content="{{ og_img }}" />{% endif %}
 
     {# base styles #}
     <link rel="stylesheet" href="/css/style.css" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/font.css" />
 
     {% block head %}
     {% endblock %}
 
     {% block style %}
+    {% endblock %}
+
+    {% block page_style %}
     {% endblock %}
   </head>
 

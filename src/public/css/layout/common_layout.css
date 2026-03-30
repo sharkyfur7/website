@@ -10,9 +10,7 @@ body {
 }
 
 .content {
-  /* display: grid;
-  grid-template-columns: 1fr 3fr; */
-  border: 2px solid hsl(222, 35%, 43%);
+  border: 2px solid var(--border-color);
 }
 
 .content > aside,
@@ -23,5 +21,5 @@ body {
 
 .content > aside {
   background: #212127;
-  border-right: 1px solid hsl(222, 35%, 43%);
+  border-right: 1px solid var(--border-color);
 }
