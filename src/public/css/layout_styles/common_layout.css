@@ -1,0 +1,27 @@
+body {
+  background-image: url("/assets/ivy2.png");
+
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 800px;
+  margin: auto;
+}
+
+.content {
+  /* display: grid;
+  grid-template-columns: 1fr 3fr; */
+  border: 2px solid hsl(222, 35%, 43%);
+}
+
+.content > aside,
+.content > main {
+  background: #1e1e23;
+  padding: 8px;
+}
+
+.content > aside {
+  background: #212127;
+  border-right: 1px solid hsl(222, 35%, 43%);
+}

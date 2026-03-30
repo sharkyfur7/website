@@ -1,114 +1,12 @@
-<style>
-  .sidebar {
-    flex: 3.5;
-
-    border-right: 1px solid var(--color-line);
-    max-width: 220px;
-  }
-
-  .sidebar > section {
-    padding: 8px 16px;
-  }
-
-  .sidebar > section + section {
-    margin: 8px 0px;
-  }
-
-  .stitle {
-    padding: 2px 16px;
-    background: linear-gradient(90deg, var(--color-link), transparent);
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-
-  section + .stitle {
-    margin-top: 8px;
-  }
-</style>
-
-<aside class="sidebar lg-only">
-  <div class="stitle">Status</div>
-  <section>{% include "components/status_cafe.html" %}</section>
-
-  <div class="stitle">Navigation</div>
-  {% include "components/navigation.html" %}
-
-  <!-- WEBRINGS -->
-  <div class="stitle">Webrings</div>
-  <section>
-    <div id="webring-container">
-      <!-- SSG WEBRING -->
-      <div id="ssgwebring">
-        <a
-          href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=prev"
-          class="webring-arrow"
-          >&larr;</a
-        >
-        <a href="https://jbcarreon123.nekoweb.org/webrings/ssgring/">SSG ring</a>
-        <a
-          href="https://jbcarreon123.nekoweb.org/webrings/ssgring/redirect?slug=sharky&way=next"
-          class="webring-arrow"
-          >&rarr;</a
-        >
-      </div>
-
-      <!-- NO AI WEBRING -->
-      <div id="noaiwebring">
-        <div>
-          <a href="https://baccyflap.com/noai">the no AI webring</a>
-        </div>
-
-        <div>
-          <a
-            href="https://baccyflap.com/noai/?prv&s=shr"
-            target="_top"
-            title="previous"
-            class="webring-arrow"
-            >&larr;</a
-          >
-
-          <a class="small" href="https://baccyflap.com/noai/?rnd" target="_top" title="random"
-            >(random)</a
-          >
-
-          <a
-            href="https://baccyflap.com/noai/?nxt&s=shr"
-            target="_top"
-            title="next"
-            class="webring-arrow"
-            >&rarr;</a
-          >
-        </div>
-      </div>
-
-      <!-- RETRONAUT WEBRING -->
-      <div id="retronaut">
-        <a href="https://webring.dinhe.net/prev/https://sharkyfur.nekoweb.org" class="webring-arrow"
-          >&larr;</a
-        >
-        <div>
-          <a href="https://webring.dinhe.net">retronaut<br />webring</a>
-        </div>
-        <a href="https://webring.dinhe.net/next/https://sharkyfur.nekoweb.org" class="webring-arrow"
-          >&rarr;</a
-        >
-      </div>
-    </div>
-  </section>
-
-  <div class="stitle">Cool websites</div>
-  {% include "components/sidebar_buttons.html" %}
-
-  <section>
-    Maybe
-    <a href="https://nekoweb.org/follow/sharkyfur">follow me</a> on nekoweb?
-  </section>
-
-  <section>
-    <div>
-      <a href="/build/">Build info</a>
-      (for nerds)
-    </div>
-  </section>
+<aside class="sidebar">
+  {# Navigation #} Navigation
+  <nav class="sidebar--nav">
+    <a href="/">Index</a>
+    <a href="/shark/">Sharks 🦈</a>
+    <a href="/links/">Links and contact</a>
+    <a href="/about/">About me</a>
+    <a href="/guestbook/">Guestbook</a>
+    <a href="/blog/">Blog</a>
+    <a href="/collections/">Collections</a>
+  </nav>
 </aside>

@@ -1,0 +1,20 @@
+{% extends "layouts/base.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/css/layout_styles/common_layout.css" />
+{% endblock %}
+
+{% block body %}
+  <script src="/scripts/time.js" defer></script>
+  <script src="/scripts/weather.js" defer></script>
+  {% include "components/topbar.html" %}
+  <div class="page">
+    {% include "components/header.html" %}
+
+    <div class="content">
+      <main>{{ content | safe }}</main>
+    </div>
+
+    {% include "components/footer.html" %}
+  </div>
+{% endblock %}

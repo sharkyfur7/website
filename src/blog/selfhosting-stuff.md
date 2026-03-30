@@ -1,5 +1,5 @@
 ---
-layout: layouts/blogpost.njk
+layout: layouts/common_layout.njk
 canonical: blog/selfhosting-stuff/
 
 modified: 2026-02-03
