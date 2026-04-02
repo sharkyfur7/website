@@ -39,3 +39,10 @@
   font-weight: bold;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Tiny5";
+  src: url("/fonts/Tiny5/Tiny5-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -11,10 +11,7 @@
   <div class="page">
     {% include "components/header.html" %}
 
-    <div class="content">
-      <main>{{ content | safe }}</main>
-    </div>
-
-    {% include "components/footer.html" %}
+    <main class="content">{{ content | safe }}</main>
   </div>
+  {% include "components/footer.html" %}
 {% endblock %}

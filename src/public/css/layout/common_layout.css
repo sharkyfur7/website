@@ -1,5 +1,6 @@
 body {
-  background-image: url("/assets/ivy2.png");
+  background-image: url("/assets/dithered_kelp.jpg");
+  background-size: cover;
 
   min-height: 100vh;
 }
@@ -7,19 +8,11 @@ body {
 .page {
   max-width: 800px;
   margin: auto;
+  box-shadow: 0 0 16px rgb(40, 40, 40);
 }
 
 .content {
   border: 2px solid var(--border-color);
-}
-
-.content > aside,
-.content > main {
-  background: #1e1e23;
+  background: rgb(36 37 37);
   padding: 8px;
-}
-
-.content > aside {
-  background: #212127;
-  border-right: 1px solid var(--border-color);
 }
