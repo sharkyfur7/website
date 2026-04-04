@@ -3,7 +3,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.setOutputDirectory("site");
 
   eleventyConfig.addPassthroughCopy({ "src/public": "/" });
-  eleventyConfig.addPassthroughCopy({ "LICENSE.txt": "/" });
+  eleventyConfig.addPassthroughCopy({ "LICENSE.txt": "LICENSE.txt" });
 
   eleventyConfig.addCollection("shark_posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/shark/**/*.{html,md}");
