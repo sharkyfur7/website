@@ -1,7 +1,7 @@
 © Sharky 2025-2026. All rights reserved.
 
 Code in commits after 8df630b49efd076716a7932cd1fcfe03f18d44c8
-(2026/03/30) is proprietary. No reproduction or reuse without permission.
+(2026-02-08) is copyrighted. No reproduction or reuse without permission.
 
 Code in commits up to and including that commit is released under the
 MIT License. See git history for applicable code.

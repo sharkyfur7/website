@@ -1,0 +1,18 @@
+body {
+  background-color: black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  font-family: "Inter";
+}
+
+.content {
+  max-width: 700px;
+}
+
+p + p {
+  margin-top: 1em;
+}

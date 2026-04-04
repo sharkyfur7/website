@@ -1,6 +1,6 @@
-MIT License
+MIT License (applicable for commits up to and including 8df630b49efd076716a7932cd1fcfe03f18d44c8)
 
-Copyright (c) 2025 Sharky
+Copyright (c) 2025-2026 Sharky
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

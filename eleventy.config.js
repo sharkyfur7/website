@@ -4,6 +4,7 @@ export default async function (eleventyConfig) {
 
   eleventyConfig.addPassthroughCopy({ "src/public": "/" });
   eleventyConfig.addPassthroughCopy({ "LICENSE.txt": "LICENSE.txt" });
+  eleventyConfig.addPassthroughCopy({ "MIT-LICENSE.txt": "MIT-LICENSE.txt" });
 
   eleventyConfig.addCollection("shark_posts", function (collectionApi) {
     return collectionApi.getFilteredByGlob("src/shark/**/*.{html,md}");
