@@ -2,17 +2,28 @@ body {
   background-image: url("/assets/dithered_kelp.jpg");
   background-size: cover;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   min-height: 100vh;
 }
 
 .page {
-  max-width: 800px;
+  width: 1000px;
   margin: auto;
-  box-shadow: 0 0 16px rgb(40, 40, 40);
+}
+
+.window {
+  height: 800px;
+
+  background: black;
+  border: 2px solid var(--border-color);
 }
 
 .content {
-  border: 2px solid var(--border-color);
-  background: rgb(36 37 37);
-  padding: 8px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  padding: 12px;
 }

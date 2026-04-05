@@ -1,16 +1,13 @@
 @import url("/css/reset.css");
 @import url("/css/font.css");
 
-/* Component style files */
-@import url("/css/component/topbar.css");
-
 :root {
   --font-color: SeaShell;
   --link-color: #bacbf3;
-  --border-color: rgb(107 107 111);
+  --border-color: white;
 
   color: var(--font-color);
-  font-family: "Fuzzy Bubbles";
+  font-family: "Cousine";
 }
 
 a,
@@ -20,27 +17,4 @@ a:visited {
 
 a:hover {
   text-decoration: none;
-}
-
-.header {
-  border: 2px solid var(--border-color);
-  border-bottom: none;
-}
-
-.footer {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-
-  padding: 4px;
-
-  font-size: 13px;
-}
-
-.footer > * {
-  background-color: rgba(80, 80, 80, 0.6);
-  backdrop-filter: blur(2px);
-  border-radius: 32px;
-  padding: 0 1em;
-  margin: 2px 0;
 }

@@ -46,3 +46,31 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "Cousine";
+  src: url("/fonts/Cousine/Cousine-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cousine";
+  src: url("/fonts/Cousine/Cousine-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Cousine";
+  src: url("/fonts/Cousine/Cousine-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cousine";
+  src: url("/fonts/Cousine/Cousine-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}

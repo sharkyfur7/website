@@ -2,16 +2,16 @@
 
 {% block style %}
   <link rel="stylesheet" href="/css/layout/common_layout.css" />
+  <link rel="stylesheet" href="/css/component/navbar.css" />
+  <link rel="stylesheet" href="/css/component/footer.css" />
 {% endblock %}
 
 {% block body %}
-  <script src="/scripts/time.js" defer></script>
-  <script src="/scripts/weather.js" defer></script>
-  {% include "components/topbar.html" %}
   <div class="page">
-    {% include "components/header.html" %}
-
-    <main class="content">{{ content | safe }}</main>
+    <div class="window">
+      {% include "components/navbar.njk" %}
+      <main class="content">{{ content | safe }}</main>
+    </div>
+    {% include "components/footer.html" %}
   </div>
-  {% include "components/footer.html" %}
 {% endblock %}
