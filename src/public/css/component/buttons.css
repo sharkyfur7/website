@@ -4,8 +4,14 @@
   justify-content: center;
   gap: 4px;
 }
+
 .buttons img {
   width: 88px;
   height: 31px;
   image-rendering: pixelated;
+  transition: 200ms;
+}
+
+.buttons img:hover {
+  box-shadow: 0px 0px 8px var(--font-color);
 }

@@ -9,10 +9,9 @@ body {
 }
 
 main {
-  padding: 32px;
-  backdrop-filter: blur(16px);
-  border-radius: 16px;
-  border: 1px solid grey;
+  background-color: white;
+  border: 2px solid black;
+  padding: 16px 32px;
   max-width: 50vw;
   margin: 0 auto;
 }
@@ -24,19 +23,19 @@ main {
 }
 
 .links > a {
-  color: var(--font-color);
-  background-color: DarkCyan;
+  color: white;
+  background-color: blue;
   padding: 16px;
 
   font-size: xx-large;
   text-decoration: none;
-
-  border-radius: 8px;
-  border: 3px solid var(--font-color);
+  border: 2px solid transparent;
 }
 
 .links > a:hover {
-  background-color: teal;
+  background-color: white;
+  color: blue;
+  border: 2px solid blue;
 }
 
 .buttons,
