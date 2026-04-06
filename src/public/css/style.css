@@ -4,10 +4,13 @@
 :root {
   --font-color: SeaShell;
   --link-color: #bacbf3;
-  --border-color: white;
+  --border-color: #003334;
+  --bg: #006766;
+  --bg-dark: #005554;
 
   color: var(--font-color);
-  font-family: "Cousine";
+  font-family: "Fuzzy Bubbles";
+  font-size: 16px;
 }
 
 a,
@@ -17,4 +20,9 @@ a:visited {
 
 a:hover {
   text-decoration: none;
+}
+
+p + p,
+ul + p {
+  margin-top: 1em;
 }

@@ -8,8 +8,9 @@
 
 {% block body %}
   <div class="page">
+    {% include "components/navbar.njk" %}
+
     <div class="window">
-      {% include "components/navbar.njk" %}
       <main class="content">{{ content | safe }}</main>
     </div>
     {% include "components/footer.html" %}
