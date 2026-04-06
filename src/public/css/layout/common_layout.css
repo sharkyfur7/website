@@ -1,6 +1,7 @@
 body {
   background-image: url("/assets/dithered_kelp.jpg");
   background-size: cover;
+  background-color: Black;
 
   display: flex;
   justify-content: center;
@@ -29,14 +30,8 @@ body {
   padding: 12px;
 }
 
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px;
-}
-.buttons img {
-  width: 88px;
-  height: 31px;
-  image-rendering: pixelated;
+.commit {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
 }

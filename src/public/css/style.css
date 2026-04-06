@@ -2,14 +2,14 @@
 @import url("/css/font.css");
 
 :root {
-  --font-color: SeaShell;
-  --link-color: #bacbf3;
-  --border-color: #003334;
-  --bg: #006766;
-  --bg-dark: #005554;
+  --font-color: Black;
+  --link-color: blue;
+  --border-color: black;
+  --bg: White;
+  --bg-dark: Grey;
 
   color: var(--font-color);
-  font-family: "Fuzzy Bubbles";
+  font-family: "Cousine";
   font-size: 16px;
 }
 
@@ -23,6 +23,7 @@ a:hover {
 }
 
 p + p,
-ul + p {
+ul + p,
+div + p {
   margin-top: 1em;
 }
