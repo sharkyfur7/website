@@ -27,3 +27,9 @@ ul + p,
 div + p {
   margin-top: 1em;
 }
+
+.nw-view,
+.nw-follow,
+.nw-update {
+  display: flex;
+}

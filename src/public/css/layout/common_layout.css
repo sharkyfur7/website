@@ -35,3 +35,15 @@ body {
   font-style: italic;
   text-align: center;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: small;
+}
