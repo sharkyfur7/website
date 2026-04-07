@@ -1,0 +1,16 @@
+{% extends "layouts/base.njk" %}
+
+{% block style %}
+  <link rel="stylesheet" href="/css/layout/common_layout.css" />
+  <link rel="stylesheet" href="/css/component/footer.css" />
+  <link rel="stylesheet" href="/css/component/buttons.css" />
+{% endblock %}
+
+{% block body %}
+  <div class="page">
+    <div class="window">
+      <main class="content">{{ content | safe }}</main>
+    </div>
+    {% include "components/footer.html" %}
+  </div>
+{% endblock %}

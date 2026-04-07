@@ -6,13 +6,13 @@
   "scripts": {
     "clean": "run-script-os",
     "clean:linux:darwin": "rm -rf site/*",
-    "clean:win32": "rd /s /q site",
+    "clean:win32": "rmdir site /s /q",
     "build": "run-script-os",
     "build:linux:darwin": "npm run clean; npx @11ty/eleventy",
-    "build:win32": "npm run clean & npx @11ty/eleventy",
+    "build:win32": "npm run clean && npx @11ty/eleventy",
     "dev": "run-script-os",
     "dev:linux:darwin": "npm run clean; npx @11ty/eleventy --serve",
-    "dev:win32": "npm run clean & npx @11ty/eleventy --serve"
+    "dev:win32": "npm run clean && npx @11ty/eleventy --serve"
   },
   "repository": {
     "type": "git",
@@ -33,6 +33,8 @@
   "devDependencies": {
     "@eslint/js": "^9.39.2",
     "eslint": "^9.39.2",
-    "globals": "^17.0.0"
+    "globals": "^17.0.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-jinja-template": "^2.1.0"
   }
 }

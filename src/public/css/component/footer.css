@@ -1,0 +1,27 @@
+.footer {
+  font-size: small;
+}
+
+.footer > details {
+  color: white;
+  width: fit-content;
+  margin: 10px auto;
+
+  text-align: center;
+}
+
+.footer > details:not(:open) {
+  background-color: black;
+  padding: 4px 10px;
+}
+
+.footer > details > summary:hover {
+  cursor: pointer;
+}
+
+.footer > details:open {
+  background-color: var(--bg);
+  color: var(--font-color);
+  border: 2px solid var(--border-color);
+  padding: 1em;
+}

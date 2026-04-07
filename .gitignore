@@ -1,5 +1,5 @@
 export
 node_modules
 site
-.vscode
+
 .DS_store

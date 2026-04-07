@@ -1,0 +1,61 @@
+body {
+  background-image: url("/assets/dithered_kelp.jpg");
+  background-size: cover;
+  background-color: Black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 64px;
+
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 800px;
+  margin: auto;
+}
+
+.window {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--bg);
+  border: 2px solid var(--border-color);
+}
+
+.content {
+  padding: 12px;
+}
+
+.commit {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1em;
+  font-size: small;
+}
+
+.nw-view,
+.nw-follow,
+.nw-update {
+  display: flex;
+}
+
+.notify {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1em;
+}
