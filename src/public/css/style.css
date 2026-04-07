@@ -24,12 +24,11 @@ a:hover {
 
 p + p,
 ul + p,
-div + p {
+div + p,
+form + p {
   margin-top: 1em;
 }
 
-.nw-view,
-.nw-follow,
-.nw-update {
-  display: flex;
+button:hover {
+  cursor: pointer;
 }
