@@ -17,3 +17,8 @@ body {
 p + p {
   margin-top: 1em;
 }
+
+a,
+a:visited {
+  color: DodgerBlue;
+}
