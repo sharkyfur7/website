@@ -45,7 +45,7 @@ function createCounter(number, padding = 5) {
 
 async function checkCookies() {
   if (!getValue("nw-view")) {
-    let response = await fetch("https://nekoweb.org/api/site/info/furshark.net");
+    let response = await fetch("https://nekoweb.org/api/site/info/wireless.fish");
     response = await response.json();
 
     setValue("nw-view", response.views, valueMinutes);

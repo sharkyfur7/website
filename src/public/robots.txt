@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /not_found/
 
-Sitemap: https://furshark.net/sitemap.xml
+Sitemap: https://wireless.fish/sitemap.xml
