@@ -14,7 +14,7 @@ async function sendNotification() {
   button.innerHTML = "Sending...";
   button.disabled = true;
 
-  let resp = await fetch("https://api.furshark.net/ntfy", {
+  let resp = await fetch("https://api.wireless.fish/ntfy", {
     method: "POST",
     body: JSON.stringify({ text: input.value, agent: navigator.userAgent }),
     headers: {

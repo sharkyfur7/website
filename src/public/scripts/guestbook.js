@@ -182,7 +182,7 @@ async function main() {
   let comment_container = document.querySelector("#comments");
 
   try {
-    let comment_response = await fetch("https://api.furshark.net/guestbook", {
+    let comment_response = await fetch("https://api.wireless.fish/guestbook", {
       method: "GET",
       accept: "application/json",
     });
@@ -236,7 +236,7 @@ async function sendComment() {
     status.style.display = "block";
   }
 
-  let response = await fetch("https://api.furshark.net/guestbook", {
+  let response = await fetch("https://api.wireless.fish/guestbook", {
     method: "POST",
     headers: {
       "Accept": "application/json",
