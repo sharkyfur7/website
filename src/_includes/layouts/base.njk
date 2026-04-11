@@ -29,8 +29,9 @@
     {% block style %}
     {% endblock %}
 
-    {% block page_style %}
-    {% endblock %}
+    {% for sheet in extra_css %}
+      <link rel="stylesheet" href="{{ sheet }}" />
+    {% endfor %}
   </head>
 
   <body>

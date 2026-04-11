@@ -1,0 +1,11 @@
+.ssgwebring,
+.noaiwebring,
+.retronaut {
+  display: flex;
+  gap: 1em;
+}
+
+.webrings {
+  display: flex;
+  justify-content: space-evenly;
+}

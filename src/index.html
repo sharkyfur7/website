@@ -1,9 +1,15 @@
 ---
 layout: layouts/common_layout.njk
+extra_css:
+  - /css/page/index.css
 
 title: Sharky's website
 description: Sharky's personal webpage. The creature. Shark-infested website. wireless.fish 🐟
 ---
+
+{% block page_style %}
+  <link rel="stylesheet" href="/css/layout/index.css" />
+{% endblock %}
 
 <img
   style="position: absolute; height: 128px; top: 420px; left: 1050px; pointer-events: none;"
@@ -46,6 +52,33 @@ description: Sharky's personal webpage. The creature. Shark-infested website. wi
 {% include "components/buttons.html" %}
 
 <p>Or check out my <a href="/collections/">collections</a> of various things</p>
+
+<p>Also poke around and see who else is on these webrings!</p>
+<div class="webrings">
+  <div class="ssgwebring">
+    <a href="https://jbc.lol/webrings/ssgring/redirect?slug=sharky&way=prev" class="webring-arrow">&larr;</a>
+    <a target="_blank" href="https://jbc.lol/webrings/ssgring/">SSG ring</a>
+    <a href="https://jbc.lol/webrings/ssgring/redirect?slug=sharky&way=next" class="webring-arrow">&rarr;</a>
+  </div>
+
+  <div class="noaiwebring">
+    <a href="https://baccyflap.com/noai/?prv&s=shr" target="_top" title="previous" class="webring-arrow">&larr;</a>
+
+    <div>
+      <a href="https://baccyflap.com/noai" target="_blank">the no AI webring</a>
+    </div>
+
+    <a href="https://baccyflap.com/noai/?nxt&s=shr" target="_top" title="next" class="webring-arrow">&rarr;</a>
+  </div>
+
+  <div class="retronaut">
+    <a href="https://webring.dinhe.net/prev/https://wireless.fish/" class="webring-arrow">&larr;</a>
+    <div>
+      <a target="_blank" href="https://webring.dinhe.net">retronaut webring</a>
+    </div>
+    <a href="https://webring.dinhe.net/next/https://wireless.fish/" class="webring-arrow">&rarr;</a>
+  </div>
+</div>
 
 <p class="commit">
   Commit
