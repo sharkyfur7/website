@@ -13,6 +13,16 @@ body {
   min-height: 100vh;
 }
 
+@media only screen and (max-device-width: 768px) {
+  body {
+    padding: 0px;
+  }
+  .page {
+    margin: 0;
+    max-width: none;
+  }
+}
+
 .page {
   max-width: 800px;
   margin: auto;
@@ -51,6 +61,10 @@ body {
 .nw-view,
 .nw-follow,
 .nw-update {
+  img {
+    display: inline;
+  }
+
   display: flex;
 }
 

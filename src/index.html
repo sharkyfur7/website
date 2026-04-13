@@ -8,19 +8,22 @@ title: Sharky's website
 description: Sharky's personal webpage. The creature. Shark-infested website. wireless.fish 🐟
 ---
 
-{% block page_style %}
-  <link rel="stylesheet" href="/css/layout/index.css" />
-{% endblock %}
-
 <header class="header">
   <h1>Welcome to my website</h1>
 
   <script src="/scripts/nekoweb.js" type="module" defer></script>
   <section class="stats">
-    <div><span>Visits:</span> <span class="nw-view">00000</span></div>
     <div>
-      <a title="Follow me on nekoweb" href="https://nekoweb.org/follow/wireless.fish">[+]</a> Followers:
-      <span class="nw-follow">00000</span>
+      Visits:
+      <span class="nw-view desktop-only">00000</span>
+      <span class="nw-view-text mobile-only">00000</span>
+    </div>
+
+    <div>
+      <a title="Follow me on nekoweb" href="https://nekoweb.org/follow/wireless.fish">[+]</a>
+      Followers:
+      <span class="nw-follow desktop-only">00000</span>
+      <span class="nw-follow-text mobile-only">00000</span>
     </div>
   </section>
 </header>
@@ -49,7 +52,11 @@ description: Sharky's personal webpage. The creature. Shark-infested website. wi
   </div>
 </form>
 
-<img style="float: right; height: 125px; pointer-events: none; top: 400px" src="/assets/shark.png" />
+<img
+  class="desktop-only"
+  style="float: right; height: 125px; pointer-events: none; top: 400px"
+  src="/assets/shark.png"
+/>
 <p>You can reach me on:</p>
 <ul>
   <li>Discord: wirelessfishes</li>

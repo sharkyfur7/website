@@ -8,7 +8,6 @@
   --bg: White;
   --bg-dark: Grey;
 
-  color: var(--font-color);
   font-family: "Cousine";
   font-size: 16px;
 }
@@ -32,4 +31,20 @@ img + p {
 
 button:hover {
   cursor: pointer;
+}
+
+.mobile-only {
+  display: revert !important;
+}
+.desktop-only {
+  display: none !important;
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none !important;
+  }
+  .desktop-only {
+    display: revert !important;
+  }
 }
