@@ -9,3 +9,12 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.mytime {
+  background-color: #a4a89c;
+  color: #303439;
+  border: 1px solid #777b71;
+  font-weight: bold;
+  padding: 2px 4px;
+  border-radius: 3px;
+}

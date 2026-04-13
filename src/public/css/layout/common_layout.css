@@ -43,7 +43,7 @@ body {
 
 .stats > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   gap: 1em;
   font-size: small;
 }

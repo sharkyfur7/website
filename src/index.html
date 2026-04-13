@@ -22,8 +22,11 @@ description: Sharky's personal webpage. The creature. Shark-infested website. wi
 
   <script src="/scripts/nekoweb.js" type="module" defer></script>
   <section class="stats">
-    <div><span>Visits:</span> <span class="nw-view">00000</span></div>
-    <div>Followers: <span class="nw-follow">00000</span></div>
+    <div style="text-align: right;"><span>Visits:</span> <span class="nw-view">00000</span></div>
+    <div>
+      <a title="Follow me on nekoweb" href="https://nekoweb.org/follow/wireless.fish">[+]</a> Followers:
+      <span class="nw-follow">00000</span>
+    </div>
   </section>
 </header>
 
@@ -32,7 +35,16 @@ description: Sharky's personal webpage. The creature. Shark-infested website. wi
   are more things to come, so stay tuned! I have a very important exam coming up, so expect more updates in June.
 </p>
 
-<p>As always, you can send a push notification to my phone for no reason:</p>
+<p>
+  <script src="/scripts/mytime.js" defer></script>
+  It is currently <span class="mytime">mytime</span> for me.
+  <noscript>(This requires javascript)</noscript>
+</p>
+
+<p>
+  As always, you can send a push notification to my phone for no reason:
+  <noscript>(This requires javascript too)</noscript>
+</p>
 
 <script src="/scripts/notify.js" defer></script>
 <form>
@@ -84,5 +96,5 @@ description: Sharky's personal webpage. The creature. Shark-infested website. wi
 <p class="commit">
   Commit
   <a href="https://github.com/wirelessfishes/website/commit/{{ buildInfo.hash }}">{{ buildInfo.hash_short }}</a>,
-  published on {{ buildInfo.time }}
+  published on {{ buildInfo.time }}, proudly hosted on <a href="https://nekoweb.org">nekoweb.org</a>
 </p>
