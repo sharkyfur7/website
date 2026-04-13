@@ -25,7 +25,8 @@ a:hover {
 p + p,
 ul + p,
 div + p,
-form + p {
+form + p,
+img + p {
   margin-top: 1em;
 }
 
