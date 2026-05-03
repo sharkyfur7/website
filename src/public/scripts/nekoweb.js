@@ -100,20 +100,20 @@ if (updates) {
 let views_text = document.getElementsByClassName("nw-view-text");
 if (views_text) {
   for (let i = 0; i < views_text.length; i++) {
-    views_text[i].innerText = data.view;
+    views_text[i].innerText = data.view.toString().padStart("4", 0);
   }
 }
 
 let follows_text = document.getElementsByClassName("nw-follow-text");
 if (follows_text) {
   for (let i = 0; i < follows_text.length; i++) {
-    follows_text[i].innerText = data.follow;
+    follows_text[i].innerText = data.follow.toString().padStart("4", 0);
   }
 }
 
 let updates_text = document.getElementsByClassName("nw-update-text");
 if (updates_text) {
   for (let i = 0; i < updates_text.length; i++) {
-    updates_text[i].innerText = data.update;
+    updates_text[i].innerText = data.update.toString().padStart("4", 0);
   }
 }

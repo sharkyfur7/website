@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block body %}
-  <div class="page">
+  <div class="background"></div>
+
+  <div class="page" style="z-index: 10;">
     <div class="window">
       <main class="content">{{ content | safe }}</main>
     </div>

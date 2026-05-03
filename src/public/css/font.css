@@ -53,3 +53,13 @@
   font-weight: bold;
   font-style: italic;
 }
+
+@font-face {
+  font-family: "Departure Mono";
+  src:
+    url("/fonts/DepartureMono/DepartureMono-Regular.woff2") format("woff2"),
+    url("/fonts/DepartureMono/DepartureMono-Regular.woff") format("woff"),
+    url("/fonts/DepartureMono/DepartureMono-Regular.otf") format("otf");
+  font-weight: normal;
+  font-style: normal;
+}

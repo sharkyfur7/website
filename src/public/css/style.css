@@ -1,5 +1,6 @@
 @import url("/css/reset.css");
 @import url("/css/font.css");
+@import url("/css/utility.css");
 
 :root {
   --font-color: Black;
@@ -8,8 +9,15 @@
   --bg: White;
   --bg-dark: Grey;
 
-  font-family: "Cousine";
-  font-size: 16px;
+  font-family: "Departure Mono";
+  font-size: 16.5px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0.25em;
 }
 
 a,
@@ -26,7 +34,7 @@ ul + p,
 div + p,
 form + p,
 img + p {
-  margin-top: 1em;
+  margin-top: 0.5em;
 }
 
 button:hover {

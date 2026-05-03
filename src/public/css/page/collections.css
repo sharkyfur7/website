@@ -77,3 +77,10 @@ main {
   width: 99px;
   height: 56px;
 }
+
+.buttons img,
+.blinkies img,
+.stamps img,
+.misc img {
+  box-shadow: 0px 0px 4px grey;
+}
